@@ -1,11 +1,11 @@
 /** @jsxImportSource theme-ui */
 
-import { NavbarWrapperStyles } from "./Navbar.styles";
+import { NavbarTitleStyles, NavbarWrapperStyles } from "./Navbar.styles";
 
 const Navbar = () => {
     return (
         <div sx={NavbarWrapperStyles}>
-            Navbar
+            <div sx={NavbarTitleStyles}>Wizards Life</div>
         </div>
     );
 }

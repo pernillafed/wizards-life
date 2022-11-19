@@ -2,8 +2,17 @@ import { ThemeUIStyleObject } from "theme-ui";
 
 
 export const NavbarWrapperStyles: ThemeUIStyleObject = {
-    backgroundColor: "mainBackground",
+    backgroundColor: "primaryBackground",
+    color: "primaryText",
+    height: "10vh",
+    display: "flex",
+    alignItems: "center",
+    paddingX: "1rem",
+}
+
+export const NavbarTitleStyles: ThemeUIStyleObject = {
     fontSize: "3rem",
-    fontFamily: "mainHeading",
-    color: "mainText"
+    fontFamily: "heading",
+    paddingTop: "0.25rem"
+
 }

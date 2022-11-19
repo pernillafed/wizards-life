@@ -1,6 +1,10 @@
+/** @jsxImportSource theme-ui */
+
+import { HomeWrapperStyles } from "./Home.styles";
+
 const Home = () => {
     return (
-        <div>Home</div>
+        <div sx={HomeWrapperStyles}>Home</div>
     );
 }
  
