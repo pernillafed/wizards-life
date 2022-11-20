@@ -11,7 +11,7 @@ export const NavbarWrapperStyles: ThemeUIStyleObject = {
 }
 
 export const NavbarTitleStyles: ThemeUIStyleObject = {
-    fontSize: "3rem",
+    fontSize: "primaryHeading",
     fontFamily: "heading",
     paddingTop: "0.25rem"
 

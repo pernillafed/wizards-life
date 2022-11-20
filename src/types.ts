@@ -11,6 +11,7 @@ export const styleTheme: Theme = {
         primaryText: "#fff3c2"
     },
     fontSizes: {
-        mainHeading: "3rem"
+        primaryHeading: "3rem",
+        secondaryHeading: "2rem",
     }
 }
