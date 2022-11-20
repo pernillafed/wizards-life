@@ -4,7 +4,7 @@ import { NavbarTitleStyles, NavbarWrapperStyles } from "./Navbar.styles";
 
 const Navbar = () => {
     return (
-        <div sx={NavbarWrapperStyles}>
+        <div sx={NavbarWrapperStyles} data-testid="navbar">
             <div sx={NavbarTitleStyles}>Wizards Life</div>
         </div>
     );
