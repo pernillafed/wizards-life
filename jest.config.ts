@@ -1,7 +1,7 @@
 export default {
     testEnvironment: "jsdom",
     transform: {
-        "^.+\\.tsx?$": "ts-jest"
+        "^.+\\.tsx?$": ["ts-jest", { isolatedModules: true }]
     },
     moduleNameMapper: {
         '\\.(gif|ttf|eot|svg|png|jpg)$': '<rootDir>/test/__mocks__/fileMock.js',
