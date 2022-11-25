@@ -9,7 +9,7 @@ const Home = () => {
     const [showLoginForm, setShowLoginForm] = useState(true);
 
     return (
-        <div sx={HomeWrapperStyles} data-testid="home">
+        <div sx={HomeWrapperStyles}>
             <div sx={LoginOrCreateContainerStyles}>
                 {showLoginForm
                     ? <LoginForm setShowLoginForm={setShowLoginForm} />
