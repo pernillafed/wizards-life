@@ -1,22 +1,16 @@
 /** @jsxImportSource theme-ui */
 
-import { Dispatch, SetStateAction } from "react";
-import { ButtonStyles, InputFieldStyles, LoginFormStyles, LoginHeadingStyles } from "./LoginForm.styles";
+import { FormButtonStyles, FormInputFieldStyles, FormWrapperStyles, FormHeadingStyles } from "../Form.styles";
 
-export type LoginFormProps = {
-    setShowLoginForm: Dispatch<SetStateAction<boolean>>;
-}
-
-const LoginForm = ({ setShowLoginForm }: LoginFormProps) => {
+const LoginForm = () => {
     return (
         <div>
-            <div sx={LoginHeadingStyles}>Log in</div>
-            <div sx={LoginFormStyles}>
-                <input sx={InputFieldStyles} type="text" placeholder="username" />
-                <input sx={InputFieldStyles} type="password" placeholder="password" />
-                <input sx={ButtonStyles} type="submit" value="Log in" />
+            <div sx={FormHeadingStyles}>Log in</div>
+            <div sx={FormWrapperStyles}>
+                <input sx={FormInputFieldStyles} type="text" placeholder="e-mail" />
+                <input sx={FormInputFieldStyles} type="password" placeholder="password" />
+                <input sx={FormButtonStyles} type="submit" value="Log in" />
             </div>
-            <div sx={{ color: "primaryText" }}>Don't have an account? <span sx={{ fontWeight: "bold", cursor: "pointer", ":hover": { textDecoration: "underline" } }} onClick={() => setShowLoginForm(false)}>Create one!</span></div>
         </div>
     );
 }

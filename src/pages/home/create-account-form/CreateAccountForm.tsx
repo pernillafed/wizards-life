@@ -1,10 +1,18 @@
-import { LoginFormProps } from "../login-form/LoginForm";
+/** @jsxImportSource theme-ui */
 
-const CreateAccountForm = ({ setShowLoginForm }: LoginFormProps) => {
+import { FormButtonStyles, FormHeadingStyles, FormInputFieldStyles, FormWrapperStyles } from "../Form.styles";
+
+const CreateAccountForm = () => {
     return (
         <div>
-            <h1>Create account</h1>
-            <div>Already have an account? <span onClick={() => setShowLoginForm(true)}>Log in!</span></div>
+            <div sx={FormHeadingStyles}>Create account</div>
+            <div sx={FormWrapperStyles}>
+                <input sx={FormInputFieldStyles} type="text" placeholder="username" />
+                <input sx={FormInputFieldStyles} type="text" placeholder="e-mail" />
+                <input sx={FormInputFieldStyles} type="password" placeholder="password" />
+                <input sx={FormInputFieldStyles} type="password" placeholder="repeat password" />
+                <input sx={FormButtonStyles} type="submit" value="Log in" />
+            </div>
         </div>
     );
 }

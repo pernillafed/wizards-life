@@ -2,7 +2,7 @@
 
 import { useState } from "react";
 import CreateAccountForm from "./create-account-form/CreateAccountForm";
-import { HomeWrapperStyles, LoginOrCreateContainerStyles } from "./Home.styles";
+import { HomeWrapperStyles, LoginOrCreateContainerStyles, SwitchFormsLinkStyles } from "./Home.styles";
 import LoginForm from "./login-form/LoginForm";
 
 const Home = () => {
@@ -12,8 +12,31 @@ const Home = () => {
         <div sx={HomeWrapperStyles}>
             <div sx={LoginOrCreateContainerStyles}>
                 {showLoginForm
-                    ? <LoginForm setShowLoginForm={setShowLoginForm} />
-                    : <CreateAccountForm setShowLoginForm={setShowLoginForm} />
+                    ? (
+                        <>
+                            <LoginForm />
+                            <div sx={{ color: "primaryText", fontFamily: "paragraph", textAlign: "center" }}>
+                                Don't have an account?
+                                <span
+                                    data-testid="switch-forms-link"
+                                    sx={SwitchFormsLinkStyles}
+                                    onClick={() => setShowLoginForm(false)}
+                                >Create one!</span>
+                            </div>
+                        </>
+                    ) : (
+                        <>
+                            <CreateAccountForm />
+                            <div sx={{ color: "primaryText", fontFamily: "paragraph", textAlign: "center" }}>
+                                Already have an account?
+                                <span
+                                    data-testid="switch-forms-link"
+                                    sx={SwitchFormsLinkStyles}
+                                    onClick={() => setShowLoginForm(true)}
+                                >Log in!</span>
+                            </div>
+                        </>
+                    )
                 }
             </div>
         </div>

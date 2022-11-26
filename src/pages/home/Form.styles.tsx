@@ -1,37 +1,41 @@
 import { ThemeUIStyleObject } from "theme-ui";
 
-export const LoginHeadingStyles: ThemeUIStyleObject = {
+export const FormHeadingStyles: ThemeUIStyleObject = {
     fontFamily: "heading",
-    fontSize: "primaryHeading",
+    fontSize: ["2rem", "2.5rem", "primaryHeading"],
     color: "primaryText",
     textAlign: "center"
 }
 
-export const LoginFormStyles: ThemeUIStyleObject = {
+export const FormWrapperStyles: ThemeUIStyleObject = {
     display: "flex",
     flexDirection: "column",
     marginTop: "1rem",
     marginBottom: "2rem"
 }
 
-export const InputFieldStyles: ThemeUIStyleObject = {
+export const FormInputFieldStyles: ThemeUIStyleObject = {
     backgroundColor: "primaryBackground",
     marginBottom: "0.5rem",
-    padding: "0.5rem 1rem",
+    padding: "0.75rem 1rem",
     borderRadius: "0.5rem",
     border: "none",
     outline: "none",
     color: "primaryText",
-    fontSize: "1rem"
+    fontSize: "1rem",
+    "::placeholder": {
+        color: "primaryText",
+        opacity: "0.25"
+    }
 }
 
-export const ButtonStyles: ThemeUIStyleObject = {
+export const FormButtonStyles: ThemeUIStyleObject = {
     backgroundColor: "primaryBackground",
     border: "none",
     borderRadius: "0.5rem",
-    padding: "0.5rem 1rem",
+    padding: "0.75rem 1rem",
     margin: "1rem auto 0 auto",
-    width: "60%",
+    width: "40%",
     color: "primaryText",
     textTransform: "uppercase",
     fontWeight: "bold",
