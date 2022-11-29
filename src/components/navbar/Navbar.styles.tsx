@@ -7,6 +7,7 @@ export const NavbarWrapperStyles: ThemeUIStyleObject = {
     height: "10vh",
     display: "flex",
     alignItems: "center",
+    justifyContent: "space-between",
     paddingX: "1rem",
 }
 

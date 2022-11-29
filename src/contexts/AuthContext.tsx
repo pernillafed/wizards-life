@@ -1,4 +1,4 @@
-import { createUserWithEmailAndPassword, onAuthStateChanged, User, UserCredential } from "firebase/auth";
+import { createUserWithEmailAndPassword, onAuthStateChanged, signInWithEmailAndPassword, signOut, User, UserCredential } from "firebase/auth";
 import React, { createContext, useContext, useEffect, useState } from "react";
 import { auth } from "../firebase";
 
@@ -6,6 +6,8 @@ export type AuthContextType = {
     currentUser: User | null;
     loading: boolean;
     createAccount: (email: string, password: string) => Promise<UserCredential>;
+    logout: () => Promise<void>;
+    login: (email: string, password: string) => Promise<UserCredential>;
 }
 
 interface IAuthContextProps {
@@ -29,6 +31,14 @@ const AuthContextProvider = ({ children }: IAuthContextProps): JSX.Element => {
         return createUserWithEmailAndPassword(auth, email, password);
     };
 
+    const login = (email: string, password: string): Promise<UserCredential> => {
+        return signInWithEmailAndPassword(auth, email, password);
+    }
+
+    const logout = (): Promise<void> => {
+        return signOut(auth);
+    }
+
     useEffect(() => {
         onAuthStateChanged(auth, (user) => {
             setCurrentUser(user);
@@ -40,6 +50,8 @@ const AuthContextProvider = ({ children }: IAuthContextProps): JSX.Element => {
         currentUser,
         loading,
         createAccount,
+        login,
+        logout,
     };
 
     return (
