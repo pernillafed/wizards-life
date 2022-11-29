@@ -1,20 +1,20 @@
 import { ThemeUIStyleObject } from "theme-ui";
 
-export const FormHeadingStyles: ThemeUIStyleObject = {
+export const AuthFormHeadingStyles: ThemeUIStyleObject = {
     fontFamily: "heading",
     fontSize: ["2rem", "2.5rem", "primaryHeading"],
     color: "primaryText",
     textAlign: "center"
 }
 
-export const FormWrapperStyles: ThemeUIStyleObject = {
+export const AuthFormWrapperStyles: ThemeUIStyleObject = {
     display: "flex",
     flexDirection: "column",
     marginTop: "1rem",
     marginBottom: "2rem"
 }
 
-export const FormInputFieldStyles: ThemeUIStyleObject = {
+export const AuthFormInputFieldStyles: ThemeUIStyleObject = {
     backgroundColor: "primaryBackground",
     marginBottom: "0.5rem",
     padding: "0.75rem 1rem",
@@ -29,11 +29,11 @@ export const FormInputFieldStyles: ThemeUIStyleObject = {
     }
 }
 
-export const FormButtonStyles: ThemeUIStyleObject = {
+export const AuthFormButtonStyles: ThemeUIStyleObject = {
     backgroundColor: "primaryBackground",
     border: "none",
     borderRadius: "0.5rem",
-    padding: "0.75rem 1rem",
+    padding: "0.80rem 1rem 0.70rem 1rem",
     margin: "1rem auto 0 auto",
     width: "40%",
     color: "primaryText",

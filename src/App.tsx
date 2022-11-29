@@ -1,11 +1,11 @@
 import Navbar from "./components/navbar/Navbar"
-import Home from "./pages/home/Home"
+import Start from "./pages/start/Start"
 
 const App = () => {
     return (
         <div className="App">
             <Navbar />
-            <Home />
+            <Start />
         </div>
     )
 }

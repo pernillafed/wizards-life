@@ -1,10 +1,10 @@
 import App from "../App";
 import { render, RenderResult } from "@testing-library/react";
 import Navbar from "../components/navbar/Navbar";
-import Home from "../pages/home/Home";
+import Start from "../pages/start/Start";
 
 jest.mock("../components/navbar/Navbar");
-jest.mock("../pages/home/Home");
+jest.mock("../pages/start/Start");
 
 describe(App.name, () => {
     let app: RenderResult;
@@ -12,8 +12,8 @@ describe(App.name, () => {
     const mockNavbar = Navbar as jest.MockedFunction<typeof Navbar>;
     mockNavbar.mockImplementation(() => <div data-testid="navbar" />);
 
-    const mockHome = Home as jest.MockedFunction<typeof Home>;
-    mockHome.mockImplementation(() => <div data-testid="home" />);
+    const mockHome = Start as jest.MockedFunction<typeof Start>;
+    mockHome.mockImplementation(() => <div data-testid="start" />);
 
     beforeEach(() => {
         app = render(<App />);
@@ -25,6 +25,6 @@ describe(App.name, () => {
 
     it("should render children", () => {
         expect(app.queryByTestId("navbar")).toBeInTheDocument();
-        expect(app.queryByTestId("home")).toBeInTheDocument();
+        expect(app.queryByTestId("start")).toBeInTheDocument();
     });
 });
