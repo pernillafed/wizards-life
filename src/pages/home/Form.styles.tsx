@@ -41,6 +41,7 @@ export const FormButtonStyles: ThemeUIStyleObject = {
     fontWeight: "bold",
     cursor: "pointer",
     fontSize: "1rem",
+    outline: "none",
     transition: "background-color 0.4s",
     ':hover': {
         backgroundColor: "#6c5847",
