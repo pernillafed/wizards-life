@@ -1,5 +1,3 @@
-/** @jsxImportSource theme-ui */
-
 import { useState } from "react";
 import { StartWrapperStyles, LoginOrCreateContainerStyles, SwitchFormsLinkStyles } from "./Start.styles";
 import AuthForm from "./auth-form/AuthForm";

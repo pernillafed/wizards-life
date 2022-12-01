@@ -1,5 +1,3 @@
-/** @jsxImportSource theme-ui */
-
 import { useAuthContext } from "../../contexts/AuthContext";
 import { NavbarTitleStyles, NavbarWrapperStyles } from "./Navbar.styles";
 

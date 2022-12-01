@@ -1,5 +1,3 @@
-/** @jsxImportSource theme-ui */
-
 import { FormEvent, useState } from "react";
 import { useAuthContext } from "../../../contexts/AuthContext";
 import { AuthFormButtonStyles, AuthFormHeadingStyles, AuthFormInputFieldStyles, AuthFormWrapperStyles } from "./AuthForm.styles";
