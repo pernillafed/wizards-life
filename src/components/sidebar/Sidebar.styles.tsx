@@ -14,5 +14,12 @@ export const SidebarLinkStyles: ThemeUIStyleObject = {
     fontSize: "1rem",
     marginBottom: "1rem",
     cursor: "pointer",
-    textAlign: "center"
+    textAlign: "center",
+    boxShadow: "0.25rem 0.25rem 0.5rem #00000077",
+    textTransform: "uppercase",
+    fontFamily: "paragraph",
+    transition: "primaryBackground",
+    ":hover": {
+        backgroundColor: "hoverPrimaryBackground"
+    }
 }

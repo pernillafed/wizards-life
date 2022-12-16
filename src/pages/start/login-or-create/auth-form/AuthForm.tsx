@@ -1,11 +1,10 @@
 /** @jsxImportSource theme-ui */
 
 import { FormEvent, useState } from "react";
-import { useAuthContext } from "../../../contexts/AuthContext";
+import { useAuthContext } from "../../../../contexts/AuthContext";
 import { AuthFormButtonStyles, AuthFormHeadingStyles, AuthFormInputFieldStyles, AuthFormWrapperStyles } from "./AuthForm.styles";
 import { BeatLoader } from "react-spinners";
-import { validateAuthInformation } from "../../../utils/authValidation";
-import { useNavigate } from "react-router-dom";
+import { validateAuthInformation } from "../../../../utils/authValidation";
 
 export type AuthFormProps = {
     heading: string;
@@ -23,8 +22,6 @@ const AuthForm = ({ heading, buttonText, isLoginForm }: AuthFormProps) => {
     
     const { createAccount, login } = useAuthContext();
 
-    const navigate = useNavigate();
-
     const handleLogin = async (e: FormEvent) => {
         e.preventDefault();
 
@@ -34,7 +31,6 @@ const AuthForm = ({ heading, buttonText, isLoginForm }: AuthFormProps) => {
         try {
             setLoading(true);
             await login(email, password);
-            navigate("/home");
         } catch (err) {
             setLoading(false);
             setError("Wrong e-mail or password");
@@ -58,7 +54,6 @@ const AuthForm = ({ heading, buttonText, isLoginForm }: AuthFormProps) => {
         try {
             setLoading(true);
             await createAccount(email, password);
-            navigate("/home");
         } catch (err) {
             setLoading(false);
             setError("Failed to create account");

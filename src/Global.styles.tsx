@@ -9,5 +9,5 @@ export const ButtonStyles: ThemeUIStyleObject = {
     fontWeight: "bold",
     cursor: "pointer",
     outline: "none",
-    transition: "background-color 0.4s"
+    transition: "primaryBackground"
 }

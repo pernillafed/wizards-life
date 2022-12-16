@@ -1,7 +1,7 @@
 import { ThemeUIStyleObject } from "theme-ui";
-import HogwartsCastle from "../../assets/hogwarts-castle.jpg";
+import HogwartsCastle from "../../../assets/hogwarts-castle.jpg";
 
-export const StartWrapperStyles: ThemeUIStyleObject = {
+export const LoginOrCreateWrapperStyles: ThemeUIStyleObject = {
     background: `url(${HogwartsCastle}) no-repeat center top fixed`,
     backgroundSize: "cover",
     height: "100%",
@@ -9,9 +9,10 @@ export const StartWrapperStyles: ThemeUIStyleObject = {
     display: "flex",
     justifyContent: "center",
     alignItems: "center",
+    width: "100%"
 }
 
-export const LoginOrCreateContainerStyles: ThemeUIStyleObject = {
+export const LoginOrCreateFormStyles: ThemeUIStyleObject = {
     backgroundColor: "secondaryBackground",
     padding: "2rem 3rem",
     borderRadius: "2rem",

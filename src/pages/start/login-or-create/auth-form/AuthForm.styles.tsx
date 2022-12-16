@@ -42,8 +42,8 @@ export const AuthFormButtonStyles: ThemeUIStyleObject = {
     cursor: "pointer",
     fontSize: "1rem",
     outline: "none",
-    transition: "background-color 0.4s",
+    transition: "primaryBackground",
     ':hover': {
-        backgroundColor: "#6c5847",
+        backgroundColor: "hoverPrimaryBackground",
     },
 }
