@@ -9,7 +9,8 @@ export const LoginOrCreateWrapperStyles: ThemeUIStyleObject = {
     display: "flex",
     justifyContent: "center",
     alignItems: "center",
-    width: "100%"
+    width: "100%",
+    marginTop: "10vh"
 }
 
 export const LoginOrCreateFormStyles: ThemeUIStyleObject = {

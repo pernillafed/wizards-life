@@ -3,7 +3,8 @@ import type { Theme } from 'theme-ui';
 export const styleTheme: Theme = {
     fonts: {
         heading: "'IM Fell English SC', serif",
-        paragraph: "'Source Sans Pro', sans-serif"
+        paragraph: "'Source Sans Pro', sans-serif",
+        newspaper: "'Fredericka the Great', serif"
     },
     colors: {
         primaryBackground: "#645140",

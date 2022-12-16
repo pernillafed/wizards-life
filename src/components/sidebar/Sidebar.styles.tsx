@@ -3,7 +3,11 @@ import { ThemeUIStyleObject } from "theme-ui";
 export const SidebarWrapperStyles: ThemeUIStyleObject = {
     display: "flex",
     flexDirection: "column",
-    margin: "3rem 2rem"
+    width: "180px",
+    position: "fixed",
+    top: "10vh",
+    left: "2rem",
+    paddingY: "3rem"
 }
 
 export const SidebarLinkStyles: ThemeUIStyleObject = {
@@ -19,6 +23,7 @@ export const SidebarLinkStyles: ThemeUIStyleObject = {
     textTransform: "uppercase",
     fontFamily: "paragraph",
     transition: "primaryBackground",
+    borderRadius: "0.5rem",
     ":hover": {
         backgroundColor: "hoverPrimaryBackground"
     }
