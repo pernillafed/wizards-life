@@ -4,7 +4,8 @@ import { ThemeUIStyleObject } from "theme-ui";
 export const NavbarWrapperStyles: ThemeUIStyleObject = {
     backgroundColor: "primaryBackground",
     color: "primaryText",
-    height: "10vh",
+    height: ["8vh", "10vh", "10vh"],
+    minHeight: "4rem",
     display: "flex",
     alignItems: "center",
     justifyContent: "space-between",
@@ -17,7 +18,7 @@ export const NavbarWrapperStyles: ThemeUIStyleObject = {
 }
 
 export const NavbarTitleStyles: ThemeUIStyleObject = {
-    fontSize: "primaryHeading",
+    fontSize: ["primaryHeadingMobile", "primaryHeading", "primaryHeading"],
     fontFamily: "heading",
     paddingTop: "0.25rem"
 

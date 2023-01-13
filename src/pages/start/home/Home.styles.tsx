@@ -4,8 +4,8 @@ export const HomeWrapperStyles: ThemeUIStyleObject = {
     display: "flex",
     justifyContent: "center",
     position: "absolute",
-    top: "10vh",
-    left: "212px",
+    top: ["78vh", "10vh", "10vh"],
+    left: ["0", "212px", "212px"],
     right: "0",
     paddingX: "3rem"
 }
@@ -24,11 +24,12 @@ export const NewsHeadingStyles: ThemeUIStyleObject = {
     backgroundColor: "#fff3c299",
     padding: "1rem 1.5rem",
     borderRadius: "0.25rem",
-    textAlign: "center"
+    textAlign: "center",
+    boxShadow: "0.25rem 0.25rem 0.75rem black"
 }
 
 export const FirstHeadingStyles: ThemeUIStyleObject = {
-    fontSize: "4.5rem",
+    fontSize: ["3rem", "4.5rem", "4.5rem"],
     gridColumnStart: "1",
     gridColumnEnd: "11"
 }
@@ -36,31 +37,31 @@ export const FirstHeadingStyles: ThemeUIStyleObject = {
 export const SecondHeadingStyles: ThemeUIStyleObject = {
     fontSize: "2rem",
     gridColumnStart: "1",
-    gridColumnEnd: "7"
+    gridColumnEnd: ["11", "7", "7"]
 }
 
 export const ThirdHeadingStyles: ThemeUIStyleObject = {
-    fontSize: "3rem",
-    gridColumnStart: "7",
+    fontSize: ["2.5rem", "3rem", "3rem"],
+    gridColumnStart: ["1", "7", "7"],
     gridColumnEnd: "11",
-    gridRowStart: "2",
+    gridRowStart: ["3", "2", "2"],
     gridRowEnd: "4"
 }
 
 export const FourthHeadingStyles: ThemeUIStyleObject = {
     fontSize: "2.5rem",
     gridColumnStart: "1",
-    gridColumnEnd: "7",
+    gridColumnEnd: ["11", "7", "7"],
 }
 
 export const FifthHeadingStyles: ThemeUIStyleObject = {
     fontSize: "2rem",
     gridColumnStart: "1",
-    gridColumnEnd: "6",
+    gridColumnEnd: ["11", "6", "6"],
 }
 
 export const SixthHeadingStyles: ThemeUIStyleObject = {
     fontSize: "2rem",
-    gridColumnStart: "6",
+    gridColumnStart: ["1", "6", "6"],
     gridColumnEnd: "11",
 }

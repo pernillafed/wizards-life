@@ -10,12 +10,10 @@ const App = () => {
     return (
         <div className="App">
             <Navbar />
-            <div style={{ display: "flex" }}>
-                {currentUser && <Sidebar />}
-                <Routes>
-                    <Route path="/" element={ <Start /> } />
-                </Routes>
-            </div>
+            {currentUser && <Sidebar />}
+            <Routes>
+                <Route path="/" element={ <Start /> } />
+            </Routes>
         </div>
     )
 }

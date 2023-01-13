@@ -14,7 +14,9 @@ export const styleTheme: Theme = {
     },
     fontSizes: {
         primaryHeading: "3rem",
+        primaryHeadingMobile: "2.5rem",
         secondaryHeading: "2rem",
+        secondaryHeadingMobile: "1.5rem",
     },
     transitions: {
         primaryBackground: "background-color 0.2s"

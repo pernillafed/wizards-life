@@ -5,12 +5,12 @@ export const LoginOrCreateWrapperStyles: ThemeUIStyleObject = {
     background: `url(${HogwartsCastle}) no-repeat center top fixed`,
     backgroundSize: "cover",
     height: "100%",
-    minHeight: "90vh",
+    minHeight: ["92vh", "90vh", "90vh"],
     display: "flex",
     justifyContent: "center",
     alignItems: "center",
     width: "100%",
-    marginTop: "10vh"
+    marginTop: ["8vh", "10vh", "10vh"]
 }
 
 export const LoginOrCreateFormStyles: ThemeUIStyleObject = {

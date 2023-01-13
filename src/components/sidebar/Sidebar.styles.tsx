@@ -3,11 +3,12 @@ import { ThemeUIStyleObject } from "theme-ui";
 export const SidebarWrapperStyles: ThemeUIStyleObject = {
     display: "flex",
     flexDirection: "column",
-    width: "180px",
-    position: "fixed",
-    top: "10vh",
-    left: "2rem",
-    paddingY: "3rem"
+    width: ["100%", "180px", "180px"],
+    position: ["absolute", "fixed", "fixed"],
+    top: ["8vh", "10vh", "10vh"],
+    left: ["0", "2rem", "2rem"],
+    paddingY: "3rem",
+    paddingX: ["3rem", "0", "0"]
 }
 
 export const SidebarLinkStyles: ThemeUIStyleObject = {

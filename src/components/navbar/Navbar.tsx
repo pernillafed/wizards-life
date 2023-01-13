@@ -1,5 +1,6 @@
 /** @jsxImportSource theme-ui */
 
+import { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import { useAuthContext } from "../../contexts/AuthContext";
 import { ButtonStyles } from "../../Global.styles";
@@ -10,6 +11,8 @@ const Navbar = () => {
 
     const navigate = useNavigate();
 
+    const [showSidebar, setShowSidebar] = useState(false);
+
     const handleLogOut = () => {
         logout();
         navigate("/");
@@ -18,15 +21,26 @@ const Navbar = () => {
     return (
         <div sx={NavbarWrapperStyles}>
             <div sx={NavbarTitleStyles}>Wizards Life</div>
-            {currentUser &&
-                <button sx={{
-                    ...ButtonStyles,
-                    backgroundColor: "secondaryBackground",
-                    ":hover": {
-                        backgroundColor: "#4f3f32"
-                    }
-                }} onClick={handleLogOut}>Log out</button>
-            }
+            {currentUser && (
+                <>
+                    <button sx={{
+                        ...ButtonStyles,
+                        display: ["none", "inline", "inline"],
+                        backgroundColor: "secondaryBackground",
+                        ":hover": {
+                            backgroundColor: "#4f3f32"
+                        }
+                    }} onClick={handleLogOut}>Log out</button>
+                    <button sx={{
+                        ...ButtonStyles,
+                        display: ["inline", "none", "none"],
+                        backgroundColor: "secondaryBackground",
+                        ":hover": {
+                            backgroundColor: "#4f3f32"
+                        }
+                    }} onClick={() => setShowSidebar(!showSidebar)}>Menu</button>
+                </>
+            )}
         </div>
     );
 }
