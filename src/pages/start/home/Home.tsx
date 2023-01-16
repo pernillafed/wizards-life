@@ -1,5 +1,6 @@
 /** @jsxImportSource theme-ui */
 
+import { SidebarVisibilityProps } from "../../../components/sidebar/Sidebar";
 import { 
     HomeWrapperStyles,
     NewsHeadingStyles,
@@ -12,9 +13,9 @@ import {
     SixthHeadingStyles
 } from "./Home.styles";
 
-const Home = () => {
+const Home = ({ isSidebarVisible }: SidebarVisibilityProps) => {
     return (
-        <div sx={HomeWrapperStyles}>
+        <div sx={!isSidebarVisible ? { ...HomeWrapperStyles, top: ["8vh", "10vh", "10vh"] } : HomeWrapperStyles}>
             <div sx={GridStyles}>
                 <div sx={{...NewsHeadingStyles, ...FirstHeadingStyles}}>
                     Quidditch: Hufflepuff wins against Slytherin
@@ -23,7 +24,7 @@ const Home = () => {
                     Everything half off at Scribbulus in Diagon Alley! Get your writing supplies now
                 </div>
                 <div sx={{...NewsHeadingStyles, ...ThirdHeadingStyles}}>
-                    Sign up for the annual Wizards Chess Tournament
+                    Sign up for the annual Wizards Chess Tour&shy;nament
                 </div>
                 <div sx={{...NewsHeadingStyles, ...FourthHeadingStyles}}>
                     Reminder: O.W.L.s in the Great Hall this Friday afternoon

@@ -3,9 +3,13 @@
 import { Link } from "react-router-dom";
 import { SidebarLinkStyles, SidebarWrapperStyles } from "./Sidebar.styles";
 
-const Sidebar = () => {
+export type SidebarVisibilityProps = {
+    isSidebarVisible: boolean;
+}
+
+const Sidebar = ({ isSidebarVisible }: SidebarVisibilityProps) => {
     return (
-        <div sx={SidebarWrapperStyles}>
+        <div sx={isSidebarVisible ? SidebarWrapperStyles : {...SidebarWrapperStyles, display: ["none", "flex", "flex"]}}>
             <Link sx={SidebarLinkStyles} to="/">Profile</Link>
             <Link sx={SidebarLinkStyles} to="/">Friends</Link>
             <Link sx={SidebarLinkStyles} to="/">Owl post</Link>

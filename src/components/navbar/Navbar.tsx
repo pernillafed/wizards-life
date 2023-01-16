@@ -1,17 +1,22 @@
 /** @jsxImportSource theme-ui */
 
-import { useState } from "react";
+import { faBars } from "@fortawesome/free-solid-svg-icons";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import React from "react";
 import { useNavigate } from "react-router-dom";
 import { useAuthContext } from "../../contexts/AuthContext";
 import { ButtonStyles } from "../../Global.styles";
+import { SidebarVisibilityProps } from "../sidebar/Sidebar";
 import { NavbarTitleStyles, NavbarWrapperStyles } from "./Navbar.styles";
 
-const Navbar = () => {
+export type NavbarProps = SidebarVisibilityProps & {
+    setIsSidebarVisible: React.Dispatch<React.SetStateAction<boolean>>;
+}
+
+const Navbar = ({ isSidebarVisible, setIsSidebarVisible }: NavbarProps) => {
     const { currentUser, logout } = useAuthContext();
 
     const navigate = useNavigate();
-
-    const [showSidebar, setShowSidebar] = useState(false);
 
     const handleLogOut = () => {
         logout();
@@ -34,11 +39,10 @@ const Navbar = () => {
                     <button sx={{
                         ...ButtonStyles,
                         display: ["inline", "none", "none"],
-                        backgroundColor: "secondaryBackground",
-                        ":hover": {
-                            backgroundColor: "#4f3f32"
-                        }
-                    }} onClick={() => setShowSidebar(!showSidebar)}>Menu</button>
+                        backgroundColor: isSidebarVisible ? "#3f3124" : "secondaryBackground",
+                    }} onClick={() => setIsSidebarVisible?.(!isSidebarVisible)}>
+                        <FontAwesomeIcon icon={faBars} size="xl" />
+                    </button>
                 </>
             )}
         </div>
