@@ -25,7 +25,7 @@ const Navbar = ({ isSidebarVisible, setIsSidebarVisible }: NavbarProps) => {
 
     return (
         <div sx={NavbarWrapperStyles}>
-            <div sx={NavbarTitleStyles}>Wizards Life</div>
+            <div sx={NavbarTitleStyles} onClick={() => navigate("/")}>Wizards Life</div>
             {currentUser && (
                 <>
                     <button sx={{

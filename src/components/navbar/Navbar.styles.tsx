@@ -20,6 +20,6 @@ export const NavbarWrapperStyles: ThemeUIStyleObject = {
 export const NavbarTitleStyles: ThemeUIStyleObject = {
     fontSize: ["primaryHeadingMobile", "primaryHeading", "primaryHeading"],
     fontFamily: "heading",
-    paddingTop: "0.25rem"
-
+    paddingTop: "0.25rem",
+    cursor: "pointer"
 }

@@ -1,19 +1,9 @@
 import { ThemeUIStyleObject } from "theme-ui";
 
-export const HomeWrapperStyles: ThemeUIStyleObject = {
-    display: "flex",
-    justifyContent: "center",
-    position: "absolute",
-    top: ["650px", "10vh", "10vh"],
-    left: ["0", "212px", "212px"],
-    right: "0",
-    paddingX: "2rem"
-}
-
 export const GridStyles: ThemeUIStyleObject = {
     width: "100%",
     maxWidth: "900px",
-    margin: "3rem auto",
+    margin: "0 auto",
     display: "grid",
     gridTemplateColumns: "repeat(10, 1fr)",
     gap: "1rem"

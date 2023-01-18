@@ -1,8 +1,8 @@
 /** @jsxImportSource theme-ui */
 
 import { SidebarVisibilityProps } from "../../../components/sidebar/Sidebar";
+import { LoggedInPageWrapperStyles } from "../../../Global.styles";
 import { 
-    HomeWrapperStyles,
     NewsHeadingStyles,
     GridStyles,
     FirstHeadingStyles,
@@ -15,7 +15,7 @@ import {
 
 const Home = ({ isSidebarVisible }: SidebarVisibilityProps) => {
     return (
-        <div sx={!isSidebarVisible ? { ...HomeWrapperStyles, top: ["8vh", "10vh", "10vh"] } : HomeWrapperStyles}>
+        <div sx={!isSidebarVisible ? { ...LoggedInPageWrapperStyles, top: ["8vh", "10vh", "10vh"] } : LoggedInPageWrapperStyles}>
             <div sx={GridStyles}>
                 <div sx={{...NewsHeadingStyles, ...FirstHeadingStyles}}>
                     Quidditch: Hufflepuff wins against Slytherin
