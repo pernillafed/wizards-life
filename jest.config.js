@@ -3,7 +3,7 @@ export default {
   transform: {
     "^.+\\.(ts|tsx|js|jsx)?$": [
       "ts-jest",
-      { tsconfig: "tsconfig.test.json",  useESM: true},
+      { tsconfig: "tsconfig.test.json", useESM: true},
     ],
   },
   moduleNameMapper: {
