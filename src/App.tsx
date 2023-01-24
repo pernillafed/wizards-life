@@ -26,7 +26,7 @@ const App = () => {
                 } />
                 <Route path="/library/book/:bookId" element={
                     <RequireAuth redirectTo="/">
-                        <Book />
+                        <Book isSidebarVisible={isSidebarVisible} />
                     </RequireAuth>
                 } />
             </Routes>
