@@ -1,23 +1,27 @@
 /** @jsxImportSource theme-ui */
 
+import { useState, useEffect } from "react";
 import { useParams } from "react-router-dom";
 import { LoggedInPageWrapperStyles } from "../../../Global.styles";
+import libraryBooks from "../../../assets/data/libraryBooks.json";
+
+export type BookType = {
+    id: string;
+    title: string;
+}
 
 const Book = () => {
-    const { bookTitle } = useParams();
+    const { bookId } = useParams();
 
-    const capitalizeFirstLetter = () => {
-        if (bookTitle) {
-            let titleWithSpaces = bookTitle.replaceAll("-", " ");
-            return titleWithSpaces?.charAt(0).toUpperCase() + titleWithSpaces?.slice(1);
-        } else {
-            return "Book title unknown"
-        }
-    }
+    const [book, setBook] = useState<BookType>()
+
+    useEffect(() => {
+        setBook(libraryBooks.find(book => book.id === bookId))
+    }, [bookId]);
 
     return (
         <div sx={LoggedInPageWrapperStyles}>
-            <div sx={{ color: "primaryText", fontFamily: "heading", fontSize: "primaryHeading" }}>{capitalizeFirstLetter()}</div>
+            <div sx={{ color: "primaryText", fontFamily: "heading", fontSize: "primaryHeading" }}>{book?.title}</div>
         </div>
     );
 }

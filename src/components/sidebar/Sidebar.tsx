@@ -7,18 +7,22 @@ export type SidebarVisibilityProps = {
     isSidebarVisible: boolean;
 }
 
-const Sidebar = ({ isSidebarVisible }: SidebarVisibilityProps) => {
+export type SidebarProps = SidebarVisibilityProps & {
+    setIsSidebarVisible: React.Dispatch<React.SetStateAction<boolean>>;
+}
+
+const Sidebar = ({ isSidebarVisible, setIsSidebarVisible }: SidebarProps) => {
     return (
         <div sx={isSidebarVisible ? SidebarWrapperStyles : {...SidebarWrapperStyles, display: ["none", "flex", "flex"]}}>
-            <Link sx={SidebarLinkStyles} to="/">Home</Link>
-            <Link sx={SidebarLinkStyles} to="/">Profile</Link>
-            <Link sx={SidebarLinkStyles} to="/">Friends</Link>
-            <Link sx={SidebarLinkStyles} to="/">Owl post</Link>
-            <Link sx={SidebarLinkStyles} to="/">Common room</Link>
-            <Link sx={SidebarLinkStyles} to="/">Classes</Link>
-            <Link sx={SidebarLinkStyles} to="/library">Library</Link>
+            <Link sx={SidebarLinkStyles} to="/" onClick={() => setIsSidebarVisible(false)}>Home</Link>
+            <Link sx={SidebarLinkStyles} to="/" onClick={() => setIsSidebarVisible(false)}>Profile</Link>
+            <Link sx={SidebarLinkStyles} to="/" onClick={() => setIsSidebarVisible(false)}>Friends</Link>
+            <Link sx={SidebarLinkStyles} to="/" onClick={() => setIsSidebarVisible(false)}>Owl post</Link>
+            <Link sx={SidebarLinkStyles} to="/" onClick={() => setIsSidebarVisible(false)}>Common room</Link>
+            <Link sx={SidebarLinkStyles} to="/" onClick={() => setIsSidebarVisible(false)}>Classes</Link>
+            <Link sx={SidebarLinkStyles} to="/library" onClick={() => setIsSidebarVisible(false)}>Library</Link>
             <Link sx={SidebarLinkStyles} to="/">Diagon alley</Link>
-            <Link sx={SidebarLinkStyles} to="/">Log out</Link>
+            <Link sx={SidebarLinkStyles} to="/" onClick={() => setIsSidebarVisible(false)}>Log out</Link>
         </div>
     );
 }

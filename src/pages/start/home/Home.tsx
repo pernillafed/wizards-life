@@ -15,7 +15,7 @@ import {
 
 const Home = ({ isSidebarVisible }: SidebarVisibilityProps) => {
     return (
-        <div sx={!isSidebarVisible ? { ...LoggedInPageWrapperStyles, top: ["8vh", "10vh", "10vh"] } : LoggedInPageWrapperStyles}>
+        <div sx={isSidebarVisible ? LoggedInPageWrapperStyles : { ...LoggedInPageWrapperStyles, top: ["8vh", "10vh", "10vh"] }}>
             <div sx={GridStyles}>
                 <div sx={{...NewsHeadingStyles, ...FirstHeadingStyles}}>
                     Quidditch: Hufflepuff wins against Slytherin

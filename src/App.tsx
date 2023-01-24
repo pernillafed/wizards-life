@@ -16,15 +16,15 @@ const App = () => {
     return (
         <div className="App">
             <Navbar isSidebarVisible={isSidebarVisible} setIsSidebarVisible={setIsSidebarVisible} />
-            {currentUser && <Sidebar isSidebarVisible={isSidebarVisible} />}
+            {currentUser && <Sidebar isSidebarVisible={isSidebarVisible} setIsSidebarVisible={setIsSidebarVisible} />}
             <Routes>
                 <Route path="/" element={ <Start isSidebarVisible={isSidebarVisible}  /> } />
                 <Route path="/library" element={
                     <RequireAuth redirectTo="/">
-                        <Library />
+                        <Library isSidebarVisible={isSidebarVisible} />
                     </RequireAuth>
                 } />
-                <Route path="/library/book/:bookTitle" element={
+                <Route path="/library/book/:bookId" element={
                     <RequireAuth redirectTo="/">
                         <Book />
                     </RequireAuth>
