@@ -12,29 +12,36 @@ import {
     FourthHeadingStyles,
     SixthHeadingStyles
 } from "./Home.styles";
+import hogwartsNews from "../../../assets/data/hogwartsNews.json";
 
 const Home = ({ isSidebarVisible }: SidebarVisibilityProps) => {
+    const getIdSpecificStyling = (newsId: string) => {
+        if (newsId === "1") {
+            return FirstHeadingStyles;
+        }
+        if (newsId === "2") {
+            return SecondHeadingStyles;
+        }
+        if (newsId === "3") {
+            return ThirdHeadingStyles;
+        }
+        if (newsId === "4") {
+            return FourthHeadingStyles;
+        }
+        if (newsId === "5") {
+            return FifthHeadingStyles;
+        }
+        if (newsId === "6") {
+            return SixthHeadingStyles;
+        }
+    }
+
     return (
         <div sx={isSidebarVisible ? LoggedInPageWrapperStyles : { ...LoggedInPageWrapperStyles, top: ["8vh", "10vh", "10vh"] }}>
             <div sx={GridStyles}>
-                <div sx={{...NewsHeadingStyles, ...FirstHeadingStyles}}>
-                    Quidditch: Hufflepuff wins against Slytherin
-                </div>
-                <div sx={{...NewsHeadingStyles, ...SecondHeadingStyles}}>
-                    Everything half off at Scribbulus in Diagon Alley! Get your writing supplies now
-                </div>
-                <div sx={{...NewsHeadingStyles, ...ThirdHeadingStyles}}>
-                    Sign up for the annual Wizards Chess Tour&shy;nament
-                </div>
-                <div sx={{...NewsHeadingStyles, ...FourthHeadingStyles}}>
-                    Reminder: O.W.L.s in the Great Hall this Friday afternoon
-                </div>
-                <div sx={{...NewsHeadingStyles, ...FifthHeadingStyles}}>
-                    Pick up your free copy of Professor Flitwick's dissertation on memory charms in the library!
-                </div>
-                <div sx={{...NewsHeadingStyles, ...SixthHeadingStyles}}>
-                    The Shrieking Shack will be closed off for restoration purposes during the holidays
-                </div>
+                {hogwartsNews.map(news => (
+                    <div key={news.id} sx ={{ ...NewsHeadingStyles, ...getIdSpecificStyling(news.id) }}>{news.headline}</div>
+                ))}
             </div>
         </div>
     );

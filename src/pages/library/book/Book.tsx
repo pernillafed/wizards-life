@@ -1,9 +1,12 @@
 /** @jsxImportSource theme-ui */
 
 import { useState, useEffect } from "react";
-import { useParams } from "react-router-dom";
+import { Link, useParams } from "react-router-dom";
 import { LoggedInPageWrapperStyles } from "../../../Global.styles";
 import libraryBooks from "../../../assets/data/libraryBooks.json";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faAngleLeft } from "@fortawesome/free-solid-svg-icons";
+import { BackLinkStyles, BookTitleStyles, TitleWrapperStyles } from "./Book.styles";
 
 export type BookType = {
     id: string;
@@ -21,7 +24,15 @@ const Book = () => {
 
     return (
         <div sx={LoggedInPageWrapperStyles}>
-            <div sx={{ color: "primaryText", fontFamily: "heading", fontSize: "primaryHeading" }}>{book?.title}</div>
+            <div sx={TitleWrapperStyles}>
+                <div>
+                    <Link to="/library" sx={BackLinkStyles}>
+                        <FontAwesomeIcon icon={faAngleLeft} sx={{ marginRight: "0.5rem" }} />
+                        Back to Library
+                    </Link>
+                </div>
+                <div sx={BookTitleStyles}>{book?.title}</div>
+            </div>
         </div>
     );
 }

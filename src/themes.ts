@@ -10,7 +10,8 @@ export const styleTheme: Theme = {
         primaryBackground: "#645140",
         secondaryBackground: "#47382b",
         primaryText: "#fff3c2",
-        hoverPrimaryBackground: "#6c5847"
+        hoverPrimaryBackground: "#6c5847",
+        hoverPrimaryText: '#fff7d5'
     },
     fontSizes: {
         primaryHeading: "3rem",
