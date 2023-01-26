@@ -6,7 +6,7 @@ import { LoggedInPageWrapperStyles } from "../../../Global.styles";
 import libraryBooks from "../../../assets/data/libraryBooks.json";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faAngleLeft } from "@fortawesome/free-solid-svg-icons";
-import { BackLinkStyles, BookTitleStyles, BookContentGridStyles, BookContentLinkStyles, TitleWrapperStyles } from "./Book.styles";
+import { BackLinkStyles, BookTitleStyles, BookContentGridStyles, BookPageStyles, BookContentLinkStyles } from "./Book.styles";
 import { SidebarVisibilityProps } from "../../../components/sidebar/Sidebar";
 import { useQuery } from "react-query";
 import { getCharacters, getHouses, getSpecies, getWands } from "../../../services/TheBoyWhoLivedAPI";
@@ -25,14 +25,10 @@ export type BookContentType = {
     dataGetter: (page: SearchParamPageType) => Promise<any>;
 }
 
-export type CharacterType = {
+export type BookContentEntryType = {
     id: number;
     name: string;
-    species: string;
-    image_url: string;
 }
-
-export type BookContentEntryType = CharacterType;
 
 export type SearchParamPageType = ReactNode & string | number | boolean | Object | Date | string[] | undefined;
 
@@ -73,27 +69,28 @@ const Book = ({ isSidebarVisible }: SidebarVisibilityProps) => {
         } : {
             ...LoggedInPageWrapperStyles, flexDirection: "column", alignItems: "center", top: ["8vh", "10vh", "10vh"]
         }}>
-            <div sx={TitleWrapperStyles}>
-                <div>
-                    <Link to="/library" sx={BackLinkStyles}>
-                        <FontAwesomeIcon icon={faAngleLeft} sx={{ marginRight: "0.5rem" }} />
-                        Back to Library
-                    </Link>
-                </div>
-                <div sx={BookTitleStyles}>{book?.title}</div>
+            <div sx={{ width: "100%" }}>
+                <Link to="/library" sx={BackLinkStyles}>
+                    <FontAwesomeIcon icon={faAngleLeft} sx={{ marginRight: "0.5rem" }} />
+                    Back to Library
+                </Link>
             </div>
             {isLoading && <div>Loading index...</div>}
             {isError && <div>Error!</div>}
             {!isLoading && !isError && data && (
                 <>
-                    <div sx={BookContentGridStyles}>
-                        {data.map((bookContentEntry: BookContentEntryType) => (
-                            <Link
-                                to={`/library/book/${bookId}/${bookContent?.urlParam}/${bookContentEntry.id}`}
-                                key={bookContentEntry.id}
-                                sx={BookContentLinkStyles}
-                            >{bookContentEntry.name}</Link>
-                        ))}
+                    <div sx={BookPageStyles}>
+                        <div sx={BookTitleStyles}>{book?.title}</div>
+                        <div sx={BookContentGridStyles}>
+                            {data.map((bookContentEntry: BookContentEntryType) => (
+                                <div key={bookContentEntry.id}>
+                                    <Link
+                                        to={`/library/book/${bookId}/${bookContent?.urlParam}/${bookContentEntry.id}`}
+                                        sx={BookContentLinkStyles}
+                                    >{bookContentEntry.name}</Link>
+                                </div>
+                            ))}
+                        </div>
                     </div>
                     <Pagination
                         page={page}

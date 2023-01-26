@@ -11,7 +11,7 @@ export const GridStyles: ThemeUIStyleObject = {
 
 export const NewsHeadingStyles: ThemeUIStyleObject = {
     fontFamily: "newspaper",
-    backgroundColor: "#fff3c299",
+    backgroundColor: "contentBackground",
     padding: "1rem 1.5rem",
     borderRadius: "0.25rem",
     textAlign: "center",

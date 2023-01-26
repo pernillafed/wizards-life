@@ -1,17 +1,11 @@
 import { ThemeUIStyleObject } from "theme-ui";
 
 export const BookTitleStyles: ThemeUIStyleObject = {
-    color: "primaryText",
+    color: "secondaryText",
     fontFamily: "heading",
-    fontSize: "primaryHeading",
-    textAlign: "center"
-}
-
-export const TitleWrapperStyles: ThemeUIStyleObject = {
-    width: "100%",
-    display: "grid",
-    gridTemplateColumns: ["1fr", "1fr 3fr 1fr", "1fr 3fr 1fr"],
-    columnGap: "0.5rem"
+    fontSize: ["primaryHeadingMobile", "primaryHeadingMobile", "primaryHeading"],
+    textAlign: "center",
+    marginBottom: "1.5rem"
 }
 
 export const BackLinkStyles: ThemeUIStyleObject = {
@@ -27,21 +21,31 @@ export const BackLinkStyles: ThemeUIStyleObject = {
 }
 
 export const BookContentGridStyles: ThemeUIStyleObject = {
-    width: "100%",
-    maxWidth: "900px",
-    margin: ["1.5rem auto 0 auto", "2rem auto", "2rem auto"],
+    width: ["100%", "100%", "80%"],
+    minWidth: ["200px", "200px", "515px"],
+    margin: "0 auto",
     display: "grid",
-    gridTemplateColumns: "repeat(2, 1fr)",
+    gridTemplateColumns: ["1fr", "1fr", "repeat(2, 1fr)"],
     gap: "1rem",
-    textAlign: "center"
+    textAlign: "center",
 }
 
 export const BookContentLinkStyles: ThemeUIStyleObject = {
     textDecoration: "none",
-    color: "primaryText",
+    color: "secondaryText",
     fontSize: "1.25rem",
     fontFamily: "paragraph",
-    border: "1px solid #fff3c2",
-    borderRadius: "1rem",
-    padding: "1rem 1.5rem",
+    ":hover": {
+        textDecoration: "underline dotted #1a130d 1px"
+    }
+}
+
+export const BookPageStyles: ThemeUIStyleObject = {
+    width: "100%",
+    maxWidth: "900px",
+    margin: ["1.5rem auto", "2rem auto", "2rem auto"],
+    backgroundColor: "contentBackground",
+    borderRadius: "0.25rem",
+    boxShadow: "0.25rem 0.25rem 0.75rem black",
+    padding: "3rem 1.5rem 4rem 1.5rem"
 }
