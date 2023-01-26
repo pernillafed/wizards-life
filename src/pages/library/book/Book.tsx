@@ -6,16 +6,23 @@ import { LoggedInPageWrapperStyles } from "../../../Global.styles";
 import libraryBooks from "../../../assets/data/libraryBooks.json";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faAngleLeft } from "@fortawesome/free-solid-svg-icons";
-import { BackLinkStyles, BookTitleStyles, CharacterGridStyles, CharacterLinkStyles, TitleWrapperStyles } from "./Book.styles";
+import { BackLinkStyles, BookTitleStyles, BookContentGridStyles, BookContentLinkStyles, TitleWrapperStyles } from "./Book.styles";
 import { SidebarVisibilityProps } from "../../../components/sidebar/Sidebar";
 import { useQuery } from "react-query";
-import { getCharacters } from "../../../services/TheBoyWhoLivedAPI";
+import { getCharacters, getHouses, getSpecies, getWands } from "../../../services/TheBoyWhoLivedAPI";
 import { useUrlSearchParams } from "use-url-search-params";
 import Pagination from "../../../components/pagination/Pagination";
 
 export type BookType = {
     id: string;
     title: string;
+    totalPages: number;
+}
+
+export type BookContentType = {
+    name: string;
+    urlParam: string;
+    dataGetter: (page: SearchParamPageType) => Promise<any>;
 }
 
 export type CharacterType = {
@@ -24,6 +31,8 @@ export type CharacterType = {
     species: string;
     image_url: string;
 }
+
+export type BookContentEntryType = CharacterType;
 
 export type SearchParamPageType = ReactNode & string | number | boolean | Object | Date | string[] | undefined;
 
@@ -34,11 +43,28 @@ const Book = ({ isSidebarVisible }: SidebarVisibilityProps) => {
 
     const [book, setBook] = useState<BookType>();
     const [page, setPage] = useState(searchParams.page);
+    const [bookContent, setBookContent] = useState<BookContentType>();
 
-    const {data, isLoading, isError, error} = useQuery(["characters", page], () => getCharacters(page));
+    const {data, isLoading, isError, error} = useQuery([bookContent?.name, page], () => bookContent?.dataGetter(page));
+
+    useEffect(() => {
+        setSearchParams({ ...searchParams, page });
+    }, [page]);
 
     useEffect(() => {
         setBook(libraryBooks.find(book => book.id === bookId))
+        if (bookId === "1") {
+            setBookContent({ name: "characters", urlParam: "character", dataGetter: getCharacters })
+        }
+        if (bookId === "2") {
+            setBookContent({ name: "houses", urlParam: "house", dataGetter: getHouses })
+        }
+        if (bookId === "3") {
+            setBookContent({ name: "species", urlParam: "species", dataGetter: getSpecies })
+        }
+        if (bookId === "4") {
+            setBookContent({ name: "wands", urlParam: "wand", dataGetter: getWands })
+        }
     }, [bookId]);
 
     return (
@@ -60,16 +86,21 @@ const Book = ({ isSidebarVisible }: SidebarVisibilityProps) => {
             {isError && <div>Error!</div>}
             {!isLoading && !isError && data && (
                 <>
-                    <div sx={CharacterGridStyles}>
-                        {data.map((character: CharacterType) => (
+                    <div sx={BookContentGridStyles}>
+                        {data.map((bookContentEntry: BookContentEntryType) => (
                             <Link
-                                to={`/library/book/${bookId}/character/${character.id}`}
-                                key={character.id}
-                                sx={CharacterLinkStyles}
-                            >{character.name}</Link>
+                                to={`/library/book/${bookId}/${bookContent?.urlParam}/${bookContentEntry.id}`}
+                                key={bookContentEntry.id}
+                                sx={BookContentLinkStyles}
+                            >{bookContentEntry.name}</Link>
                         ))}
                     </div>
-                    <Pagination page={page} setPage={setPage} data={data} isLoading={isLoading} />
+                    <Pagination
+                        page={page}
+                        totalPages={book?.totalPages}
+                        setPage={setPage}
+                        isLoading={isLoading}
+                    />
                 </>
             )}
         </div>

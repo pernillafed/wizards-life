@@ -1,18 +1,22 @@
 [
     {
         "id": "1",
-        "title": "Historical Wizards"
+        "title": "Historical People",
+        "totalPages": 33
     },
     {
         "id": "2",
-        "title": "Hogwarts Houses"
+        "title": "Hogwarts Houses",
+        "totalPages": 1
     },
     {
         "id": "3",
-        "title": "Creatures of the Wizarding World"
+        "title": "Creatures of the Wizarding World",
+        "totalPages": 6
     },
     {
         "id": "4",
-        "title": "Famous Wands through Time"
+        "title": "Famous Wands through Time",
+        "totalPages": 5
     }
 ]

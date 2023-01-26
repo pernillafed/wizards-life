@@ -26,7 +26,7 @@ export const BackLinkStyles: ThemeUIStyleObject = {
     },
 }
 
-export const CharacterGridStyles: ThemeUIStyleObject = {
+export const BookContentGridStyles: ThemeUIStyleObject = {
     width: "100%",
     maxWidth: "900px",
     margin: ["1.5rem auto 0 auto", "2rem auto", "2rem auto"],
@@ -36,7 +36,7 @@ export const CharacterGridStyles: ThemeUIStyleObject = {
     textAlign: "center"
 }
 
-export const CharacterLinkStyles: ThemeUIStyleObject = {
+export const BookContentLinkStyles: ThemeUIStyleObject = {
     textDecoration: "none",
     color: "primaryText",
     fontSize: "1.25rem",
