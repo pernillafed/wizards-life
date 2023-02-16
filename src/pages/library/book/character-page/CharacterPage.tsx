@@ -8,6 +8,7 @@ import { SidebarVisibilityProps } from "../../../../components/sidebar/Sidebar";
 import { LoggedInPageWrapperStyles } from "../../../../Global.styles";
 import { getCharacter } from "../../../../services/TheBoyWhoLivedAPI";
 import { BackLinkStyles, BookPageStyles, BookTitleStyles } from "../Book.styles";
+import { CharacterInfoList, CharacterImageStyles, CharacterGridStyles, CharacterDescriptionWrapperStyles, CharacterTitlesStyles } from "./CharacterPage.styles";
 
 const CharacterPage = ({ isSidebarVisible }: SidebarVisibilityProps) => {
     const { characterId, bookId } = useParams();
@@ -29,7 +30,7 @@ const CharacterPage = ({ isSidebarVisible }: SidebarVisibilityProps) => {
             {isLoading && <div>Loading...</div>}
             {isError && <div>Error!</div>}
             {!isLoading && !isError && data && (
-                <div sx={BookPageStyles}>
+                <div sx={{...BookPageStyles, padding: "3rem 2rem 4rem 2rem"}}>
                     <div sx={data.title ? {
                         ...BookTitleStyles, marginBottom: "0.5rem"
                     } : BookTitleStyles}>{data.name}</div>
@@ -40,16 +41,40 @@ const CharacterPage = ({ isSidebarVisible }: SidebarVisibilityProps) => {
                             "secondaryHeadingMobile",
                             "secondaryHeading"
                         ]}}>"{data.title}"</div>}
-                    <div sx={{ display: "grid", gridTemplateColumns: "1fr 1fr", gap: "1rem" }}>
-                        <ul sx={{ listStyleType: "none", textAlign: "right" }}>
-                            {data.nickname && <li>Nickname: {data.nickname}</li>}
-                            <li>Gender: {data.gender ? data.gender : "Unknown"}</li>
-                            <li>Born: {data.born ? data.born : "Unknown"}</li>
-                            {data.died && <li>Died: {data.died}</li>}
-                            <li>Blood: {data.blood ? data.blood : "Unknown"}</li>
-                            <li>Nationality: {data.nationality ? data.nationality : "Unknown"}</li>
+                    <div sx={CharacterGridStyles}>
+                        <ul sx={CharacterInfoList}>
+                            {data.nickname && <li sx={{ marginBottom: "0.25rem" }}>Nickname: {data.nickname}</li>}
+                            <li sx={{ marginBottom: "0.25rem" }}>Gender: {data.gender ? data.gender : "Unknown"}</li>
+                            <li sx={{ marginBottom: "0.25rem" }}>Born: {data.born ? data.born : "Unknown"}</li>
+                            {data.died && <li sx={{ marginBottom: "0.25rem" }}>Died: {data.died}</li>}
+                            <li sx={{ marginBottom: "0.25rem" }}>Blood: {data.blood ? data.blood : "Unknown"}</li>
+                            <li sx={{ marginBottom: "0.25rem" }}>Nationality: {data.nationality ? data.nationality : "Unknown"}</li>
+                            <li sx={{ marginBottom: "0.25rem" }}>Job: {data.job ? data.job : "Unknown"}</li>
+                            {data.house && <li sx={{ marginBottom: "0.25rem" }}>Hogwarts house: {data.house.name}</li>}
                         </ul>
-                        {data.image_url ? <img src={data.image_url} alt={data.name} /> : "no image"}
+                        {data.image_url ? <img src={data.image_url} alt={data.name} sx={CharacterImageStyles} /> : "no image"}
+                    </div>
+                    <div sx={CharacterDescriptionWrapperStyles}>
+                        <div>
+                            <div sx={CharacterTitlesStyles}>Physical description</div>
+                            <ul sx={{ listStyleType: "none", textAlign: "center", fontFamily: "paragraph", fontSize: "1.1rem" }}>
+                                <li>Hair color: {data.hair ? data.hair : "Unknown"}</li>
+                                <li>Eye color: {data.eyes ? data.eyes : "Unknown"}</li>
+                                <li>Skin color: {data.skin ? data.skin : "Unknown"}</li>
+                                {data.feathers && <li>Feathers: {data.feathers}</li>}
+                                {data.height && <li>Height: {data.height}</li>}
+                                {data.weight && <li>Weight: {data.weight}</li>}
+                            </ul>
+                        </div>
+                        {data.blood && data.blood !== "Muggle" && (
+                            <div>
+                                <div sx={CharacterTitlesStyles}>Magical properties</div>
+                                <ul sx={{ listStyleType: "none", textAlign: "center", fontFamily: "paragraph", fontSize: "1.1rem" }}>
+                                    <li>Patronus: {data.patronus ? data.patronus : "Unknown"}</li>
+                                    {data.animagus && <li>Animagus: {data.animagus}</li>}
+                                </ul>
+                            </div>
+                        )}
                     </div>
                 </div>
             )}
