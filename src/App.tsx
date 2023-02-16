@@ -5,6 +5,7 @@ import RequireAuth from "./components/require-auth/RequireAuth"
 import Sidebar from "./components/sidebar/Sidebar"
 import { useAuthContext } from "./contexts/AuthContext"
 import Book from "./pages/library/book/Book"
+import CharacterPage from "./pages/library/book/character-page/CharacterPage"
 import Library from "./pages/library/Library"
 import Start from "./pages/start/Start"
 
@@ -27,6 +28,11 @@ const App = () => {
                 <Route path="/library/book/:bookId" element={
                     <RequireAuth redirectTo="/">
                         <Book isSidebarVisible={isSidebarVisible} />
+                    </RequireAuth>
+                } />
+                <Route path="/library/book/:bookId/character/:characterId" element={
+                    <RequireAuth redirectTo="/">
+                        <CharacterPage isSidebarVisible={isSidebarVisible} />
                     </RequireAuth>
                 } />
             </Routes>

@@ -12,6 +12,16 @@ export const getCharacters = async (page: SearchParamPageType) => {
 	return response.json()
 }
 
+export const getCharacter = async (characterId: string | undefined) => {
+    const response = await fetch(baseURL + `/characters/${characterId}/`);
+
+    if (!response.ok) {
+		throw new Error("Could not find resource")
+	}
+
+	return response.json()
+}
+
 export const getHouses = async (page: SearchParamPageType) => {
     const response = await fetch(baseURL + `/houses?page=${page}`);
 
@@ -44,6 +54,7 @@ export const getWands = async (page: SearchParamPageType) => {
 
 export default {
     getCharacters,
+    getCharacter,
     getHouses,
     getSpecies,
     getWands

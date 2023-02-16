@@ -5,7 +5,7 @@ export const BookTitleStyles: ThemeUIStyleObject = {
     fontFamily: "heading",
     fontSize: ["primaryHeadingMobile", "primaryHeadingMobile", "primaryHeading"],
     textAlign: "center",
-    marginBottom: "1.5rem"
+    marginBottom: "1.75rem"
 }
 
 export const BackLinkStyles: ThemeUIStyleObject = {

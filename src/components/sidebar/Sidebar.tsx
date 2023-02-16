@@ -1,6 +1,7 @@
 /** @jsxImportSource theme-ui */
 
 import { Link } from "react-router-dom";
+import { useAuthContext } from "../../contexts/AuthContext";
 import { SidebarLinkStyles, SidebarWrapperStyles } from "./Sidebar.styles";
 
 export type SidebarVisibilityProps = {
@@ -12,6 +13,13 @@ export type SidebarProps = SidebarVisibilityProps & {
 }
 
 const Sidebar = ({ isSidebarVisible, setIsSidebarVisible }: SidebarProps) => {
+    const { logout } = useAuthContext();
+
+    const handleLogOut = () => {
+        setIsSidebarVisible(false);
+        logout();
+    }
+
     return (
         <div sx={isSidebarVisible ? SidebarWrapperStyles : {...SidebarWrapperStyles, display: ["none", "flex", "flex"]}}>
             <Link sx={SidebarLinkStyles} to="/" onClick={() => setIsSidebarVisible(false)}>Home</Link>
@@ -22,7 +30,7 @@ const Sidebar = ({ isSidebarVisible, setIsSidebarVisible }: SidebarProps) => {
             <Link sx={SidebarLinkStyles} to="/" onClick={() => setIsSidebarVisible(false)}>Classes</Link>
             <Link sx={SidebarLinkStyles} to="/library" onClick={() => setIsSidebarVisible(false)}>Library</Link>
             <Link sx={SidebarLinkStyles} to="/">Diagon alley</Link>
-            <Link sx={SidebarLinkStyles} to="/" onClick={() => setIsSidebarVisible(false)}>Log out</Link>
+            <Link sx={SidebarLinkStyles} to="/" onClick={handleLogOut}>Log out</Link>
         </div>
     );
 }

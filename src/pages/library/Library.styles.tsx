@@ -6,7 +6,7 @@ export const BookGridStyles: ThemeUIStyleObject = {
     margin: ["1.5rem auto 0 auto", "3rem auto 0 auto", "3rem auto 0 auto"],
     display: "grid",
     gridTemplateColumns: ["1fr", "repeat(2, 1fr)", "repeat(2, 1fr)"],
-    rowGap: ["1rem", "2.5rem", "2.5rem"],
+    rowGap: ["1.5rem", "2.5rem", "2.5rem"],
     columnGap: "1rem",
     color: "primaryText",
     textAlign: "center"
