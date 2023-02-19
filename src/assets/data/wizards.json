@@ -17,7 +17,7 @@
         "patronus": "Doe",
         "animagus": null,
         "wand": {
-            "length": "10.25 inches",
+            "length": "10.25\"",
             "wood": "Willow",
             "core": null
         },
@@ -42,7 +42,7 @@
         "patronus": "Stag",
         "animagus": null,
         "wand": {
-            "length": "11 inches",
+            "length": "11\"",
             "wood": "Holly",
             "core": "Phoenix feather"
         },
@@ -67,7 +67,7 @@
         "patronus": "None",
         "animagus": null,
         "wand": {
-            "length": "13.5 inches",
+            "length": "13.5\"",
             "wood": "Yew",
             "core": "Phoenix feather"
         },
@@ -92,7 +92,7 @@
         "patronus": "Phoenix",
         "animagus": null,
         "wand": {
-            "length": "15 inches",
+            "length": "15\"",
             "wood": "Elder",
             "core": "Thestral tail hair"
         },
@@ -117,7 +117,7 @@
         "patronus": "Cat",
         "animagus": "Tabby cat",
         "wand": {
-            "length": "9.5 inches",
+            "length": "9.5\"",
             "wood": "Fir",
             "core": "Dragon heartstring"
         },
@@ -242,7 +242,7 @@
         "patronus": "Non-corporeal",
         "animagus": null,
         "wand": {
-            "length": "9 inches",
+            "length": "9\"",
             "wood": "Alder",
             "core": "Unicorn hair"
         },
@@ -267,7 +267,7 @@
         "patronus": "None",
         "animagus": null,
         "wand": {
-            "length": "10 inches",
+            "length": "10\"",
             "wood": "Hawthorn",
             "core": "Unicorn hair"
         },
@@ -567,7 +567,7 @@
         "patronus": "Otter",
         "animagus": null,
         "wand": {
-            "length": "10.75 inches",
+            "length": "10.75\"",
             "wood": "Vine",
             "core": "Dragon heartstring"
         },
@@ -1042,7 +1042,7 @@
         "patronus": "Non-corporeal",
         "animagus": null,
         "wand": {
-            "length": "10.25 inches",
+            "length": "10.25\"",
             "wood": "Cypress",
             "core": "Unicorn hair"
         },
@@ -1067,7 +1067,7 @@
         "patronus": "Non-corporeal",
         "animagus": null,
         "wand": {
-            "length": "9.5 inches",
+            "length": "9.5\"",
             "wood": "Hazel",
             "core": "Unicorn hair"
         },
@@ -1092,7 +1092,7 @@
         "patronus": null,
         "animagus": null,
         "wand": {
-            "length": "12.25 inches",
+            "length": "12.25\"",
             "wood": "Ash",
             "core": "Unicorn hair"
         },
@@ -1167,7 +1167,7 @@
         "patronus": null,
         "animagus": null,
         "wand": {
-            "length": "10.25 inches",
+            "length": "10.25\"",
             "wood": "Hornbeam",
             "core": "Dragon heartstring"
         },
@@ -1367,7 +1367,7 @@
         "patronus": "None",
         "animagus": null,
         "wand": {
-            "length": "12.75 inches",
+            "length": "12.75\"",
             "wood": "Walnut",
             "core": "Dragon heartstring"
         },
@@ -1442,7 +1442,7 @@
         "patronus": "Stag",
         "animagus": "Stag",
         "wand": {
-            "length": "11 inches",
+            "length": "11\"",
             "wood": "Mahogany",
             "core": null
         },
@@ -1467,7 +1467,7 @@
         "patronus": "None",
         "animagus": null,
         "wand": {
-            "length": "16 inches",
+            "length": "16\"",
             "wood": "Oak",
             "core": null
         },
@@ -1592,7 +1592,7 @@
         "patronus": "Non-corporeal",
         "animagus": null,
         "wand": {
-            "length": "12.75 inches",
+            "length": "12.75\"",
             "wood": "Hornbeam",
             "core": "Dragon heartstring"
         },
@@ -1642,7 +1642,7 @@
         "patronus": "Jack Russel terrier",
         "animagus": null,
         "wand": {
-            "length": "14 inches",
+            "length": "14\"",
             "wood": "Willow",
             "core": "Unicorn tail hair"
         },
@@ -1667,7 +1667,7 @@
         "patronus": "None",
         "animagus": "Grey rat",
         "wand": {
-            "length": "9.25 inches",
+            "length": "9.25\"",
             "wood": "Chestnut",
             "core": "Dragon heartstring"
         },
@@ -1692,7 +1692,7 @@
         "patronus": "Non-corporeal",
         "animagus": null,
         "wand": {
-            "length": "15 inches",
+            "length": "15\"",
             "wood": "Elder",
             "core": "Thestral tail hair"
         },
@@ -1842,7 +1842,7 @@
         "patronus": "Non-corporeal",
         "animagus": null,
         "wand": {
-            "length": "9 inches",
+            "length": "9\"",
             "wood": "Cherry",
             "core": "Dragon heartstring"
         },
@@ -1967,7 +1967,7 @@
         "patronus": "Non-corporeal",
         "animagus": null,
         "wand": {
-            "length": "9.5 inches",
+            "length": "9.5\"",
             "wood": "Rosewood",
             "core": "Veela hair"
         },
@@ -2042,7 +2042,7 @@
         "patronus": "Persian cat",
         "animagus": null,
         "wand": {
-            "length": "8 inches",
+            "length": "8\"",
             "wood": "Birch",
             "core": "Dragon heartstring"
         },
@@ -2117,7 +2117,7 @@
         "patronus": "Non-corporeal",
         "animagus": null,
         "wand": {
-            "length": "10.25 inches",
+            "length": "10.25\"",
             "wood": "Cedar",
             "core": "Dragon heartstring"
         },

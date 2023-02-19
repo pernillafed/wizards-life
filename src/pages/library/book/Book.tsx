@@ -4,12 +4,13 @@ import { useState, useEffect, ReactNode } from "react";
 import { Link, useParams } from "react-router-dom";
 import { LoggedInPageWrapperStyles } from "../../../Global.styles";
 import libraryBooks from "../../../assets/data/libraryBooks.json";
+import wizards from "../../../assets/data/wizards.json";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faAngleLeft } from "@fortawesome/free-solid-svg-icons";
 import { BackLinkStyles, BookTitleStyles, BookContentGridStyles, BookPageStyles, BookContentLinkStyles } from "./Book.styles";
 import { SidebarVisibilityProps } from "../../../components/sidebar/Sidebar";
 import { useQuery } from "react-query";
-import { getCharacters, getHouses, getSpecies, getWands } from "../../../services/TheBoyWhoLivedAPI";
+import { getHouses, getSpecies, getWands } from "../../../services/TheBoyWhoLivedAPI";
 import { useUrlSearchParams } from "use-url-search-params";
 import Pagination from "../../../components/pagination/Pagination";
 
@@ -22,6 +23,9 @@ export type BookType = {
 export type BookContentType = {
     name: string;
     urlParam: string;
+}
+
+export type QueryBookContentType = BookContentType & {
     dataGetter: (page: SearchParamPageType) => Promise<any>;
 }
 
@@ -39,7 +43,8 @@ const Book = ({ isSidebarVisible }: SidebarVisibilityProps) => {
 
     const [book, setBook] = useState<BookType>();
     const [page, setPage] = useState(searchParams.page);
-    const [bookContent, setBookContent] = useState<BookContentType>();
+    const [bookContent, setBookContent] = useState<QueryBookContentType>();
+    const [characterBook, setCharacterBook] = useState<BookContentType>();
 
     const {data, isLoading, isError, error} = useQuery([bookContent?.name, page], () => bookContent?.dataGetter(page));
 
@@ -48,18 +53,22 @@ const Book = ({ isSidebarVisible }: SidebarVisibilityProps) => {
     }, [page]);
 
     useEffect(() => {
-        setBook(libraryBooks.find(book => book.id === bookId))
+        setBook(libraryBooks.find(book => book.id === bookId));
         if (bookId === "1") {
-            setBookContent({ name: "characters", urlParam: "character", dataGetter: getCharacters })
+            setBookContent(undefined);
+            setCharacterBook({ name: "characters", urlParam: "character" });
         }
         if (bookId === "2") {
-            setBookContent({ name: "houses", urlParam: "house", dataGetter: getHouses })
+            setBookContent({ name: "houses", urlParam: "house", dataGetter: getHouses });
+            setCharacterBook(undefined);
         }
         if (bookId === "3") {
-            setBookContent({ name: "species", urlParam: "species", dataGetter: getSpecies })
+            setBookContent({ name: "species", urlParam: "species", dataGetter: getSpecies });
+            setCharacterBook(undefined);
         }
         if (bookId === "4") {
-            setBookContent({ name: "wands", urlParam: "wand", dataGetter: getWands })
+            setBookContent({ name: "wands", urlParam: "wand", dataGetter: getWands });
+            setCharacterBook(undefined);
         }
     }, [bookId]);
 
@@ -99,6 +108,21 @@ const Book = ({ isSidebarVisible }: SidebarVisibilityProps) => {
                         isLoading={isLoading}
                     />
                 </>
+            )}
+            {!isLoading && !isError && characterBook && (
+                <div sx={BookPageStyles}>
+                    <div sx={BookTitleStyles}>{book?.title}</div>
+                    <div sx={BookContentGridStyles}>
+                        {wizards.map(wizard => (
+                            <div key={wizard.id}>
+                                <Link
+                                    to={`/library/book/${bookId}/${characterBook?.urlParam}/${wizard.id}`}
+                                    sx={BookContentLinkStyles}
+                                >{wizard.name}</Link>
+                            </div>
+                        ))}
+                    </div>
+                </div>
             )}
         </div>
     );
