@@ -2,7 +2,7 @@
 
 import { Link } from "react-router-dom";
 import { BookContentEntryType, BookContentType, BookType, QueryBookContentType } from "../Book";
-import { BookPageStyles, BookTitleStyles, BookContentGridStyles, BookContentLinkStyles } from "../Book.styles";
+import { BookPageStyles, BookHeadingStyles, BookContentGridStyles, BookContentLinkStyles } from "../Book.styles";
 
 export type BookContentProps = {
     book: BookType | undefined;
@@ -14,7 +14,7 @@ export type BookContentProps = {
 const BookContent = ({ book, data, bookId, bookContent }: BookContentProps) => {
     return (
         <div sx={BookPageStyles}>
-            <div sx={BookTitleStyles}>{book?.title}</div>
+            <div sx={BookHeadingStyles}>{book?.title}</div>
             <div sx={BookContentGridStyles}>
                 {data.map((bookContentEntry: BookContentEntryType) => (
                     <div key={bookContentEntry.id}>

@@ -4,11 +4,11 @@ import { faAngleLeft } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { useState, useEffect } from "react";
 import { Link, useParams } from "react-router-dom";
-import { SidebarVisibilityProps } from "../../../../components/sidebar/Sidebar";
-import { LoggedInPageWrapperStyles } from "../../../../Global.styles";
-import { BackLinkStyles, BookPageStyles, BookTitleStyles } from "../Book.styles";
+import { SidebarVisibilityProps } from "../../../../../components/sidebar/Sidebar";
+import { LoggedInPageWrapperStyles } from "../../../../../Global.styles";
+import { BackLinkStyles, BookPageStyles, BookHeadingStyles } from "../../Book.styles";
 import { CharacterInfoList, CharacterImageStyles, CharacterGridStyles, CharacterDescriptionWrapperStyles, CharacterTitlesStyles } from "./CharacterPage.styles";
-import wizards from "../../../../assets/data/wizards.json";
+import wizards from "../../../../../assets/data/wizards.json";
 
 export type CharacterType = {
     id: number;
@@ -60,10 +60,10 @@ const CharacterPage = ({ isSidebarVisible }: SidebarVisibilityProps) => {
             {data && (
                 <div sx={{...BookPageStyles, padding: "3rem 2.5rem 4rem 2.5rem"}}>
                     <div sx={data.nickname ? {
-                        ...BookTitleStyles, marginBottom: "0.5rem"
-                    } : BookTitleStyles}>{data.name}</div>
+                        ...BookHeadingStyles, marginBottom: "0.5rem"
+                    } : BookHeadingStyles}>{data.name}</div>
                     {data.nickname && <div sx={{
-                        ...BookTitleStyles,
+                        ...BookHeadingStyles,
                         fontSize: [
                             "secondaryHeadingMobile",
                             "secondaryHeadingMobile",
@@ -72,6 +72,7 @@ const CharacterPage = ({ isSidebarVisible }: SidebarVisibilityProps) => {
                     <div sx={CharacterGridStyles}>
                         <ul sx={CharacterInfoList}>
                             <li sx={{ marginBottom: "0.25rem" }}><b>Gender:</b> {data.gender ? data.gender : "Unknown"}</li>
+                            <li sx={{ marginBottom: "0.25rem" }}><b>Species:</b> {data.species ? data.species : "Unknown"}</li>
                             <li sx={{ marginBottom: "0.25rem" }}><b>Born:</b> {data.born ? data.born : "Unknown"}</li>
                             {data.died && <li sx={{ marginBottom: "0.25rem" }}><b>Died:</b> {data.died}</li>}
                             <li sx={{ marginBottom: "0.25rem" }}><b>Blood status:</b> {data.blood ? data.blood : "Unknown"}</li>

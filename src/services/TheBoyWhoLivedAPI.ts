@@ -12,6 +12,16 @@ export const getHouses = async (page: SearchParamPageType) => {
 	return response.json()
 }
 
+export const getHouse = async (houseId: number) => {
+    const response = await fetch(baseURL + `/houses/${houseId}`);
+
+    if (!response.ok) {
+		throw new Error("Could not find resource")
+	}
+
+	return response.json()
+}
+
 export const getSpecies = async (page: SearchParamPageType) => {
     const response = await fetch(baseURL + `/species?page=${page}`);
 

@@ -9,7 +9,7 @@ export const CharacterInfoList: ThemeUIStyleObject = {
 }
 
 export const CharacterImageStyles: ThemeUIStyleObject = {
-    width: "50%",
+    width: "60%",
     borderRadius: "0.25rem",
     border: "3px solid #fff3c255",
 }

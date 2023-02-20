@@ -7,7 +7,7 @@ import libraryBooks from "../../../assets/data/libraryBooks.json";
 import wizards from "../../../assets/data/wizards.json";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faAngleLeft } from "@fortawesome/free-solid-svg-icons";
-import { BackLinkStyles, BookTitleStyles, BookContentGridStyles, BookPageStyles, BookContentLinkStyles } from "./Book.styles";
+import { BackLinkStyles, BookHeadingStyles, BookContentGridStyles, BookPageStyles, BookContentLinkStyles } from "./Book.styles";
 import { SidebarVisibilityProps } from "../../../components/sidebar/Sidebar";
 import { useQuery } from "react-query";
 import { getHouses, getSpecies, getWands } from "../../../services/TheBoyWhoLivedAPI";

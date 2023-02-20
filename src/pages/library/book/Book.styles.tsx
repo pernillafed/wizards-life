@@ -1,6 +1,6 @@
 import { ThemeUIStyleObject } from "theme-ui";
 
-export const BookTitleStyles: ThemeUIStyleObject = {
+export const BookHeadingStyles: ThemeUIStyleObject = {
     color: "secondaryText",
     fontFamily: "heading",
     fontSize: ["primaryHeadingMobile", "primaryHeadingMobile", "primaryHeading"],
