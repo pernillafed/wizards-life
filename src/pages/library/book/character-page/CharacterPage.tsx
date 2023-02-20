@@ -58,7 +58,7 @@ const CharacterPage = ({ isSidebarVisible }: SidebarVisibilityProps) => {
                 </Link>
             </div>
             {data && (
-                <div sx={{...BookPageStyles, padding: "3rem 2rem 4rem 2rem"}}>
+                <div sx={{...BookPageStyles, padding: "3rem 2.5rem 4rem 2.5rem"}}>
                     <div sx={data.nickname ? {
                         ...BookTitleStyles, marginBottom: "0.5rem"
                     } : BookTitleStyles}>{data.name}</div>
@@ -71,13 +71,13 @@ const CharacterPage = ({ isSidebarVisible }: SidebarVisibilityProps) => {
                         ]}}>"{data.nickname}"</div>}
                     <div sx={CharacterGridStyles}>
                         <ul sx={CharacterInfoList}>
-                            <li sx={{ marginBottom: "0.25rem" }}>Gender: {data.gender ? data.gender : "Unknown"}</li>
-                            <li sx={{ marginBottom: "0.25rem" }}>Born: {data.born ? data.born : "Unknown"}</li>
-                            {data.died && <li sx={{ marginBottom: "0.25rem" }}>Died: {data.died}</li>}
-                            <li sx={{ marginBottom: "0.25rem" }}>Blood status: {data.blood ? data.blood : "Unknown"}</li>
-                            <li sx={{ marginBottom: "0.25rem" }}>Nationality: {data.nationality ? data.nationality : "Unknown"}</li>
-                            <li sx={{ marginBottom: "0.25rem" }}>Job: {data.job ? data.job : "Unknown"}</li>
-                            {data.house && <li sx={{ marginBottom: "0.25rem" }}>Hogwarts house: {data.house}</li>}
+                            <li sx={{ marginBottom: "0.25rem" }}><b>Gender:</b> {data.gender ? data.gender : "Unknown"}</li>
+                            <li sx={{ marginBottom: "0.25rem" }}><b>Born:</b> {data.born ? data.born : "Unknown"}</li>
+                            {data.died && <li sx={{ marginBottom: "0.25rem" }}><b>Died:</b> {data.died}</li>}
+                            <li sx={{ marginBottom: "0.25rem" }}><b>Blood status:</b> {data.blood ? data.blood : "Unknown"}</li>
+                            <li sx={{ marginBottom: "0.25rem" }}><b>Nationality:</b> {data.nationality ? data.nationality : "Unknown"}</li>
+                            <li sx={{ marginBottom: "0.25rem" }}><b>Job:</b> {data.job ? data.job : "Unknown"}</li>
+                            {data.house && <li sx={{ marginBottom: "0.25rem" }}><b>Hogwarts house:</b> {data.house}</li>}
                         </ul>
                         <img src={data.image_url} alt={data.name} sx={CharacterImageStyles} />
                     </div>
@@ -85,22 +85,22 @@ const CharacterPage = ({ isSidebarVisible }: SidebarVisibilityProps) => {
                         <div>
                             <div sx={CharacterTitlesStyles}>Physical description</div>
                             <ul sx={{ listStyleType: "none", textAlign: "center", fontFamily: "paragraph", fontSize: "1.1rem" }}>
-                                <li>Hair color: {data.hair ? data.hair : "Unknown"}</li>
-                                <li>Eye color: {data.eyes ? data.eyes : "Unknown"}</li>
-                                {data.height && <li>Height: {data.height}</li>}
-                                {data.weight && <li>Weight: {data.weight}</li>}
+                                <li><b>Hair color:</b> {data.hair ? data.hair : "Unknown"}</li>
+                                <li><b>Eye color:</b> {data.eyes ? data.eyes : "Unknown"}</li>
+                                {data.height && <li><b>Height:</b> {data.height}</li>}
+                                {data.weight && <li><b>Weight:</b> {data.weight}</li>}
                             </ul>
                         </div>
                         <div>
                             <div sx={CharacterTitlesStyles}>Magical properties</div>
                             <ul sx={{ listStyleType: "none", textAlign: "center", fontFamily: "paragraph", fontSize: "1.1rem" }}>
-                                <li>Wand:&nbsp;
+                                <li><b>Wand:</b>&nbsp;
                                     {data.wand.length ? data.wand.length : "Unknown length"},&nbsp;
                                     {data.wand.wood ? data.wand.wood.toLowerCase() : "unknown wood"},&nbsp;
                                     {data.wand.core ? data.wand.core.toLowerCase() : "unknown"} core
                                 </li>
-                                <li>Patronus: {data.patronus ? data.patronus : "Unknown"}</li>
-                                {data.animagus && <li>Animagus: {data.animagus}</li>}
+                                <li><b>Patronus:</b> {data.patronus ? data.patronus : "Unknown"}</li>
+                                {data.animagus && <li><b>Animagus:</b> {data.animagus}</li>}
                             </ul>
                         </div>
                     </div>

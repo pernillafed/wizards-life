@@ -13,6 +13,7 @@ import { useQuery } from "react-query";
 import { getHouses, getSpecies, getWands } from "../../../services/TheBoyWhoLivedAPI";
 import { useUrlSearchParams } from "use-url-search-params";
 import Pagination from "../../../components/pagination/Pagination";
+import BookContent from "./book-content/BookContent";
 
 export type BookType = {
     id: string;
@@ -43,10 +44,10 @@ const Book = ({ isSidebarVisible }: SidebarVisibilityProps) => {
 
     const [book, setBook] = useState<BookType>();
     const [page, setPage] = useState(searchParams.page);
-    const [bookContent, setBookContent] = useState<QueryBookContentType>();
-    const [characterBook, setCharacterBook] = useState<BookContentType>();
+    const [queryBookContent, setQueryBookContent] = useState<QueryBookContentType>();
+    const [characterBookContent, setCharacterBookContent] = useState<BookContentType>();
 
-    const {data, isLoading, isError, error} = useQuery([bookContent?.name, page], () => bookContent?.dataGetter(page));
+    const {data, isLoading, isError, error} = useQuery([queryBookContent?.name, page], () => queryBookContent?.dataGetter(page));
 
     useEffect(() => {
         setSearchParams({ ...searchParams, page });
@@ -55,20 +56,20 @@ const Book = ({ isSidebarVisible }: SidebarVisibilityProps) => {
     useEffect(() => {
         setBook(libraryBooks.find(book => book.id === bookId));
         if (bookId === "1") {
-            setBookContent(undefined);
-            setCharacterBook({ name: "characters", urlParam: "character" });
+            setQueryBookContent(undefined);
+            setCharacterBookContent({ name: "characters", urlParam: "character" });
         }
         if (bookId === "2") {
-            setBookContent({ name: "houses", urlParam: "house", dataGetter: getHouses });
-            setCharacterBook(undefined);
+            setQueryBookContent({ name: "houses", urlParam: "house", dataGetter: getHouses });
+            setCharacterBookContent(undefined);
         }
         if (bookId === "3") {
-            setBookContent({ name: "species", urlParam: "species", dataGetter: getSpecies });
-            setCharacterBook(undefined);
+            setQueryBookContent({ name: "species", urlParam: "species", dataGetter: getSpecies });
+            setCharacterBookContent(undefined);
         }
         if (bookId === "4") {
-            setBookContent({ name: "wands", urlParam: "wand", dataGetter: getWands });
-            setCharacterBook(undefined);
+            setQueryBookContent({ name: "wands", urlParam: "wand", dataGetter: getWands });
+            setCharacterBookContent(undefined);
         }
     }, [bookId]);
 
@@ -88,19 +89,12 @@ const Book = ({ isSidebarVisible }: SidebarVisibilityProps) => {
             {isError && <div>Error!</div>}
             {!isLoading && !isError && data && (
                 <>
-                    <div sx={BookPageStyles}>
-                        <div sx={BookTitleStyles}>{book?.title}</div>
-                        <div sx={BookContentGridStyles}>
-                            {data.map((bookContentEntry: BookContentEntryType) => (
-                                <div key={bookContentEntry.id}>
-                                    <Link
-                                        to={`/library/book/${bookId}/${bookContent?.urlParam}/${bookContentEntry.id}`}
-                                        sx={BookContentLinkStyles}
-                                    >{bookContentEntry.name}</Link>
-                                </div>
-                            ))}
-                        </div>
-                    </div>
+                    <BookContent
+                        book={book}
+                        data={data}
+                        bookId={bookId}
+                        bookContent={queryBookContent}
+                    />
                     <Pagination
                         page={page}
                         totalPages={book?.totalPages}
@@ -109,20 +103,13 @@ const Book = ({ isSidebarVisible }: SidebarVisibilityProps) => {
                     />
                 </>
             )}
-            {!isLoading && !isError && characterBook && (
-                <div sx={BookPageStyles}>
-                    <div sx={BookTitleStyles}>{book?.title}</div>
-                    <div sx={BookContentGridStyles}>
-                        {wizards.map(wizard => (
-                            <div key={wizard.id}>
-                                <Link
-                                    to={`/library/book/${bookId}/${characterBook?.urlParam}/${wizard.id}`}
-                                    sx={BookContentLinkStyles}
-                                >{wizard.name}</Link>
-                            </div>
-                        ))}
-                    </div>
-                </div>
+            {!isLoading && !isError && characterBookContent && (
+                <BookContent
+                    book={book}
+                    data={wizards}
+                    bookId={bookId}
+                    bookContent={characterBookContent}
+                />
             )}
         </div>
     );

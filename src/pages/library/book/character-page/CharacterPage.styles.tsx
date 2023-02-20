@@ -6,7 +6,6 @@ export const CharacterInfoList: ThemeUIStyleObject = {
     fontSize: "1.25rem",
     fontFamily: "paragraph",
     color: "secondaryText",
-    fontWeight: "bold",
 }
 
 export const CharacterImageStyles: ThemeUIStyleObject = {
@@ -22,13 +21,15 @@ export const CharacterGridStyles: ThemeUIStyleObject = {
 }
 
 export const CharacterDescriptionWrapperStyles: ThemeUIStyleObject = {
-    display: "flex",
-    justifyContent: "space-evenly",
-    marginTop: "1.75rem"
+    display: "grid",
+    gridTemplateColumns: "1fr 1fr",
+    gap: "1rem",
+    margin: "1.75rem 2rem 0 2rem"
 }
 
 export const CharacterTitlesStyles: ThemeUIStyleObject = {
     color: "secondaryText",
     fontSize: ["secondaryHeadingMobile", "secondaryHeadingMobile", "secondaryHeading"],
-    fontFamily: "heading"
+    fontFamily: "heading",
+    textAlign: "center"
 }
