@@ -1,0 +1,264 @@
+[
+    {
+        "id": 1,
+        "name": "Unicorn",
+        "image_url": "https://static.wikia.nocookie.net/harrypotter/images/e/e4/Unicorn_FBCFTWW.png/revision/latest?cb=20161130204538",
+        "native": "Northern Europe",
+        "hair": "White, silver or gold (depending on age)",
+        "eyes": null,
+        "skin": null,
+        "height": null,
+        "length": null,
+        "mortality": "Mortal",
+        "distinctions": [
+            "Single horn on head",
+            "Pure white coat",
+            "Golden hooves",
+            "Friendlier towards witches than wizards",
+            "Blood, hair and horn all have potent magical properties"
+        ],
+        "classification": "Beast"
+    },
+    {
+        "id": 2,
+        "name": "Ghost",
+        "image_url": "https://static.wikia.nocookie.net/harrypotter/images/4/45/Ghost-pottermore.png/revision/latest?cb=20210903044914",
+        "native": "Worldwide",
+        "hair": "Greyish-silver",
+        "eyes": "Greyish-silver",
+        "skin": "Greyish-silver",
+        "height": null,
+        "length": null,
+        "mortality": "Already dead",
+        "distinctions": [
+            "Souls of deceased wizards and witches",
+            "Transparent",
+            "Limited physical influence"
+        ],
+        "classification": "Spirit"
+    },
+    {
+        "id": 3,
+        "name": "Dementor",
+        "image_url": "https://static.wikia.nocookie.net/harrypotter/images/4/49/DementorConceptArt.jpg/revision/latest?cb=20150928152038",
+        "native": "Azkaban",
+        "hair": "Scabby grey",
+        "eyes": null,
+        "skin": null,
+        "height": "12'",
+        "length": null,
+        "mortality": "Amortal",
+        "distinctions": [
+            "Capable of draining humans of happy thoughts, memories and emotions",
+            "Capable of the Dementor's Kiss",
+            "Hover effortlessly inches above the ground",
+            "Negatively alter atmosphere and magically create fog",
+            "Force victims to relive their worst memories"
+        ],
+        "classification": "Non-being"
+    },
+    {
+        "id": 4,
+        "name": "Boggart",
+        "image_url": "https://static.wikia.nocookie.net/harrypotter/images/8/8e/Boggart_Shapeshifting.jpg/revision/latest?cb=20090113184140",
+        "native": "Worldwide",
+        "hair": "Varies",
+        "eyes": "Varies",
+        "skin": "Varies",
+        "height": null,
+        "length": null,
+        "mortality": "Amortal",
+        "distinctions": [
+            "Transforms into the worst fear of the nearest observer"
+        ],
+        "classification": "Non-being"
+    },
+    {
+        "id": 5,
+        "name": "Grindylow",
+        "image_url": "https://static.wikia.nocookie.net/harrypotter/images/0/0e/Grindylow_FBCFTWW.png/revision/latest?cb=20161129180344",
+        "native": "Great Britain and Ireland",
+        "hair": null,
+        "eyes": "Yellow, white or green",
+        "skin": "Sickly green",
+        "height": "Less than 5'",
+        "length": null,
+        "mortality": "Mortal",
+        "distinctions": [
+            "Horned",
+            "Aggressive nature",
+            "Inhabit water",
+            "Carnivorous"
+        ],
+        "classification": "Beast"
+    },
+    {
+        "id": 6,
+        "name": "Hinkypunk",
+        "image_url": "https://static.wikia.nocookie.net/harrypotter/images/e/e2/Hinkypunk_PM.png/revision/latest/scale-to-width-down/1000?cb=20161224192145",
+        "native": "Scotland",
+        "hair": null,
+        "eyes": null,
+        "skin": null,
+        "height": null,
+        "length": null,
+        "mortality": "Mortal",
+        "distinctions": [
+            "Looks like smoke",
+            "Bears a lantern",
+            "Lures travelers into dangerous bogs",
+            "Turns solid when illuminated"
+        ],
+        "classification": "Beast"
+    },
+    {
+        "id": 7,
+        "name": "Veela",
+        "image_url": "https://static.wikia.nocookie.net/harrypotter/images/5/51/Veela2014QWC.png/revision/latest?cb=20180318021921",
+        "native": "Bulgaria",
+        "hair": "White-gold",
+        "eyes": "Various colors (mostly blue)",
+        "skin": "Lustrous white",
+        "height": null,
+        "length": null,
+        "mortality": "Mortal",
+        "distinctions": [
+            "Very beautiful",
+            "Can charm humans",
+            "When angry, they transform into harpy-like creatures"
+        ],
+        "classification": "Being"
+    },
+    {
+        "id": 8,
+        "name": "Leprechaun",
+        "image_url": "https://static.wikia.nocookie.net/harrypotter/images/3/3f/Leprechaun.png/revision/latest?cb=20200722153315",
+        "native": "Ireland",
+        "hair": null,
+        "eyes": null,
+        "skin": "Green",
+        "height": "6\"",
+        "length": null,
+        "mortality": "Mortal",
+        "distinctions": [
+            "Mischievous nature",
+            "Herbivorous"
+        ],
+        "classification": "Beast"
+    },
+    {
+        "id": 9,
+        "name": "Blast-Ended Skrewt",
+        "image_url": "https://static.wikia.nocookie.net/harrypotter/images/9/99/Blast-Ended_Skrewt_PM.png/revision/latest/scale-to-width-down/1000?cb=20220126040215",
+        "native": "Hogwarts castle",
+        "hair": null,
+        "eyes": null,
+        "skin": "Pale",
+        "height": null,
+        "length": "10'",
+        "mortality": "Mortal",
+        "distinctions": [
+            "Resemble pale, slimy, deformed shell-less lobsters or scorpions",
+            "Covered in grey, shiny armour",
+            "Males have stingers, females have suckers to suck blood",
+            "Aggressive temperament and repulsive appearance",
+            "Shoot fire from their rear end"
+        ],
+        "classification": "Beast"
+    },
+    {
+        "id": 10,
+        "name": "Abraxan",
+        "image_url": "https://static.wikia.nocookie.net/harrypotter/images/9/93/Abraxan.jpg/revision/latest/scale-to-width-down/1000?cb=20170705165111",
+        "native": null,
+        "hair": "White",
+        "eyes": "Red",
+        "skin": "Palomino",
+        "height": "Larger than normal horse-size, similar to an elephant",
+        "length": null,
+        "mortality": "Mortal",
+        "distinctions": [
+            "Large and winged"
+        ],
+        "classification": "Beast"
+    },
+    {
+        "id": 11,
+        "name": "Niffler",
+        "image_url": "https://static.wikia.nocookie.net/harrypotter/images/e/e9/Niffler_FBCFTWW.png/revision/latest?cb=20161129180529",
+        "native": "Great Britain",
+        "hair": "Black",
+        "eyes": null,
+        "skin": null,
+        "height": null,
+        "length": null,
+        "mortality": "Mortal",
+        "distinctions": [
+            "Rodent-like",
+            "Long snout",
+            "Attracted to shiny objects and metals",
+            "Skilled at hunting for treasure",
+            "Can wreck indoor environments"
+        ],
+        "classification": "Beast"
+    },
+    {
+        "id": 12,
+        "name": "Sphinx",
+        "image_url": "https://static.wikia.nocookie.net/harrypotter/images/e/e9/Niffler_FBCFTWW.png/revision/latest?cb=20161129180529",
+        "native": "Egypt",
+        "hair": "Brown",
+        "eyes": "Hazel",
+        "skin": null,
+        "height": null,
+        "length": null,
+        "mortality": null,
+        "distinctions": [
+            "Human head and face",
+            "Lion body",
+            "Highly intelligent",
+            "Capable of human speech",
+            "Delights in puzzles and riddles",
+            "Violent nature"
+        ],
+        "classification": "Beast"
+    },
+    {
+        "id": 13,
+        "name": "Spider",
+        "image_url": "https://static.wikia.nocookie.net/harrypotter/images/e/e8/Spiders.JPG/revision/latest/scale-to-width-down/1000?cb=20090814104207",
+        "native": "Worldwide",
+        "hair": "Various colors",
+        "eyes": "Black",
+        "skin": null,
+        "height": "Various",
+        "length": "Various",
+        "mortality": "Mortal",
+        "distinctions": [
+            "Eight legs and eyes",
+            "Pincers",
+            "Carnivorous",
+            "Some species venomous"
+        ],
+        "classification": null
+    },
+    {
+        "id": 14,
+        "name": "Doxy",
+        "image_url": "https://static.wikia.nocookie.net/harrypotter/images/6/67/Doxy_concept_art.png/revision/latest/scale-to-width-down/1000?cb=20170102173347",
+        "native": "North America and Northern Europe",
+        "hair": "Black",
+        "eyes": null,
+        "skin": "Purple or brown",
+        "height": null,
+        "length": null,
+        "mortality": "Mortal",
+        "distinctions": [
+            "Two sets of limbs",
+            "Beetle-like wings",
+            "Two rows of venomous teeth",
+            "Common household pests"
+        ],
+        "classification": "Beast"
+    }
+]
