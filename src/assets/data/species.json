@@ -48,7 +48,7 @@
         "feathers": null,
         "eyes": null,
         "skin": null,
-        "height": "12'",
+        "height": "12 feet",
         "length": null,
         "mortality": "Amortal",
         "distinctions": [
@@ -73,7 +73,9 @@
         "length": null,
         "mortality": "Amortal",
         "distinctions": [
-            "Transforms into the worst fear of the nearest observer"
+            "Shape-shifters",
+            "Transforms into the worst fear of the nearest observer",
+            "Likes confined spaces"
         ],
         "classification": "Non-being"
     },
@@ -86,7 +88,7 @@
         "feathers": null,
         "eyes": "Yellow, white or green",
         "skin": "Sickly green",
-        "height": "Less than 5'",
+        "height": "Various",
         "length": null,
         "mortality": "Mortal",
         "distinctions": [
@@ -145,7 +147,7 @@
         "feathers": null,
         "eyes": null,
         "skin": "Green",
-        "height": "6\"",
+        "height": "6 inches",
         "length": null,
         "mortality": "Mortal",
         "distinctions": [
@@ -164,7 +166,7 @@
         "eyes": null,
         "skin": "Pale",
         "height": null,
-        "length": "10'",
+        "length": "10 feet",
         "mortality": "Mortal",
         "distinctions": [
             "Resemble pale, slimy, deformed shell-less lobsters or scorpions",
@@ -184,11 +186,13 @@
         "feathers": null,
         "eyes": "Red",
         "skin": "Palomino",
-        "height": "Larger than normal horse-size, similar to an elephant",
+        "height": "Larger than a normal horse, similar to an elephant",
         "length": null,
         "mortality": "Mortal",
         "distinctions": [
-            "Large and winged"
+            "Large and winged",
+            "Extremely powerful",
+            "Is a rare possible corporeal form of the Patronus Charm"
         ],
         "classification": "Beast"
     },
@@ -284,7 +288,7 @@
         "feathers": null,
         "eyes": "Black",
         "skin": "Peach",
-        "height": "48\"",
+        "height": "48 inches",
         "length": null,
         "mortality": "Mortal",
         "distinctions": [
@@ -364,7 +368,7 @@
         "feathers": null,
         "eyes": "Brown",
         "skin": "Green",
-        "height": "8\"",
+        "height": "8 inches",
         "length": null,
         "mortality": "Mortal",
         "distinctions": [
@@ -390,7 +394,7 @@
             "Bipedal",
             "Omnivorous",
             "Come in various shapes and sizes",
-            "Claimed to be the most intelligent beings on Earth"
+            "Claim to be the most intelligent beings on Earth"
         ],
         "classification": "Being"
     },
@@ -427,7 +431,7 @@
         "feathers": "Mostly white with black or brown markings",
         "eyes": "Yellow or amber",
         "skin": null,
-        "height": "24\"",
+        "height": "24 inches",
         "length": null,
         "mortality": "Mortal",
         "distinctions": [
@@ -445,7 +449,7 @@
         "feathers": "Brownish hues with whitish, patterned underside)",
         "eyes": "Bright yellow/green",
         "skin": null,
-        "height": "9\"",
+        "height": "9 inches",
         "length": null,
         "mortality": "Mortal",
         "distinctions": [
@@ -501,7 +505,7 @@
         "feathers": null,
         "eyes": "Brown or blue",
         "skin": null,
-        "height": "32\"",
+        "height": "32 inches",
         "length": null,
         "mortality": "Mortal",
         "distinctions": [
@@ -510,5 +514,276 @@
             "Friendly nature"
         ],
         "classification": null
+    },
+    {
+        "id": 27,
+        "name": "Three-headed dog",
+        "image_url": "https://static.wikia.nocookie.net/harrypotter/images/a/a3/Fluffy_HPCB.png/revision/latest/scale-to-width-down/1000?cb=20170204211603",
+        "native": "Greece",
+        "hair": "Brown",
+        "feathers": null,
+        "eyes": "Black",
+        "skin": null,
+        "height": null,
+        "length": null,
+        "mortality": "Mortal",
+        "distinctions": [
+            "Three heads",
+            "Larger and stronger than non-magical dogs"
+        ],
+        "classification": "Beast"
+    },
+    {
+        "id": 28,
+        "name": "Norwegian Ridgeback",
+        "image_url": "https://static.wikia.nocookie.net/harrypotter/images/c/c1/Norberta_Norwegian_Ridgeback.jpg/revision/latest/scale-to-width-down/1000?cb=20161122220257",
+        "native": "Norway",
+        "hair": null,
+        "feathers": null,
+        "eyes": null,
+        "skin": "Black",
+        "height": null,
+        "length": null,
+        "mortality": "Mortal",
+        "distinctions": [
+            "Lives in the Northern mountains",
+            "Physically resembles a Hungarian Horntail",
+            "Venomous fangs",
+            "Food of choice is large mammals",
+            "Black eggs"
+        ],
+        "classification": "Beast"
+    },
+    {
+        "id": 29,
+        "name": "Centaur",
+        "image_url": "https://static.wikia.nocookie.net/harrypotter/images/f/f4/Centaur_Pottermore.png/revision/latest?cb=20120510141530",
+        "native": "Greece, Great Britain and Croatia",
+        "hair": "Various colors",
+        "feathers": null,
+        "eyes": "Various colors",
+        "skin": "Various colors",
+        "height": "Various",
+        "length": null,
+        "mortality": "Mortal",
+        "distinctions": [
+            "Lower torso is a horse's body",
+            "Higher torso is a human's body",
+            "Capable of human intelligence and speech",
+            "Skilled in Astronomy, Healing magic and Divination"
+        ],
+        "classification": "Beast"
+    },
+    {
+        "id": 30,
+        "name": "Mountain troll",
+        "image_url": "https://static.wikia.nocookie.net/harrypotter/images/b/ba/Mountain_Troll.png/revision/latest?cb=20161129174923",
+        "native": "Mountainous countryside",
+        "hair": null,
+        "feathers": null,
+        "eyes": null,
+        "skin": "Pale grey",
+        "height": "12 feet",
+        "length": null,
+        "mortality": null,
+        "distinctions": [
+            "Giant Club",
+            "Small head on large body",
+            "Great strength"
+        ],
+        "classification": "Beast"
+    },
+    {
+        "id": 31,
+        "name": "House-elf",
+        "image_url": "https://static.wikia.nocookie.net/harrypotter/images/c/cf/Dobby_Full_CoS.png/revision/latest/scale-to-width-down/1000?cb=20161215055343",
+        "native": null,
+        "hair": "Grey",
+        "feathers": null,
+        "eyes": "Various colors",
+        "skin": "Various colors",
+        "height": "3 feet",
+        "length": null,
+        "mortality": "Mortal",
+        "distinctions": [
+            "Short and skinny",
+            "Bat-like ears",
+            "Possesses powerful magic",
+            "Serves wizards and witches"
+        ],
+        "classification": "Being"
+    },
+    {
+        "id": 32,
+        "name": "Great grey owl",
+        "image_url": "https://www.hedberg.art/wp-content/uploads/2018/01/17-227.jpg",
+        "native": "North America",
+        "hair": null,
+        "feathers": "Mostly silvery grey with patterned white, grey and brown markings",
+        "eyes": "Yellow",
+        "skin": null,
+        "height": "27 inches",
+        "length": null,
+        "mortality": "Mortal",
+        "distinctions": [
+            "One of the larges species of owl in the world",
+            "Is one possible corporeal form of the Patronus Charm"
+        ],
+        "classification": null
+    },
+    {
+        "id": 33,
+        "name": "Phoenix",
+        "image_url": "https://static.wikia.nocookie.net/harrypotter/images/c/c1/Phoenix.png/revision/latest?cb=20161129180611",
+        "native": "Egypt, India and China",
+        "hair": null,
+        "feathers": "Mostly scarlet with a golden tail",
+        "eyes": "Black",
+        "skin": null,
+        "height": null,
+        "length": null,
+        "mortality": "Immortal",
+        "distinctions": [
+            "Reborn from ashes upon death",
+            "Immense strength",
+            "Tears have healing powers",
+            "Capable of singing soul-touching song",
+            "Strictly herbivorous"
+        ],
+        "classification": "Beast"
+    },
+    {
+        "id": 34,
+        "name": "Acromantula",
+        "image_url": "https://static.wikia.nocookie.net/harrypotter/images/6/60/Acromantula.png/revision/latest?cb=20161202173102",
+        "native": "Island of Borneo",
+        "hair": "Jet-black",
+        "feathers": null,
+        "eyes": "Black",
+        "skin": null,
+        "height": null,
+        "length": "Various",
+        "mortality": "Mortal",
+        "distinctions": [
+            "Capable of human speech",
+            "Taste for human flesh",
+            "Cannibalistic"
+        ],
+        "classification": "Beast"
+    },
+    {
+        "id": 35,
+        "name": "Basilisk",
+        "image_url": "https://static.wikia.nocookie.net/harrypotter/images/5/53/Basilisk_-_FBcases.png/revision/latest?cb=20161129174406",
+        "native": "Greece",
+        "hair": null,
+        "feathers": "Scarlet plume on top of head (males only)",
+        "eyes": "Yellow",
+        "skin": "Green",
+        "height": null,
+        "length": "50 feet",
+        "mortality": "Mortal",
+        "distinctions": [
+            "Deadly gaze, capable of Petrification",
+            "Venomous fangs, which are extremely poisonous"
+        ],
+        "classification": "Beast"
+    },
+    {
+        "id": 36,
+        "name": "Dog",
+        "image_url": "https://i.pinimg.com/originals/71/eb/97/71eb97e266619bd1a4fc84bfea9b338c.jpg",
+        "native": "Worldwide",
+        "hair": "Various colors",
+        "feathers": null,
+        "eyes": "Various colors",
+        "skin": null,
+        "height": "Various",
+        "length": null,
+        "mortality": "Mortal",
+        "distinctions": [
+            "Generally friendly and loyal towards humans",
+            "Kept by humans as pets"
+        ],
+        "classification": null
+    },
+    {
+        "id": 37,
+        "name": "Hippogriff",
+        "image_url": "https://static.wikia.nocookie.net/harrypotter/images/a/a6/Hippogrif_FBCFWW.png/revision/latest?cb=20161202001443",
+        "native": "Europe",
+        "hair": "Stormy grey, chestnut, bronze, pinkish roan or inky black",
+        "feathers": "Stormy grey, chestnut, bronze, pinkish roan or inky black (matching hair color)",
+        "eyes": "Orange",
+        "skin": null,
+        "height": null,
+        "length": null,
+        "mortality": "Mortal",
+        "distinctions": [
+            "Front half of a giant eagle",
+            "Rear half of a horse",
+            "Capable of flight",
+            "Carnivorous"
+        ],
+        "classification": "Beast"
+    },
+    {
+        "id": 38,
+        "name": "Rabbit",
+        "image_url": "https://cdna.artstation.com/p/assets/images/images/017/080/286/large/yliia-oliiarnyk-bunny.jpg?1554562795",
+        "native": "Worldwide",
+        "hair": "Various colors",
+        "feathers": null,
+        "eyes": "Various colors",
+        "skin": null,
+        "height": null,
+        "length": null,
+        "mortality": "Mortal",
+        "distinctions": [
+            "Small mammals",
+            "Herbivorous",
+            "Is a possible corporeal form of the Patronus Charm"
+        ],
+        "classification": null
+    },
+    {
+        "id": 39,
+        "name": "Scops owl",
+        "image_url": "https://www.artmajeur.com/medias/hd/m/a/maier/artwork/15637834_img400-major.jpg",
+        "native": "Africa, Europe and Asia",
+        "hair": null,
+        "feathers": "Various brownish hues",
+        "eyes": "Various colors",
+        "skin": null,
+        "height": "8 inches",
+        "length": null,
+        "mortality": "Mortal",
+        "distinctions": [
+            "One of the smallest species of owl in the world",
+            "Very agile",
+            "Color and pattern that helps camouflage",
+            "Is one of the possible corporeal forms of the Patronus Charm"
+        ],
+        "classification": null
+    },
+    {
+        "id": 40,
+        "name": "Hungarian Horntail",
+        "image_url": "https://cdnb.artstation.com/p/assets/images/images/035/939/595/large/hana-belsikova-hungarian.jpg?1616323651",
+        "native": "Hungary",
+        "hair": null,
+        "feathers": null,
+        "eyes": "Yellow",
+        "skin": "Black",
+        "height": null,
+        "length": "50 feet",
+        "mortality": "Mortal",
+        "distinctions": [
+            "Extremely dangerous",
+            "Lizard-like in appearance",
+            "Spiked tail",
+            "Vicious and aggressive"
+        ],
+        "classification": "Beast"
     }
 ]
