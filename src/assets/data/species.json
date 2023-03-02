@@ -1178,16 +1178,21 @@
     {
         "id": "species-20",
         "name": "Bird",
-        "image_url": null,
-        "native": null,
+        "image_url": "http://cdn.shopify.com/s/files/1/1208/8894/products/fuertes_WhiteGyrfalcon_1024x1024.jpg?v=1624383688",
+        "native": "Worldwide",
         "hair": null,
-        "feathers": null,
-        "eyes": null,
+        "feathers": "Various colors",
+        "eyes": "Various colors",
         "skin": null,
-        "height": null,
+        "height": "Various",
         "length": null,
-        "mortality": null,
-        "distinctions": null,
+        "mortality": "Usually mortal",
+        "distinctions": [
+            "Winged",
+            "Feathered",
+            "Beaked",
+            "Most species can fly"
+        ],
         "classification": null,
         "sub_species": [
             {
@@ -1570,22 +1575,84 @@
     },
     {
         "id": "species-28",
-        "name": "Pygmy Puff",
-        "image_url": "https://i.pinimg.com/originals/6b/8f/e2/6b8fe26264d4a7e64d91fe0131be19fe.jpg",
-        "native": "England",
-        "hair": "Pink or purple",
+        "name": "Puffskein",
+        "image_url": "https://i.imgur.com/36I6YR9.png",
+        "native": null,
+        "hair": "Custard (Yellow)",
         "feathers": null,
         "eyes": null,
         "skin": null,
         "height": null,
         "length": null,
-        "mortality": null,
+        "mortality": "Mortal",
         "distinctions": [
-            "Miniature Puffskien",
-            "Resembles little fluffy balls"
+            "Small and furry",
+            "Spherical shape",
+            "Long tongue",
+            "Scavenger with a diet of leftovers, spiders, moths and bogeys",
+            "Emits low humming sound when happy",
+            "Hair has magical properties"
         ],
         "classification": "Beast",
-        "sub_species": null
+        "sub_species": [
+            {
+                "id": "puffskein-sub-species-1",
+                "name": "Pygmy Puff",
+                "image_url": "https://i.pinimg.com/originals/6b/8f/e2/6b8fe26264d4a7e64d91fe0131be19fe.jpg",
+                "native": "England",
+                "hair": "Pink or purple",
+                "feathers": null,
+                "eyes": null,
+                "skin": null,
+                "height": null,
+                "length": null,
+                "mortality": null,
+                "distinctions": [
+                    "Miniature Puffskien",
+                    "Resembles little fluffy balls"
+                ],
+                "classification": "Beast",
+                "sub_species": null
+            },
+            {
+                "id": "puffskein-sub-species-2",
+                "name": "Appaloosa Puffskein",
+                "image_url": "https://www.gamerguides.com/assets/media/15/4913/ui_t_puffskein_m_default-dfd0223b.png",
+                "native": "United States of America",
+                "hair": null,
+                "feathers": null,
+                "eyes": null,
+                "skin": null,
+                "height": null,
+                "length": null,
+                "mortality": "Mortal",
+                "distinctions": [
+                    "Breed of Puffskein",
+                    "Used to be illegally bred in New York"
+                ],
+                "classification": "Beast",
+                "sub_species": null
+            },
+            {
+                "id": "puffskein-sub-species-3",
+                "name": "Fanged Puffskein",
+                "image_url": "https://www.gamerguides.com/assets/media/15/4913/ui_t_puffskein_m_variation1-3359fe86.png",
+                "native": null,
+                "hair": "Black",
+                "feathers": null,
+                "eyes": "Yellow",
+                "skin": null,
+                "height": null,
+                "length": null,
+                "mortality": "Mortal",
+                "distinctions": [
+                    "Breed of Puffskein",
+                    "Fanged"
+                ],
+                "classification": "Beast",
+                "sub_species": null
+            }
+        ]
     },
     {
         "id": "species-29",
