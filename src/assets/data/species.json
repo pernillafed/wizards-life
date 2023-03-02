@@ -313,22 +313,63 @@
             },
             {
                 "id": "canine-sub-species-3",
-                "name": "Fox",
-                "image_url": "https://cdnb.artstation.com/p/assets/images/images/022/025/235/large/alice-tagliapietra-12471732-886503221467280-7126744641234499369-o.jpg?1573816174",
+                "name": "Gytrash",
+                "image_url": "https://static.wikia.nocookie.net/starborn-alignment/images/2/2d/Sa_mythical_familiar_the_gytrash_by_queerly-d9nwek6.png/revision/latest?cb=20170910170300",
                 "native": "Great Britain",
-                "hair": "Red and white",
+                "hair": "White",
                 "feathers": null,
-                "eyes": "Various colors",
+                "eyes": "Black",
+                "skin": "White",
+                "height": null,
+                "length": null,
+                "mortality": null,
+                "distinctions": [
+                    "Dog-like in appearance",
+                    "Forked tail",
+                    "Retreats from wand light"
+                ],
+                "classification": "Beast and spirit",
+                "sub_species": null
+            },
+            {
+                "id": "canine-sub-species-4",
+                "name": "Grim",
+                "image_url": "https://i0.wp.com/sandyriverreview.com/wp-content/uploads/2019/02/Black-Dog-Ghost-380x240.jpg?fit=380%2C240&ssl=1",
+                "native": "Great Britain",
+                "hair": "Jet-black",
+                "feathers": null,
+                "eyes": "Yellow",
                 "skin": null,
-                "height": "14-20 inches",
+                "height": "5 feet",
+                "length": null,
+                "mortality": null,
+                "distinctions": [
+                    "Large, spectral appearance",
+                    "Is believed to announce future death to a seeing person"
+                ],
+                "classification": null,
+                "sub_species": null
+            },
+            {
+                "id": "canine-sub-species-5",
+                "name": "Crup",
+                "image_url": "https://www.hp-lexicon.org/wp-content/uploads/2017/03/crup__fantastic_beasts_and_where_to_find_them_by_maryquize-dbsooid.jpg",
+                "native": "England",
+                "hair": "White and brown",
+                "feathers": null,
+                "eyes": null,
+                "skin": null,
+                "height": null,
                 "length": null,
                 "mortality": "Mortal",
                 "distinctions": [
-                    "Scavengers",
-                    "Predatory",
-                    "Is a possible corporeal form of the Patronus Charm"
+                    "Resembles the Jack Russell terrier",
+                    "Forked tail",
+                    "Fiercely loyal towards wizards",
+                    "Hostile towards Muggles and Squibs",
+                    "Skillful scavengers"
                 ],
-                "classification": null,
+                "classification": "Beast",
                 "sub_species": null
             }
         ]
@@ -661,6 +702,26 @@
                 ],
                 "classification": "Beast",
                 "sub_species": null
+            },
+            {
+                "id": "hybrid-sub-species-5",
+                "name": "Griffin",
+                "image_url": "https://static.wikia.nocookie.net/harrypotter/images/f/f8/Griffin.png/revision/latest?cb=20170413064633",
+                "native": "Greece",
+                "hair": "Brownish-yellow",
+                "feathers": "White and brown",
+                "eyes": "Yellow",
+                "skin": null,
+                "height": null,
+                "length": null,
+                "mortality": null,
+                "distinctions": [
+                    "Front half of a giant eagle",
+                    "Rear half of a lion",
+                    "Capable of flight"
+                ],
+                "classification": "Beast",
+                "sub_species": null
             }
         ]
     },
@@ -907,6 +968,46 @@
                 ],
                 "classification": "Being",
                 "sub_species": null
+            },
+            {
+                "id": "human-sub-species-2",
+                "name": "Non-magic people",
+                "image_url": "https://i.pinimg.com/originals/3f/19/79/3f19791cb93c69e20e44c40f46dd9a82.jpg",
+                "native": "Worldwide",
+                "hair": "Various colors",
+                "feathers": null,
+                "eyes": "Various colors",
+                "skin": "Various colors",
+                "height": "Various",
+                "length": null,
+                "mortality": "Mortal",
+                "distinctions": [
+                    "Lack the ability to perform magic",
+                    "Most are unaware of the wizarding world",
+                    "Use electronic/mechanical technology and science",
+                    "Also known as Muggles in Great Britain"
+                ],
+                "classification": "Being",
+                "sub_species": null
+            },
+            {
+                "id": "human-sub-species-3",
+                "name": "Squib",
+                "image_url": "https://images.fineartamerica.com/images/artworkimages/mediumlarge/1/diogenes-with-his-lantern-in-search-of-an-honest-man-attributed-to-mattia-preti.jpg",
+                "native": "Worldwide",
+                "hair": "Various colors",
+                "feathers": null,
+                "eyes": "Various colors",
+                "skin": "Various colors",
+                "height": "Various",
+                "length": null,
+                "mortality": "Mortal",
+                "distinctions": [
+                    "Children of witches and/or wizards but cannot use magic",
+                    "Are rare"
+                ],
+                "classification": "Being",
+                "sub_species": null
             }
         ]
     },
@@ -988,6 +1089,88 @@
                     "Kept as pets by humans"
                 ],
                 "classification": null,
+                "sub_species": null
+            },
+            {
+                "id": "feline-sub-species-3",
+                "name": "Matagot",
+                "image_url": "https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/3734ea1f-f4c6-4cd7-b903-70f728805c2f/ddwmris-ea45ac80-fba3-40a8-b1c3-704510c485d8.jpg/v1/fill/w_1920,h_1093,q_75,strp/fantastic_beasts___matagot_creature_design_by_kenbarthelmey_ddwmris-fullview.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7ImhlaWdodCI6Ijw9MTA5MyIsInBhdGgiOiJcL2ZcLzM3MzRlYTFmLWY0YzYtNGNkNy1iOTAzLTcwZjcyODgwNWMyZlwvZGR3bXJpcy1lYTQ1YWM4MC1mYmEzLTQwYTgtYjFjMy03MDQ1MTBjNDg1ZDguanBnIiwid2lkdGgiOiI8PTE5MjAifV1dLCJhdWQiOlsidXJuOnNlcnZpY2U6aW1hZ2Uub3BlcmF0aW9ucyJdfQ.aHu0V-EGfz6jl7563UDQLqaqNSGB_tz8A90KOJ0exzk",
+                "native": "France",
+                "hair": null,
+                "feathers": null,
+                "eyes": "Light blue",
+                "skin": "Black",
+                "height": null,
+                "length": null,
+                "mortality": null,
+                "distinctions": [
+                    "Resembles black cat in appearance",
+                    "Capable of multiplying",
+                    "Normally harmless, vicious when provoked"
+                ],
+                "classification": "Beast",
+                "sub_species": null
+            },
+            {
+                "id": "feline-sub-species-4",
+                "name": "Nundu",
+                "image_url": "https://i.pinimg.com/736x/27/9f/e4/279fe4e2b76a7c2c2ed8f646050daa46.jpg",
+                "native": "East Africa",
+                "hair": "Yellow with black spots",
+                "feathers": null,
+                "eyes": null,
+                "skin": null,
+                "height": null,
+                "length": null,
+                "mortality": "Mortal",
+                "distinctions": [
+                    "Resembles leopard and/or lion in appearance",
+                    "Toxic breath",
+                    "Moves silently",
+                    "Carnivorous"
+                ],
+                "classification": "Beast",
+                "sub_species": null
+            },
+            {
+                "id": "feline-sub-species-5",
+                "name": "Wampus cat",
+                "image_url": "http://pm1.narvii.com/7057/2faf9ba40b383ee076582a6a93f05bf24d08611er1-2048-1536v2_uhq.jpg",
+                "native": "North America",
+                "hair": "Light brown and white",
+                "feathers": null,
+                "eyes": "Yellow",
+                "skin": null,
+                "height": null,
+                "length": null,
+                "mortality": "Mortal",
+                "distinctions": [
+                    "Eyes capable of hypnosis and legilimency",
+                    "Incredibly fast and strong",
+                    "Almost impossible to kill"
+                ],
+                "classification": "Beast",
+                "sub_species": null
+            },
+            {
+                "id": "feline-sub-species-6",
+                "name": "Zouwu",
+                "image_url": "https://cdnb.artstation.com/p/assets/images/images/048/538/611/large/sigri-de-vries-277466743-10158828253940756-4628080376208368509-n.jpg?1650311960",
+                "native": "China",
+                "hair": "Orange",
+                "feathers": null,
+                "eyes": "Yellow",
+                "skin": null,
+                "height": "Size of an elephant",
+                "length": null,
+                "mortality": null,
+                "distinctions": [
+                    "Striped body",
+                    "Four fangs",
+                    "Long tail",
+                    "Incredibly powerful and fast"
+                ],
+                "classification": "Beast",
                 "sub_species": null
             }
         ]
@@ -1169,43 +1352,43 @@
             },
             {
                 "id": "bird-sub-species-4",
-                "name": "Peacock",
-                "image_url": "https://render.fineartamerica.com/images/rendered/search/print/6.5/8/break/images/artworkimages/medium/1/regal-peacock-1-on-tree-branch-w-feathers-gold-leaf-audrey-jeanne-roberts.jpg",
-                "native": "Asia",
+                "name": "Thunderbird",
+                "image_url": "https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/846a9086-8a40-43e0-aa10-2fc7d6d73730/dap4b92-80f0c519-92b5-4885-852b-d90e05e593b9.png/v1/fill/w_1024,h_1572,strp/fantastic_beasts_inter_textless_thunderbird_by_mintmovi3_dap4b92-fullview.png?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7ImhlaWdodCI6Ijw9MTU3MiIsInBhdGgiOiJcL2ZcLzg0NmE5MDg2LThhNDAtNDNlMC1hYTEwLTJmYzdkNmQ3MzczMFwvZGFwNGI5Mi04MGYwYzUxOS05MmI1LTQ4ODUtODUyYi1kOTBlMDVlNTkzYjkucG5nIiwid2lkdGgiOiI8PTEwMjQifV1dLCJhdWQiOlsidXJuOnNlcnZpY2U6aW1hZ2Uub3BlcmF0aW9ucyJdfQ.0JfAE6GNZY-nODQdA1Jm4D8KnhoXdhWhFqiIaZMA9Tw",
+                "native": "United States of America",
                 "hair": null,
-                "feathers": "Colorful, mostly blue and green",
-                "eyes": "Black",
-                "skin": null,
-                "height": "3-4 feet",
-                "length": "2-10 feet",
+                "feathers": "Gold and white",
+                "eyes": null,
+                "skin": "White",
+                "height": null,
+                "length": null,
                 "mortality": "Mortal",
                 "distinctions": [
-                    "Large colorful plumage",
-                    "Piercing call"
+                    "Can magically create storms",
+                    "Highly sensitive to danger"
                 ],
-                "classification": null,
+                "classification": "Beast",
                 "sub_species": null
             }
         ]
     },
     {
         "id": "species-21",
-        "name": "Rabbit",
-        "image_url": "https://cdna.artstation.com/p/assets/images/images/017/080/286/large/yliia-oliiarnyk-bunny.jpg?1554562795",
-        "native": "Worldwide",
-        "hair": "Various colors",
+        "name": "Erkling",
+        "image_url": "https://www.hp-lexicon.org/wp-content/uploads/2017/03/erkling.jpg",
+        "native": "Germany",
+        "hair": null,
         "feathers": null,
-        "eyes": "Various colors",
-        "skin": null,
-        "height": null,
+        "eyes": "Yellow",
+        "skin": "Brown",
+        "height": "3 feet",
         "length": null,
         "mortality": "Mortal",
         "distinctions": [
-            "Small mammals",
-            "Herbivorous",
-            "Is a possible corporeal form of the Patronus Charm"
+            "Feed upon human children",
+            "Shoot darts",
+            "High pitch cackles to lure children"
         ],
-        "classification": null,
+        "classification": "Beast",
         "sub_species": null
     },
     {
@@ -1252,16 +1435,20 @@
     {
         "id": "species-24",
         "name": "Snake",
-        "image_url": null,
-        "native": null,
+        "image_url": "https://static.wikia.nocookie.net/harrypotter/images/7/70/Nagini_PM.png/revision/latest/scale-to-width-down/1000?cb=20161124073206",
+        "native": "Worldwide",
         "hair": null,
         "feathers": null,
-        "eyes": null,
-        "skin": null,
+        "eyes": "Various colors",
+        "skin": "Various colors",
         "height": null,
-        "length": null,
-        "mortality": null,
-        "distinctions": null,
+        "length": "Various",
+        "mortality": "Mortal",
+        "distinctions": [
+            "Legless",
+            "Carnivorous",
+            "Some species venomous"
+        ],
         "classification": null,
         "sub_species": [
             {
@@ -1325,23 +1512,61 @@
     },
     {
         "id": "species-26",
-        "name": "Selkie",
-        "image_url": "https://static.wikia.nocookie.net/harrypotter/images/a/a4/One_of_the_Merpeople_of_Hogwarts_Lake_%28Concept_Artwork%29.jpg/revision/latest?cb=20091018034049",
-        "native": "Scotland",
+        "name": "Merpeople",
+        "image_url": "https://static.wikia.nocookie.net/harrypotter/images/b/b6/Merpeople_Pottermore.png/revision/latest?cb=20120511133103",
+        "native": "Greece",
         "hair": "Various colors",
         "feathers": null,
         "eyes": "Various colors",
         "skin": "Various colors",
-        "height": null,
+        "height": "Various",
         "length": null,
         "mortality": null,
         "distinctions": [
-            "Aquatic",
-            "Less beautiful than sirens",
-            "One of the species included in the Black Lake merpeople colony"
+            "Fish-like attributes",
+            "Water-inhabitant"
         ],
         "classification": "Beast",
-        "sub_species": null
+        "sub_species": [
+            {
+                "id": "merpeople-sub-species-1",
+                "name": "Selkie",
+                "image_url": "https://static.wikia.nocookie.net/harrypotter/images/a/a4/One_of_the_Merpeople_of_Hogwarts_Lake_%28Concept_Artwork%29.jpg/revision/latest?cb=20091018034049",
+                "native": "Scotland",
+                "hair": "Various colors",
+                "feathers": null,
+                "eyes": "Various colors",
+                "skin": "Various colors",
+                "height": null,
+                "length": null,
+                "mortality": null,
+                "distinctions": [
+                    "Love of music",
+                    "One of the species included in the Black Lake merpeople colony"
+                ],
+                "classification": "Beast",
+                "sub_species": null
+            },
+            {
+                "id": "merpeople-sub-species-2",
+                "name": "Merrow",
+                "image_url": "https://pm1.narvii.com/7061/c2f35e1331e9a0f87af8c951e9d189b132aa737fr1-1474-2048v2_hq.jpg",
+                "native": "Ireland",
+                "hair": "Various colors",
+                "feathers": null,
+                "eyes": "Various colors",
+                "skin": "Various colors",
+                "height": "Various",
+                "length": null,
+                "mortality": null,
+                "distinctions": [
+                    "Love of music",
+                    "Less beautiful than other forms of merpeople"
+                ],
+                "classification": "Beast",
+                "sub_species": null
+            }
+        ]
     },
     {
         "id": "species-28",
@@ -1422,21 +1647,21 @@
     },
     {
         "id": "species-32",
-        "name": "Scorpion",
-        "image_url": "https://inkart.net/wp-content/uploads/2021/03/asian_forest_scorpion.jpg",
-        "native": "Worldwide",
+        "name": "Imp",
+        "image_url": "https://www.hp-lexicon.org/wp-content/uploads/2017/03/imp-and-glumbumble.jpg",
+        "native": "Great Britain and Ireland",
         "hair": null,
         "feathers": null,
-        "eyes": "Various colors",
-        "skin": "Various colors",
-        "height": null,
+        "eyes": "Yellow",
+        "skin": "Grey",
+        "height": "6-8 inches",
         "length": null,
         "mortality": "Mortal",
         "distinctions": [
-            "Venomous sting",
-            "Grasping claws"
+            "Love of slapstick humour",
+            "Eats insects"
         ],
-        "classification": null,
+        "classification": "Beast",
         "sub_species": null
     },
     {
