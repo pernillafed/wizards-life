@@ -140,8 +140,8 @@
     },
     {
         "id": "species-2",
-        "name": "Spirit",
-        "image_url": null,
+        "name": "Non-Human Spirituous Apparition",
+        "image_url": "https://static.wikia.nocookie.net/harrypotter/images/2/22/Dementors_Quidditch.jpg/revision/latest/scale-to-width-down/1000?cb=20170730222834",
         "native": null,
         "hair": null,
         "feathers": null,
@@ -149,39 +149,23 @@
         "skin": null,
         "height": null,
         "length": null,
-        "mortality": null,
-        "distinctions": null,
-        "classification": null,
+        "mortality": "Amortal",
+        "distinctions": [
+            "Created from and sustained by human emotions",
+            "Have never been alive",
+            "Can not be killed"
+        ],
+        "classification": "Non-being",
         "sub_species": [
             {
-                "id": "spirit-sub-species-1",
-                "name": "Ghost",
-                "image_url": "https://static.wikia.nocookie.net/harrypotter/images/4/45/Ghost-pottermore.png/revision/latest?cb=20210903044914",
-                "native": "Worldwide",
-                "hair": "Greyish-silver",
-                "feathers": null,
-                "eyes": "Greyish-silver",
-                "skin": "Greyish-silver",
-                "height": null,
-                "length": null,
-                "mortality": "Already dead",
-                "distinctions": [
-                    "Souls of deceased wizards and witches",
-                    "Transparent",
-                    "Limited physical influence"
-                ],
-                "classification": "Spirit",
-                "sub_species": null
-            },
-            {
-                "id": "spirit-sub-species-2",
+                "id": "non-human-spirituous-apparition-sub-species-1",
                 "name": "Dementor",
                 "image_url": "https://static.wikia.nocookie.net/harrypotter/images/4/49/DementorConceptArt.jpg/revision/latest?cb=20150928152038",
                 "native": "Azkaban",
-                "hair": "Scabby grey",
+                "hair": null,
                 "feathers": null,
                 "eyes": null,
-                "skin": null,
+                "skin": "Scabby grey",
                 "height": "12 feet",
                 "length": null,
                 "mortality": "Amortal",
@@ -196,9 +180,9 @@
                 "sub_species": null
             },
             {
-                "id": "spirit-sub-species-3",
+                "id": "non-human-spirituous-apparition-sub-species-2",
                 "name": "Boggart",
-                "image_url": "https://static.wikia.nocookie.net/harrypotter/images/8/8e/Boggart_Shapeshifting.jpg/revision/latest?cb=20090113184140",
+                "image_url": "https://www.hp-lexicon.org/wp-content/uploads/2017/03/boggart__fantastic_beasts_and_where_to_find_them_by_maryquize-dbsooi7.jpg",
                 "native": "Worldwide",
                 "hair": "Varies",
                 "feathers": null,
@@ -216,7 +200,7 @@
                 "sub_species": null
             },
             {
-                "id": "spirit-sub-species-4",
+                "id": "non-human-spirituous-apparition-sub-species-3",
                 "name": "Poltergeist",
                 "image_url": "https://static.wikia.nocookie.net/harrypotter/images/3/35/Peeves_Film_Concept.jpg/revision/latest/scale-to-width-down/1000?cb=20130212044929",
                 "native": "Worldwide",
@@ -240,7 +224,7 @@
     {
         "id": "species-3",
         "name": "Canine",
-        "image_url": null,
+        "image_url": "https://t3.ftcdn.net/jpg/02/67/37/88/360_F_267378848_D5rbV6I9GLpWMumHLPeBczblYi4UEUrH.jpg",
         "native": null,
         "hair": null,
         "feathers": null,
@@ -255,7 +239,7 @@
             {
                 "id": "canine-sub-species-1",
                 "name": "Dog",
-                "image_url": "https://i.pinimg.com/originals/71/eb/97/71eb97e266619bd1a4fc84bfea9b338c.jpg",
+                "image_url": "https://patch.com/img/cdn/users/21854325/2013/08/raw/c3565c14a43fd588b756da5bc69f57db.jpg",
                 "native": "Worldwide",
                 "hair": "Various colors",
                 "feathers": null,
@@ -333,25 +317,6 @@
             },
             {
                 "id": "canine-sub-species-4",
-                "name": "Grim",
-                "image_url": "https://i0.wp.com/sandyriverreview.com/wp-content/uploads/2019/02/Black-Dog-Ghost-380x240.jpg?fit=380%2C240&ssl=1",
-                "native": "Great Britain",
-                "hair": "Jet-black",
-                "feathers": null,
-                "eyes": "Yellow",
-                "skin": null,
-                "height": "5 feet",
-                "length": null,
-                "mortality": null,
-                "distinctions": [
-                    "Large, spectral appearance",
-                    "Is believed to announce future death to a seeing person"
-                ],
-                "classification": null,
-                "sub_species": null
-            },
-            {
-                "id": "canine-sub-species-5",
                 "name": "Crup",
                 "image_url": "https://www.hp-lexicon.org/wp-content/uploads/2017/03/crup__fantastic_beasts_and_where_to_find_them_by_maryquize-dbsooid.jpg",
                 "native": "England",
@@ -523,7 +488,7 @@
     {
         "id": "species-9",
         "name": "Crustacean",
-        "image_url": null,
+        "image_url": "https://i.pinimg.com/736x/96/7b/d8/967bd891ed557ed08b1661ec4ca8d7ef--the-crab-animal-drawings.jpg",
         "native": null,
         "hair": null,
         "feathers": null,
@@ -603,7 +568,7 @@
     {
         "id": "species-11",
         "name": "Hybrid",
-        "image_url": null,
+        "image_url": "https://images.fineartamerica.com/images/artworkimages/mediumlarge/3/griffin-daniel-eskridge.jpg",
         "native": null,
         "hair": null,
         "feathers": null,
@@ -790,7 +755,7 @@
     {
         "id": "species-13",
         "name": "Sprite",
-        "image_url": null,
+        "image_url": "https://static.wikia.nocookie.net/powerlisting/images/f/f6/Sprite.jpeg/revision/latest?cb=20190522043843",
         "native": null,
         "hair": null,
         "feathers": null,
@@ -1034,7 +999,7 @@
     {
         "id": "species-19",
         "name": "Feline",
-        "image_url": null,
+        "image_url": "https://cdnb.artstation.com/p/assets/images/images/019/009/967/large/vincent-chu-tiger-s.jpg?1561613109",
         "native": null,
         "hair": null,
         "feathers": null,
@@ -1493,6 +1458,26 @@
                 ],
                 "classification": null,
                 "sub_species": null
+            },
+            {
+                "id": "snake-sub-species-3",
+                "name": "Boomslang",
+                "image_url": "https://i.pinimg.com/originals/6a/86/9e/6a869eb720c64920bc7923c063dd8ab3.jpg",
+                "native": "Africa",
+                "hair": null,
+                "feathers": null,
+                "eyes": null,
+                "skin": "Various colors",
+                "height": null,
+                "length": "3-5 feet",
+                "mortality": "Mortal",
+                "distinctions": [
+                    "Large",
+                    "Highly venomous",
+                    "Skin is used to make Polyjuice potion"
+                ],
+                "classification": null,
+                "sub_species": null
             }
         ]
     },
@@ -1656,22 +1641,79 @@
     },
     {
         "id": "species-29",
-        "name": "Toad",
-        "image_url": "https://static.wikia.nocookie.net/harrypotter/images/7/7a/Toad.JPG/revision/latest?cb=20070912191403",
-        "native": "Worldwide",
+        "name": "Amphibian",
+        "image_url": "https://render.fineartamerica.com/images/images-profile-flow/400/images/artworkimages/mediumlarge/2/blue-jean-frog-charlsie-kelly.jpg",
+        "native": null,
         "hair": null,
         "feathers": null,
-        "eyes": "Various colors",
-        "skin": "Various colors",
+        "eyes": null,
+        "skin": null,
         "height": null,
         "length": null,
-        "mortality": "Mortal",
-        "distinctions": [
-            "Very similar to frogs",
-            "Bumpy, warty skin"
-        ],
+        "mortality": null,
+        "distinctions": null,
         "classification": null,
-        "sub_species": null
+        "sub_species": [
+            {
+                "id": "amphibian-sub-species-1",
+                "name": "Toad",
+                "image_url": "https://static.wikia.nocookie.net/harrypotter/images/7/7a/Toad.JPG/revision/latest?cb=20070912191403",
+                "native": "Worldwide",
+                "hair": null,
+                "feathers": null,
+                "eyes": "Various colors",
+                "skin": "Various colors",
+                "height": null,
+                "length": null,
+                "mortality": "Mortal",
+                "distinctions": [
+                    "Very similar to frogs",
+                    "Bumpy, warty skin"
+                ],
+                "classification": null,
+                "sub_species": null
+            },
+            {
+                "id": "amphibian-sub-species-2",
+                "name": "Newt",
+                "image_url": "https://inkart.net/wp-content/uploads/2021/03/california_newt-1.jpg",
+                "native": "Northern hemisphere",
+                "hair": null,
+                "feathers": null,
+                "eyes": "Various colors",
+                "skin": "Various colors",
+                "height": "Various",
+                "length": "Various",
+                "mortality": "Mortal",
+                "distinctions": [
+                    "Closely resemble salamanders and lizards",
+                    "Parts of it is commonly used in potions making"
+                ],
+                "classification": null,
+                "sub_species": null
+            },
+            {
+                "id": "amphibian-sub-species-3",
+                "name": "Fire Dwelling Salamander",
+                "image_url": "https://static.wikia.nocookie.net/harrypotter/images/f/f9/SalamanderWU.png/revision/latest?cb=20200817153532",
+                "native": "Worldwide",
+                "hair": null,
+                "feathers": null,
+                "eyes": "Black",
+                "skin": "Scarlet red",
+                "height": null,
+                "length": null,
+                "mortality": "Mortal",
+                "distinctions": [
+                    "Typically on fire",
+                    "Feeds on flames",
+                    "Their blood has powerful regenerative and curative properties",
+                    "Is a rare possible corporeal form of the Patronus Charm"
+                ],
+                "classification": null,
+                "sub_species": null
+            }
+        ]
     },
     {
         "id": "species-30",
@@ -1773,6 +1815,26 @@
             "Feeds on humans"
         ],
         "classification": "Beast",
+        "sub_species": null
+    },
+    {
+        "id": "species-35",
+        "name": "Ghost",
+        "image_url": "https://static.wikia.nocookie.net/harrypotter/images/4/45/Ghost-pottermore.png/revision/latest?cb=20210903044914",
+        "native": "Worldwide",
+        "hair": "Greyish-silver",
+        "feathers": null,
+        "eyes": "Greyish-silver",
+        "skin": "Greyish-silver",
+        "height": null,
+        "length": null,
+        "mortality": "Already dead",
+        "distinctions": [
+            "Souls of deceased wizards and witches",
+            "Transparent",
+            "Limited physical influence"
+        ],
+        "classification": "Spirit",
         "sub_species": null
     }
 ]
