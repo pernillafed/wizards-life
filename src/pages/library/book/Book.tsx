@@ -92,7 +92,7 @@ const Book = ({ isSidebarVisible }: SidebarVisibilityProps) => {
                         bookContent={queryBookContent}
                     />
                     <Pagination
-                        page={page}
+                        page={page ? Number(page) : undefined}
                         totalPages={book?.totalPages}
                         setPage={setPage}
                         isLoading={isLoading}

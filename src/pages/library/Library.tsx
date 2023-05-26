@@ -1,6 +1,6 @@
 /** @jsxImportSource theme-ui */
 
-import { BookGridStyles, BookTitleStyles, BookStyles } from "./Library.styles";
+import { LibraryGridStyles, BookTitleStyles, BookStyles } from "./Library.styles";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faBook } from "@fortawesome/free-solid-svg-icons";
 import { useNavigate } from "react-router-dom";
@@ -15,10 +15,10 @@ const Library = ({ isSidebarVisible }: SidebarVisibilityProps) => {
     return (
         <LoggedInPageWrapper isSidebarVisible={isSidebarVisible}>
             <Heading text="Library" type="h1" />
-            <div sx={BookGridStyles}>
+            <div sx={LibraryGridStyles}>
                 {libraryBooks.map(book => (
                     <div key={book.id} sx={BookStyles} onClick={() => navigate(`/library/book/${book.id}`)}>
-                        <FontAwesomeIcon icon={faBook} size="5x" />
+                        <FontAwesomeIcon icon={faBook} size="3x" />
                         <div sx={BookTitleStyles}>{book.title}</div>
                     </div>
                 ))}

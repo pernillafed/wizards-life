@@ -1,8 +1,8 @@
 /** @jsxImportSource theme-ui */
 
 import React from "react";
-import { LoggedInPageWrapperStyles } from "../../../Global.styles";
 import { SidebarVisibilityProps } from "../../sidebar/Sidebar";
+import { LoggedInPageWrapperStyles } from "./LoggedInPageWrapper.styles";
 
 export type LoggedInPageWrapperProps = {
     children: React.ReactNode;

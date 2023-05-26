@@ -1,8 +1,8 @@
 /** @jsxImportSource theme-ui */
 
 import { SidebarVisibilityProps } from "../../../components/sidebar/Sidebar";
-import { LoggedInPageWrapperStyles } from "../../../Global.styles";
 import { 
+    HomePageWrapperStyles,
     NewsHeadingStyles,
     GridStyles,
     FirstHeadingStyles,
@@ -37,7 +37,7 @@ const Home = ({ isSidebarVisible }: SidebarVisibilityProps) => {
     }
 
     return (
-        <div sx={isSidebarVisible ? LoggedInPageWrapperStyles : { ...LoggedInPageWrapperStyles, top: ["8vh", "10vh", "10vh"] }}>
+        <div sx={isSidebarVisible ? HomePageWrapperStyles : { ...HomePageWrapperStyles, top: ["8vh", "10vh", "10vh"] }}>
             <div sx={GridStyles}>
                 {hogwartsNews.map(news => (
                     <div key={news.id} sx ={{ ...NewsHeadingStyles, ...getIdSpecificStyling(news.id) }}>{news.headline}</div>

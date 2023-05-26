@@ -7,7 +7,7 @@ import { SearchParamPageType } from "../../../pages/library/book/Book";
 import { PageButtonStyles, PageNumberStyles } from "./Pagination.styles";
 
 export type PaginationProps = {
-    page: SearchParamPageType;
+    page: number | undefined;
     totalPages: number | undefined;
     setPage: React.Dispatch<React.SetStateAction<SearchParamPageType>>;
     isLoading: boolean;

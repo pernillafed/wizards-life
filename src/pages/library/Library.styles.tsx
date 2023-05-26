@@ -1,30 +1,26 @@
 import { ThemeUIStyleObject } from "theme-ui";
 
-export const BookGridStyles: ThemeUIStyleObject = {
+export const LibraryGridStyles: ThemeUIStyleObject = {
     width: "100%",
-    maxWidth: "900px",
-    margin: ["1.5rem auto 0 auto", "3rem auto 0 auto", "3rem auto 0 auto"],
-    display: "grid",
-    gridTemplateColumns: ["1fr", "repeat(2, 1fr)", "repeat(2, 1fr)"],
-    rowGap: ["1.5rem", "2.5rem", "2.5rem"],
-    columnGap: "1rem",
-    color: "primaryText",
-    textAlign: "center"
+    maxWidth: "450px",
+    margin: "0 auto",
+    display: "flex",
+    flexDirection: "column",
+    color: "primaryText"
 }
 
 export const BookTitleStyles: ThemeUIStyleObject = {
     fontFamily: "heading",
     fontSize: "1.5rem",
-    marginTop: "1rem"
+    marginLeft: "1.5rem"
 }
 
 export const BookStyles: ThemeUIStyleObject = {
-    height: "fit-content",
-    borderRadius: "2rem",
-    padding: "1.25rem 1rem 1rem 1rem",
-    transition: "box-shadow 0.2s",
+    display: "flex",
+    alignItems: "center",
+    marginBottom: ["1.5rem", "2.5rem", "2.5rem"],
     ":hover": {
         cursor: "pointer",
-        boxShadow: "0 0 1rem #00000099"
+        textDecoration: "underline dotted #fff3c2 1px"
     }
 }
