@@ -2,7 +2,6 @@
 
 import { useState, useEffect, ReactNode } from "react";
 import { Link, useParams } from "react-router-dom";
-import { LoggedInPageWrapperStyles } from "../../../Global.styles";
 import libraryBooks from "../../../assets/data/libraryBooks.json";
 import wizards from "../../../assets/data/wizards.json";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
@@ -12,8 +11,9 @@ import { SidebarVisibilityProps } from "../../../components/sidebar/Sidebar";
 import { useQuery } from "react-query";
 import { getHouses, getSpecies, getWands } from "../../../services/TheBoyWhoLivedAPI";
 import { useUrlSearchParams } from "use-url-search-params";
-import Pagination from "../../../components/pagination/Pagination";
+import Pagination from "../../../components/shared/pagination/Pagination";
 import BookContent from "./book-content/BookContent";
+import LoggedInPageWrapper from "../../../components/shared/logged-in-page-wrapper/LoggedInPageWrapper";
 
 export type BookType = {
     id: string;
@@ -74,11 +74,7 @@ const Book = ({ isSidebarVisible }: SidebarVisibilityProps) => {
     }, [bookId]);
 
     return (
-        <div sx={isSidebarVisible ? { 
-            ...LoggedInPageWrapperStyles, flexDirection: "column", alignItems: "center"
-        } : {
-            ...LoggedInPageWrapperStyles, flexDirection: "column", alignItems: "center", top: ["8vh", "10vh", "10vh"]
-        }}>
+        <LoggedInPageWrapper isSidebarVisible={isSidebarVisible}>
             <div sx={{ width: "100%" }}>
                 <Link to="/library" sx={BackLinkStyles}>
                     <FontAwesomeIcon icon={faAngleLeft} sx={{ marginRight: "0.5rem" }} />
@@ -111,7 +107,7 @@ const Book = ({ isSidebarVisible }: SidebarVisibilityProps) => {
                     bookContent={characterBookContent}
                 />
             )}
-        </div>
+        </LoggedInPageWrapper>
     );
 }
  

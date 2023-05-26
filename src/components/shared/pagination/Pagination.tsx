@@ -2,8 +2,8 @@
 
 import { faAngleLeft, faAngleRight } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { ButtonStyles } from "../../Global.styles";
-import { SearchParamPageType } from "../../pages/library/book/Book";
+import { ButtonStyles } from "../../../Global.styles";
+import { SearchParamPageType } from "../../../pages/library/book/Book";
 import { PageButtonStyles, PageNumberStyles } from "./Pagination.styles";
 
 export type PaginationProps = {
