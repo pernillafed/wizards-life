@@ -12,13 +12,6 @@ export const BookGridStyles: ThemeUIStyleObject = {
     textAlign: "center"
 }
 
-export const LibraryHeadingStyles: ThemeUIStyleObject = {
-    color: "primaryText",
-    fontFamily: "heading",
-    fontSize: "primaryHeading",
-    marginTop: ["1rem", "0", "0"]
-}
-
 export const BookTitleStyles: ThemeUIStyleObject = {
     fontFamily: "heading",
     fontSize: "1.5rem",
