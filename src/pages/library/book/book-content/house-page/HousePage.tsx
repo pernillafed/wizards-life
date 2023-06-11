@@ -1,14 +1,13 @@
 /** @jsxImportSource theme-ui */
 
-import { faAngleLeft } from "@fortawesome/free-solid-svg-icons";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { useQuery } from "react-query";
-import { Link, useParams } from "react-router-dom";
+import { useParams } from "react-router-dom";
 import { SidebarVisibilityProps } from "../../../../../components/sidebar/Sidebar";
 import { getHouse } from "../../../../../services/TheBoyWhoLivedAPI";
-import { BackLinkStyles, BookPageStyles, BookHeadingStyles } from "../../Book.styles";
+import { BookPageStyles, BookHeadingStyles } from "../../Book.styles";
 import { HouseDescriptionListStyles } from "./HousePage.styles";
 import LoggedInPageWrapper from "../../../../../components/shared/logged-in-page-wrapper/LoggedInPageWrapper";
+import BackLink from "../../../../../components/shared/back-link/BackLink";
 
 export type HouseHeadType = {
     id: number;
@@ -22,12 +21,7 @@ const HousePage = ({ isSidebarVisible }: SidebarVisibilityProps) => {
 
     return ( 
         <LoggedInPageWrapper isSidebarVisible={isSidebarVisible}>
-            <div sx={{ width: "100%" }}>
-                <Link to={`/library/book/${bookId}`} sx={BackLinkStyles}>
-                    <FontAwesomeIcon icon={faAngleLeft} sx={{ marginRight: "0.5rem" }} />
-                    Back to index
-                </Link>
-            </div>
+            <BackLink path={`/library/book/${bookId}`} text="Back to index" />
             {isLoading && <div>Loading...</div>}
             {isError && <div>Error!</div>}
             {!isLoading && !isError && data && (

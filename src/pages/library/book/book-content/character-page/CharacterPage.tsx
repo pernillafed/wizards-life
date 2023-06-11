@@ -1,14 +1,13 @@
 /** @jsxImportSource theme-ui */
 
-import { faAngleLeft } from "@fortawesome/free-solid-svg-icons";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { useState, useEffect } from "react";
-import { Link, useParams } from "react-router-dom";
+import { useParams } from "react-router-dom";
 import { SidebarVisibilityProps } from "../../../../../components/sidebar/Sidebar";
-import { BackLinkStyles, BookPageStyles, BookHeadingStyles } from "../../Book.styles";
+import { BookPageStyles, BookHeadingStyles } from "../../Book.styles";
 import { CharacterInfoList, CharacterImageStyles, CharacterGridStyles, CharacterDescriptionWrapperStyles, CharacterTitlesStyles } from "./CharacterPage.styles";
 import wizards from "../../../../../assets/data/wizards.json";
 import LoggedInPageWrapper from "../../../../../components/shared/logged-in-page-wrapper/LoggedInPageWrapper";
+import BackLink from "../../../../../components/shared/back-link/BackLink";
 
 export type CharacterType = {
     id: number;
@@ -47,12 +46,7 @@ const CharacterPage = ({ isSidebarVisible }: SidebarVisibilityProps) => {
 
     return (
         <LoggedInPageWrapper isSidebarVisible={isSidebarVisible}>
-            <div sx={{ width: "100%" }}>
-                <Link to={`/library/book/${bookId}`} sx={BackLinkStyles}>
-                    <FontAwesomeIcon icon={faAngleLeft} sx={{ marginRight: "0.5rem" }} />
-                    Back to index
-                </Link>
-            </div>
+            <BackLink path={`/library/book/${bookId}`} text="Back to index" />
             {data && (
                 <div sx={{...BookPageStyles, padding: "3rem 2.5rem 4rem 2.5rem"}}>
                     <div sx={data.nickname ? {

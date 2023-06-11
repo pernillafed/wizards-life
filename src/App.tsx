@@ -9,6 +9,7 @@ import CharacterPage from "./pages/library/book/book-content/character-page/Char
 import HousePage from "./pages/library/book/book-content/house-page/HousePage"
 import Library from "./pages/library/Library"
 import Start from "./pages/start/Start"
+import CreaturePage from "./pages/library/book/book-content/creature-page/CreaturePage"
 
 const App = () => {
     const { currentUser } = useAuthContext();
@@ -34,6 +35,11 @@ const App = () => {
                 <Route path="/library/book/:bookId/character/:characterId" element={
                     <RequireAuth redirectTo="/">
                         <CharacterPage isSidebarVisible={isSidebarVisible} />
+                    </RequireAuth>
+                } />
+                <Route path="/library/book/:bookId/species/:speciesId" element={
+                    <RequireAuth redirectTo="/">
+                        <CreaturePage isSidebarVisible={isSidebarVisible} />
                     </RequireAuth>
                 } />
                 <Route path="/library/book/:bookId/house/:houseId" element={
