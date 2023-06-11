@@ -1559,7 +1559,7 @@
         ]
     },
     {
-        "id": "species-28",
+        "id": "species-27",
         "name": "Puffskein",
         "image_url": "https://i.imgur.com/36I6YR9.png",
         "native": null,
@@ -1640,7 +1640,7 @@
         ]
     },
     {
-        "id": "species-29",
+        "id": "species-28",
         "name": "Amphibian",
         "image_url": "https://render.fineartamerica.com/images/images-profile-flow/400/images/artworkimages/mediumlarge/2/blue-jean-frog-charlsie-kelly.jpg",
         "native": null,
@@ -1716,7 +1716,7 @@
         ]
     },
     {
-        "id": "species-30",
+        "id": "species-29",
         "name": "Giant Squid",
         "image_url": "https://images.fineartamerica.com/images/artworkimages/mediumlarge/2/giant-squid-eldar-zakirov.jpg",
         "native": "Scotland",
@@ -1736,7 +1736,7 @@
         "sub_species": null
     },
     {
-        "id": "species-31",
+        "id": "species-30",
         "name": "Lethifold",
         "image_url": "https://i.pinimg.com/originals/8a/e6/f6/8ae6f61b68216d9a945e1bbcf0c6c8ed.jpg",
         "native": "The tropics",
@@ -1755,7 +1755,7 @@
         "sub_species": null
     },
     {
-        "id": "species-32",
+        "id": "species-31",
         "name": "Imp",
         "image_url": "https://www.hp-lexicon.org/wp-content/uploads/2017/03/imp-and-glumbumble.jpg",
         "native": "Great Britain and Ireland",
@@ -1774,7 +1774,7 @@
         "sub_species": null
     },
     {
-        "id": "species-33",
+        "id": "species-32",
         "name": "Pukwudgie",
         "image_url": "https://static.wikia.nocookie.net/harrypotter/images/0/04/William_the_Pukwudgie.png/revision/latest?cb=20170927204129",
         "native": "United States of America",
@@ -1795,7 +1795,7 @@
         "sub_species": null
     },
     {
-        "id": "species-34",
+        "id": "species-33",
         "name": "Hidebehind",
         "image_url": "https://static.wikia.nocookie.net/the-demonic-paradise/images/9/92/Hidebehind.jpg/revision/latest/scale-to-width-down/407?cb=20201208151045",
         "native": "North America",
@@ -1818,7 +1818,7 @@
         "sub_species": null
     },
     {
-        "id": "species-35",
+        "id": "species-34",
         "name": "Ghost",
         "image_url": "https://static.wikia.nocookie.net/harrypotter/images/4/45/Ghost-pottermore.png/revision/latest?cb=20210903044914",
         "native": "Worldwide",
