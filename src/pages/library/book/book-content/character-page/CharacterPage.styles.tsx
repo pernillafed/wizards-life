@@ -26,10 +26,3 @@ export const CharacterDescriptionWrapperStyles: ThemeUIStyleObject = {
     gap: "1rem",
     margin: "1.75rem 2rem 0 2rem"
 }
-
-export const CharacterTitlesStyles: ThemeUIStyleObject = {
-    color: "secondaryText",
-    fontSize: ["secondaryHeadingMobile", "secondaryHeadingMobile", "secondaryHeading"],
-    fontFamily: "heading",
-    textAlign: "center"
-}

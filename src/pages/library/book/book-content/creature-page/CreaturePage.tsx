@@ -7,6 +7,7 @@ import { useEffect, useState } from "react";
 import species from "../../../../../assets/data/species.json";
 import { BookPageStyles } from "../../Book.styles";
 import BackLink from "../../../../../components/shared/back-link/BackLink";
+import Heading from "../../../../../components/shared/heading/Heading";
 
 export type CreatureType = {
     id: string;
@@ -38,7 +39,31 @@ const CreaturePage = ({ isSidebarVisible }: SidebarVisibilityProps) => {
         <LoggedInPageWrapper isSidebarVisible={isSidebarVisible}>
             <BackLink path={`/library/book/${bookId}`} text="Back to index" />
             {data && (
-                <div sx={BookPageStyles}>{data.name}</div>
+                <div sx={BookPageStyles}>
+                    <Heading text={data.name} type="h1" color="secondaryText" isBookPageTitle={true} />
+                    <div>
+                        <img src={data.image_url} alt={data.name} />
+                        <ul>
+                            <li>Native: {data.native ? data.native : "Unknown"}</li>
+                            {data.hair && <li>Hair: {data.hair}</li>}
+                            {data.feathers && <li>Feathers: {data.feathers}</li>}
+                            {data.eyes && <li>Eyes: {data.eyes}</li>}
+                            {data.skin && <li>Skin: {data.skin}</li>}
+                            {data.height && <li>Height: {data.height}</li>}
+                            {data.length && <li>Length: {data.length}</li>}
+                            <li>Mortality: {data.mortality ? data.mortality : "Unknown"}</li>
+                            {data.distinctions &&
+                                <li>Distinctions: 
+                                    <ul>
+                                        {data.distinctions.map((distinction, i) => <li key={i}>{distinction}</li>)}
+                                    </ul>
+                                </li>
+                            }
+                            {data.classification && <li>Magical classification: {data.classification}</li>}
+                        </ul>
+                    </div>
+                    {/* TODO: ADD SUB SPECIES */}
+                </div>
             )}
         </LoggedInPageWrapper>
     );

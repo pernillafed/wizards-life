@@ -4,7 +4,7 @@ import { useState, useEffect } from "react";
 import { useParams } from "react-router-dom";
 import { SidebarVisibilityProps } from "../../../../../components/sidebar/Sidebar";
 import { BookPageStyles } from "../../Book.styles";
-import { CharacterInfoList, CharacterImageStyles, CharacterGridStyles, CharacterDescriptionWrapperStyles, CharacterTitlesStyles } from "./CharacterPage.styles";
+import { CharacterInfoList, CharacterImageStyles, CharacterGridStyles, CharacterDescriptionWrapperStyles } from "./CharacterPage.styles";
 import wizards from "../../../../../assets/data/wizards.json";
 import LoggedInPageWrapper from "../../../../../components/shared/logged-in-page-wrapper/LoggedInPageWrapper";
 import BackLink from "../../../../../components/shared/back-link/BackLink";
