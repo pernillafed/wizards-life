@@ -1,22 +1,18 @@
 [
     {
         "id": "1",
-        "title": "Historical Wizards",
-        "totalPages": 33
+        "title": "Historical Wizards"
     },
     {
         "id": "2",
-        "title": "Hogwarts Houses",
-        "totalPages": 1
+        "title": "Hogwarts Houses"
     },
     {
         "id": "3",
-        "title": "Creatures of the Wizarding World",
-        "totalPages": 6
+        "title": "Creatures of the Wizarding World"
     },
     {
         "id": "4",
-        "title": "Magical Spells",
-        "totalPages": 5
+        "title": "Magical Spells"
     }
 ]
