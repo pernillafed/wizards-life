@@ -3,11 +3,12 @@
 import { useState, useEffect } from "react";
 import { useParams } from "react-router-dom";
 import { SidebarVisibilityProps } from "../../../../../components/sidebar/Sidebar";
-import { BookPageStyles, BookHeadingStyles } from "../../Book.styles";
+import { BookPageStyles } from "../../Book.styles";
 import { CharacterInfoList, CharacterImageStyles, CharacterGridStyles, CharacterDescriptionWrapperStyles, CharacterTitlesStyles } from "./CharacterPage.styles";
 import wizards from "../../../../../assets/data/wizards.json";
 import LoggedInPageWrapper from "../../../../../components/shared/logged-in-page-wrapper/LoggedInPageWrapper";
 import BackLink from "../../../../../components/shared/back-link/BackLink";
+import Heading from "../../../../../components/shared/heading/Heading";
 
 export type CharacterType = {
     id: number;
@@ -49,16 +50,14 @@ const CharacterPage = ({ isSidebarVisible }: SidebarVisibilityProps) => {
             <BackLink path={`/library/book/${bookId}`} text="Back to index" />
             {data && (
                 <div sx={{...BookPageStyles, padding: "3rem 2.5rem 4rem 2.5rem"}}>
-                    <div sx={data.nickname ? {
-                        ...BookHeadingStyles, marginBottom: "0.5rem"
-                    } : BookHeadingStyles}>{data.name}</div>
-                    {data.nickname && <div sx={{
-                        ...BookHeadingStyles,
-                        fontSize: [
-                            "secondaryHeadingMobile",
-                            "secondaryHeadingMobile",
-                            "secondaryHeading"
-                        ]}}>"{data.nickname}"</div>}
+                    <Heading
+                        text={data.name}
+                        type="h1"
+                        color="secondaryText"
+                        isBookPageTitle={true}
+                        hasSubHeading={Boolean(data.nickname)}
+                    />
+                    {data.nickname && <Heading text={`"${data.nickname}"`} type="h2" color="secondaryText" isBookPageTitle={true} />}
                     <div sx={CharacterGridStyles}>
                         <ul sx={CharacterInfoList}>
                             <li sx={{ marginBottom: "0.25rem" }}><b>Gender:</b> {data.gender ? data.gender : "Unknown"}</li>
@@ -74,7 +73,7 @@ const CharacterPage = ({ isSidebarVisible }: SidebarVisibilityProps) => {
                     </div>
                     <div sx={CharacterDescriptionWrapperStyles}>
                         <div>
-                            <div sx={CharacterTitlesStyles}>Physical description</div>
+                            <Heading text="Physical description" type="h2" color="secondaryText" />
                             <ul sx={{ listStyleType: "none", textAlign: "center", fontFamily: "paragraph", fontSize: "1.1rem" }}>
                                 <li><b>Hair color:</b> {data.hair ? data.hair : "Unknown"}</li>
                                 <li><b>Eye color:</b> {data.eyes ? data.eyes : "Unknown"}</li>
@@ -83,7 +82,7 @@ const CharacterPage = ({ isSidebarVisible }: SidebarVisibilityProps) => {
                             </ul>
                         </div>
                         <div>
-                            <div sx={CharacterTitlesStyles}>Magical properties</div>
+                            <Heading text="Magical properties" type="h2" color="secondaryText" />
                             <ul sx={{ listStyleType: "none", textAlign: "center", fontFamily: "paragraph", fontSize: "1.1rem" }}>
                                 <li><b>Wand:</b>&nbsp;
                                     {data.wand.length ? data.wand.length : "Unknown length"},&nbsp;

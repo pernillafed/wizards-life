@@ -1,10 +1,15 @@
 import { ThemeUIStyleObject } from "theme-ui";
 
-export const HeadingStyles: ThemeUIStyleObject = {
-    color: "primaryText",
+export const PrimaryHeadingStyles: ThemeUIStyleObject = {
     fontFamily: "heading",
-    fontSize: "primaryHeading",
-    marginTop: ["1rem", "0", "0"],
-    marginBottom: ["2rem", "3rem", "3rem"],
-    fontWeight: "normal"
+    fontSize: ["primaryHeadingMobile", "primaryHeadingMobile", "primaryHeading"],
+    fontWeight: "normal",
+    textAlign: "center"
+}
+
+export const SecondaryHeadingStyles: ThemeUIStyleObject = {
+    fontFamily: "heading",
+    fontSize: ["secondaryHeadingMobile", "secondaryHeadingMobile", "secondaryHeading"],
+    fontWeight: "normal",
+    textAlign: "center"
 }

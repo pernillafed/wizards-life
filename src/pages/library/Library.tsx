@@ -14,7 +14,7 @@ const Library = ({ isSidebarVisible }: SidebarVisibilityProps) => {
 
     return (
         <LoggedInPageWrapper isSidebarVisible={isSidebarVisible}>
-            <Heading text="Library" type="h1" />
+            <Heading text="Library" type="h1" color="primaryText" />
             <div sx={LibraryGridStyles}>
                 {libraryBooks.map(book => (
                     <div key={book.id} sx={BookStyles} onClick={() => navigate(`/library/book/${book.id}`)}>

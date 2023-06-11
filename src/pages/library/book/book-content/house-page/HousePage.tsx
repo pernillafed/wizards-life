@@ -4,10 +4,11 @@ import { useQuery } from "react-query";
 import { useParams } from "react-router-dom";
 import { SidebarVisibilityProps } from "../../../../../components/sidebar/Sidebar";
 import { getHouse } from "../../../../../services/TheBoyWhoLivedAPI";
-import { BookPageStyles, BookHeadingStyles } from "../../Book.styles";
+import { BookPageStyles } from "../../Book.styles";
 import { HouseDescriptionListStyles } from "./HousePage.styles";
 import LoggedInPageWrapper from "../../../../../components/shared/logged-in-page-wrapper/LoggedInPageWrapper";
 import BackLink from "../../../../../components/shared/back-link/BackLink";
+import Heading from "../../../../../components/shared/heading/Heading";
 
 export type HouseHeadType = {
     id: number;
@@ -26,7 +27,7 @@ const HousePage = ({ isSidebarVisible }: SidebarVisibilityProps) => {
             {isError && <div>Error!</div>}
             {!isLoading && !isError && data && (
                 <div sx={{ ...BookPageStyles, padding: "3rem 3rem 4rem 3rem" }}>
-                    <div sx={BookHeadingStyles}>{data.name}</div>
+                    <Heading text={data.name} type="h1" color="secondaryText" isBookPageTitle={true} />
                     <div sx={{ display: "grid", gridTemplateColumns: "4fr 7fr", gap: "2rem", alignItems: "center" }}>
                         <img src={data.image_url} alt={data.name} sx={{ width: "100%", justifySelf: "end" }} />
                         <ul sx={HouseDescriptionListStyles}>

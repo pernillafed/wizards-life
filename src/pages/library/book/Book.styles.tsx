@@ -1,13 +1,5 @@
 import { ThemeUIStyleObject } from "theme-ui";
 
-export const BookHeadingStyles: ThemeUIStyleObject = {
-    color: "secondaryText",
-    fontFamily: "heading",
-    fontSize: ["primaryHeadingMobile", "primaryHeadingMobile", "primaryHeading"],
-    textAlign: "center",
-    marginBottom: "1.75rem"
-}
-
 export const BackLinkStyles: ThemeUIStyleObject = {
     textDecoration: "none",
     color: "primaryText",
