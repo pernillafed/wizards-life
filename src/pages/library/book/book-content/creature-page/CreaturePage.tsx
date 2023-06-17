@@ -42,7 +42,7 @@ const CreaturePage = ({ isSidebarVisible }: SidebarVisibilityProps) => {
                 <div sx={BookPageStyles}>
                     <Heading text={data.name} type="h1" color="secondaryText" isBookPageTitle={true} />
                     <div>
-                        <img src={data.image_url} alt={data.name} />
+                        <img src={data.image_url} alt={data.name} sx={{ width: "30%" }} />
                         <ul>
                             <li>Native: {data.native ? data.native : "Unknown"}</li>
                             {data.hair && <li>Hair: {data.hair}</li>}

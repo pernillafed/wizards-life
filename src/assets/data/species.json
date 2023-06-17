@@ -141,7 +141,7 @@
     {
         "id": "species-2",
         "name": "Non-Human Spirituous Apparition",
-        "image_url": "https://static.wikia.nocookie.net/harrypotter/images/2/22/Dementors_Quidditch.jpg/revision/latest/scale-to-width-down/1000?cb=20170730222834",
+        "image_url": "https://monsterlegacy.files.wordpress.com/2017/03/dementorconc.jpg",
         "native": null,
         "hair": null,
         "feathers": null,
@@ -407,7 +407,7 @@
     {
         "id": "species-5",
         "name": "Grindylow",
-        "image_url": "https://static.wikia.nocookie.net/harrypotter/images/0/0e/Grindylow_FBCFTWW.png/revision/latest?cb=20161129180344",
+        "image_url": "https://burrow.hogwartsishere.com/media/hem_photos/Grindylow.jpg",
         "native": "Great Britain and Ireland",
         "hair": null,
         "feathers": null,
@@ -428,7 +428,7 @@
     {
         "id": "species-6",
         "name": "Hinkypunk",
-        "image_url": "https://static.wikia.nocookie.net/harrypotter/images/e/e2/Hinkypunk_PM.png/revision/latest/scale-to-width-down/1000?cb=20161224192145",
+        "image_url": "https://pbs.twimg.com/media/Ey3etyVWUAIvQB9.jpg",
         "native": "Scotland",
         "hair": null,
         "feathers": null,
@@ -449,7 +449,7 @@
     {
         "id": "species-7",
         "name": "Veela",
-        "image_url": "https://static.wikia.nocookie.net/harrypotter/images/5/51/Veela2014QWC.png/revision/latest?cb=20180318021921",
+        "image_url": "https://faefolk.weebly.com/uploads/7/8/7/5/7875619/1310068761.jpg",
         "native": "Bulgaria",
         "hair": "White-gold",
         "feathers": null,
@@ -468,25 +468,6 @@
     },
     {
         "id": "species-8",
-        "name": "Leprechaun",
-        "image_url": "https://static.wikia.nocookie.net/harrypotter/images/3/3f/Leprechaun.png/revision/latest?cb=20200722153315",
-        "native": "Ireland",
-        "hair": null,
-        "feathers": null,
-        "eyes": null,
-        "skin": "Green",
-        "height": "6 inches",
-        "length": null,
-        "mortality": "Mortal",
-        "distinctions": [
-            "Mischievous nature",
-            "Herbivorous"
-        ],
-        "classification": "Beast",
-        "sub_species": null
-    },
-    {
-        "id": "species-9",
         "name": "Crustacean",
         "image_url": "https://i.pinimg.com/736x/96/7b/d8/967bd891ed557ed08b1661ec4ca8d7ef--the-crab-animal-drawings.jpg",
         "native": null,
@@ -544,9 +525,9 @@
         ]
     },
     {
-        "id": "species-10",
+        "id": "species-9",
         "name": "Niffler",
-        "image_url": "https://static.wikia.nocookie.net/harrypotter/images/e/e9/Niffler_FBCFTWW.png/revision/latest?cb=20161129180529",
+        "image_url": "https://mir-s3-cdn-cf.behance.net/projects/404/9ced36153791447.Y3JvcCwxOTk5LDE1NjQsMCwyMTc.jpg",
         "native": "Great Britain",
         "hair": "Black",
         "feathers": null,
@@ -566,7 +547,7 @@
         "sub_species": null
     },
     {
-        "id": "species-11",
+        "id": "species-10",
         "name": "Hybrid",
         "image_url": "https://images.fineartamerica.com/images/artworkimages/mediumlarge/3/griffin-daniel-eskridge.jpg",
         "native": null,
@@ -691,9 +672,9 @@
         ]
     },
     {
-        "id": "species-12",
+        "id": "species-11",
         "name": "Spider",
-        "image_url": "https://static.wikia.nocookie.net/harrypotter/images/e/e8/Spiders.JPG/revision/latest/scale-to-width-down/1000?cb=20090814104207",
+        "image_url": "https://t4.ftcdn.net/jpg/05/68/92/91/360_F_568929170_y5EB0PrsvPZmedDRyv399M5MbcXaosso.jpg",
         "native": "Worldwide",
         "hair": "Various colors",
         "feathers": null,
@@ -753,9 +734,9 @@
         ]
     },
     {
-        "id": "species-13",
+        "id": "species-12",
         "name": "Sprite",
-        "image_url": "https://static.wikia.nocookie.net/powerlisting/images/f/f6/Sprite.jpeg/revision/latest?cb=20190522043843",
+        "image_url": "https://i.pinimg.com/originals/1f/f8/bd/1ff8bd061545d4e701c594bc6979959d.jpg",
         "native": null,
         "hair": null,
         "feathers": null,
@@ -831,9 +812,9 @@
         ]
     },
     {
-        "id": "species-14",
+        "id": "species-13",
         "name": "Goblin",
-        "image_url": "https://static.wikia.nocookie.net/harrypotter/images/4/4b/Goblin_Pottermore.png/revision/latest?cb=20120511132236",
+        "image_url": "https://www.hp-lexicon.org/wp-content/uploads/2017/03/goblin.jpg",
         "native": "Europe and North America",
         "hair": "White",
         "feathers": null,
@@ -852,7 +833,7 @@
         "sub_species": null
     },
     {
-        "id": "species-15",
+        "id": "species-14",
         "name": "Ghoul",
         "image_url": "https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/03e49207-b27e-490f-811e-09e5b8db14bc/dch8gls-a09f9cae-ca9b-4536-995a-2714a1518acd.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7InBhdGgiOiJcL2ZcLzAzZTQ5MjA3LWIyN2UtNDkwZi04MTFlLTA5ZTViOGRiMTRiY1wvZGNoOGdscy1hMDlmOWNhZS1jYTliLTQ1MzYtOTk1YS0yNzE0YTE1MThhY2QuanBnIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmZpbGUuZG93bmxvYWQiXX0.9204z7-T9Q4Z_fO-xt65jtgYRh0LosAt_kEuwN74o08",
         "native": null,
@@ -875,9 +856,9 @@
         "sub_species": null
     },
     {
-        "id": "species-16",
+        "id": "species-15",
         "name": "Inferius",
-        "image_url": "https://static.wikia.nocookie.net/harrypotter/images/9/9b/Inferius_%28Concept_Artwork%29.jpg/revision/latest/scale-to-width-down/1000?cb=20170113002319",
+        "image_url": "https://pm1.aminoapps.com/7044/59df21e5a60620a133184ac1c3543acb127437f9r1-610-396v2_uhq.jpg",
         "native": "Worldwide",
         "hair": "Various colors",
         "feathers": null,
@@ -894,9 +875,9 @@
         "sub_species": null
     },
     {
-        "id": "species-17",
+        "id": "species-16",
         "name": "Human",
-        "image_url": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgQY73SdPqLUQt536mc-es5-wU-oIDvPdd8yVDHlQZohOkv7zzPQKB6XH7y2yNwUqsSn5GwoqRkjjtHmpf6Tk9vx9KCfZxuyNo8mr9tkVq0S8T43GHhYdm03jPmMMne3OKQyxN6DYU4qCur3pFheiBZ6N-8pookCyz64RekpIXI3gouNeWT3PVvLpDP/s1200/Homo_sapiens%20bok%20recenssion.webp",
+        "image_url": "https://images.fineartamerica.com/images-medium-large-5/homo-sapiens-cutting-early-stone-tools-publiphoto.jpg",
         "native": "Worldwide",
         "hair": "Various colors",
         "feathers": null,
@@ -977,9 +958,9 @@
         ]
     },
     {
-        "id": "species-18",
+        "id": "species-17",
         "name": "Bowtruckle",
-        "image_url": "https://static.wikia.nocookie.net/harrypotter/images/2/22/Bowtruckle.png/revision/latest?cb=20161129175549",
+        "image_url": "https://i.etsystatic.com/15127242/r/il/125c38/2550947528/il_fullxfull.2550947528_384z.jpg",
         "native": "Western England, Southern Germany and Scandinavia",
         "hair": null,
         "feathers": null,
@@ -997,7 +978,7 @@
         "sub_species": null
     },
     {
-        "id": "species-19",
+        "id": "species-18",
         "name": "Feline",
         "image_url": "https://cdnb.artstation.com/p/assets/images/images/019/009/967/large/vincent-chu-tiger-s.jpg?1561613109",
         "native": null,
@@ -1141,7 +1122,7 @@
         ]
     },
     {
-        "id": "species-20",
+        "id": "species-19",
         "name": "Bird",
         "image_url": "http://cdn.shopify.com/s/files/1/1208/8894/products/fuertes_WhiteGyrfalcon_1024x1024.jpg?v=1624383688",
         "native": "Worldwide",
@@ -1342,7 +1323,7 @@
         ]
     },
     {
-        "id": "species-21",
+        "id": "species-20",
         "name": "Erkling",
         "image_url": "https://www.hp-lexicon.org/wp-content/uploads/2017/03/erkling.jpg",
         "native": "Germany",
@@ -1362,9 +1343,9 @@
         "sub_species": null
     },
     {
-        "id": "species-22",
+        "id": "species-21",
         "name": "Mountain troll",
-        "image_url": "https://static.wikia.nocookie.net/harrypotter/images/b/ba/Mountain_Troll.png/revision/latest?cb=20161129174923",
+        "image_url": "https://cdna.artstation.com/p/assets/images/images/028/279/060/large/matthis-schroeder-bergtroll.jpg?1594024923",
         "native": "Mountainous countryside",
         "hair": null,
         "feathers": null,
@@ -1382,9 +1363,9 @@
         "sub_species": null
     },
     {
-        "id": "species-23",
+        "id": "species-22",
         "name": "House-elf",
-        "image_url": "https://static.wikia.nocookie.net/harrypotter/images/c/cf/Dobby_Full_CoS.png/revision/latest/scale-to-width-down/1000?cb=20161215055343",
+        "image_url": "https://www.kalaskungen.com/pub_images/original/HEO756-4.jpg",
         "native": null,
         "hair": "Grey",
         "feathers": null,
@@ -1403,9 +1384,9 @@
         "sub_species": null
     },
     {
-        "id": "species-24",
+        "id": "species-23",
         "name": "Snake",
-        "image_url": "https://static.wikia.nocookie.net/harrypotter/images/7/70/Nagini_PM.png/revision/latest/scale-to-width-down/1000?cb=20161124073206",
+        "image_url": "https://m.media-amazon.com/images/I/518N5OSrfNL._AC_UF894,1000_QL80_.jpg",
         "native": "Worldwide",
         "hair": null,
         "feathers": null,
@@ -1482,9 +1463,9 @@
         ]
     },
     {
-        "id": "species-25",
+        "id": "species-24",
         "name": "Giant",
-        "image_url": "https://static.wikia.nocookie.net/harrypotter/images/4/4f/PottermoreGiantClutchingDeerConceptArt_-_cropped.png/revision/latest?cb=20151216132944",
+        "image_url": "https://www.potterpedia.it/imagewatermark/immagini/2-p1aucglul81kms86a151btih2696.jpg",
         "native": "Europe and North America",
         "hair": "Various colors",
         "feathers": null,
@@ -1501,9 +1482,9 @@
         "sub_species": null
     },
     {
-        "id": "species-26",
+        "id": "species-25",
         "name": "Merpeople",
-        "image_url": "https://static.wikia.nocookie.net/harrypotter/images/b/b6/Merpeople_Pottermore.png/revision/latest?cb=20120511133103",
+        "image_url": "https://i.pinimg.com/474x/12/c6/8f/12c68f227eb1598cc6a441fd1eec8015--magical-creatures-sea-creatures.jpg",
         "native": "Greece",
         "hair": "Various colors",
         "feathers": null,
@@ -1559,9 +1540,9 @@
         ]
     },
     {
-        "id": "species-27",
+        "id": "species-26",
         "name": "Puffskein",
-        "image_url": "https://i.imgur.com/36I6YR9.png",
+        "image_url": "https://pm1.aminoapps.com/6799/c31825715cc1c6df3c0de2049cca1038b3741fc1v2_hq.jpg",
         "native": null,
         "hair": "Custard (Yellow)",
         "feathers": null,
@@ -1640,7 +1621,7 @@
         ]
     },
     {
-        "id": "species-28",
+        "id": "species-27",
         "name": "Amphibian",
         "image_url": "https://render.fineartamerica.com/images/images-profile-flow/400/images/artworkimages/mediumlarge/2/blue-jean-frog-charlsie-kelly.jpg",
         "native": null,
@@ -1716,7 +1697,7 @@
         ]
     },
     {
-        "id": "species-29",
+        "id": "species-28",
         "name": "Giant Squid",
         "image_url": "https://images.fineartamerica.com/images/artworkimages/mediumlarge/2/giant-squid-eldar-zakirov.jpg",
         "native": "Scotland",
@@ -1736,7 +1717,7 @@
         "sub_species": null
     },
     {
-        "id": "species-30",
+        "id": "species-29",
         "name": "Lethifold",
         "image_url": "https://i.pinimg.com/originals/8a/e6/f6/8ae6f61b68216d9a945e1bbcf0c6c8ed.jpg",
         "native": "The tropics",
@@ -1755,7 +1736,7 @@
         "sub_species": null
     },
     {
-        "id": "species-31",
+        "id": "species-30",
         "name": "Imp",
         "image_url": "https://www.hp-lexicon.org/wp-content/uploads/2017/03/imp-and-glumbumble.jpg",
         "native": "Great Britain and Ireland",
@@ -1774,30 +1755,9 @@
         "sub_species": null
     },
     {
-        "id": "species-32",
-        "name": "Pukwudgie",
-        "image_url": "https://static.wikia.nocookie.net/harrypotter/images/0/04/William_the_Pukwudgie.png/revision/latest?cb=20170927204129",
-        "native": "United States of America",
-        "hair": null,
-        "feathers": null,
-        "eyes": null,
-        "skin": "Grey",
-        "height": "2-3 feet",
-        "length": null,
-        "mortality": "Mortal",
-        "distinctions": [
-            "Large-eared",
-            "Both help and hinder humans",
-            "Hunts with poisonous arrows",
-            "Possesses their own magic"
-        ],
-        "classification": null,
-        "sub_species": null
-    },
-    {
-        "id": "species-33",
+        "id": "species-31",
         "name": "Hidebehind",
-        "image_url": "https://static.wikia.nocookie.net/the-demonic-paradise/images/9/92/Hidebehind.jpg/revision/latest/scale-to-width-down/407?cb=20201208151045",
+        "image_url": "https://cdna.artstation.com/p/assets/images/images/014/762/578/large/jaime-staite-hidebehind-1.jpg?1545342957",
         "native": "North America",
         "hair": "Silver",
         "feathers": null,
@@ -1818,9 +1778,9 @@
         "sub_species": null
     },
     {
-        "id": "species-34",
+        "id": "species-32",
         "name": "Ghost",
-        "image_url": "https://static.wikia.nocookie.net/harrypotter/images/4/45/Ghost-pottermore.png/revision/latest?cb=20210903044914",
+        "image_url": "https://cosmofunnel.com/sites/default/files/styles/full/public/2020-10/189952168941.jpeg?itok=VoH4QcHH",
         "native": "Worldwide",
         "hair": "Greyish-silver",
         "feathers": null,
