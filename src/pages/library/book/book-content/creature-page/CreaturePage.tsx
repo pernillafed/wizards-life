@@ -31,6 +31,8 @@ const CreaturePage = ({ isSidebarVisible }: SidebarVisibilityProps) => {
 
     const [data, setData] = useState<CreatureType>();
 
+    // TODO: Make page generic to work for sub species also
+
     useEffect(() => {
         setData(species.find(creature => creature.id === speciesId));
     }, [speciesId]);
@@ -62,7 +64,14 @@ const CreaturePage = ({ isSidebarVisible }: SidebarVisibilityProps) => {
                             {data.classification && <li>Magical classification: {data.classification}</li>}
                         </ul>
                     </div>
-                    {/* TODO: ADD SUB SPECIES */}
+                    {data.sub_species && (
+                        <div>
+                            <Heading text="Sub species" type="h2" color="secondaryText" />
+                            {data.sub_species.map(species => (
+                                <div>{species.name}</div>
+                            ))}
+                        </div>
+                    )}
                 </div>
             )}
         </LoggedInPageWrapper>
