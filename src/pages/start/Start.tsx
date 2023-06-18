@@ -4,9 +4,9 @@ import Home from "./home/Home";
 import LoginOrCreate from "./login-or-create/LoginOrCreate";
 
 const Start = ({ isSidebarVisible }: SidebarVisibilityProps) => {
-    const { currentUser } = useAuthContext();
+  const { currentUser } = useAuthContext();
 
-    return currentUser ? <Home isSidebarVisible={isSidebarVisible} /> : <LoginOrCreate />;
-}
- 
+  return currentUser ? <Home isSidebarVisible={isSidebarVisible} /> : <LoginOrCreate />;
+};
+
 export default Start;

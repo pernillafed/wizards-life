@@ -1,26 +1,26 @@
 [
-    {
-        "id": "1",
-        "headline": "Quidditch: Hufflepuff wins against Slytherin"
-    },
-    {
-        "id": "2",
-        "headline": "Everything half off at Scribbulus in Diagon Alley! Get your writing supplies now"
-    },
-    {
-        "id": "3",
-        "headline": "Sign up for the annual Wizards Chess Tour\u00ADnament"
-    },
-    {
-        "id": "4",
-        "headline": "Reminder: O.W.L.s in the Great Hall this Friday afternoon"
-    },
-    {
-        "id": "5",
-        "headline": "Pick up your free copy of Professor Flitwick's dissertation on memory charms in the library!"
-    },
-    {
-        "id": "6",
-        "headline": "The Shrieking Shack will be closed off for restoration purposes during the holidays"
-    }
+  {
+    "id": "1",
+    "headline": "Quidditch: Hufflepuff wins against Slytherin"
+  },
+  {
+    "id": "2",
+    "headline": "Everything half off at Scribbulus in Diagon Alley! Get your writing supplies now"
+  },
+  {
+    "id": "3",
+    "headline": "Sign up for the annual Wizards Chess Tour\u00ADnament"
+  },
+  {
+    "id": "4",
+    "headline": "Reminder: O.W.L.s in the Great Hall this Friday afternoon"
+  },
+  {
+    "id": "5",
+    "headline": "Pick up your free copy of Professor Flitwick's dissertation on memory charms in the library!"
+  },
+  {
+    "id": "6",
+    "headline": "The Shrieking Shack will be closed off for restoration purposes during the holidays"
+  }
 ]

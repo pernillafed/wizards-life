@@ -10,21 +10,21 @@ import LoggedInPageWrapper from "../../components/shared/logged-in-page-wrapper/
 import Heading from "../../components/shared/heading/Heading";
 
 const Library = ({ isSidebarVisible }: SidebarVisibilityProps) => {
-    const navigate = useNavigate();
+  const navigate = useNavigate();
 
-    return (
-        <LoggedInPageWrapper isSidebarVisible={isSidebarVisible}>
-            <Heading text="Library" type="h1" color="primaryText" />
-            <div sx={LibraryGridStyles}>
-                {libraryBooks.map(book => (
-                    <div key={book.id} sx={BookStyles} onClick={() => navigate(`/library/book/${book.id}`)}>
-                        <FontAwesomeIcon icon={faBook} size="3x" />
-                        <div sx={BookTitleStyles}>{book.title}</div>
-                    </div>
-                ))}
-            </div>
-        </LoggedInPageWrapper>
-    );
-}
- 
+  return (
+    <LoggedInPageWrapper isSidebarVisible={isSidebarVisible}>
+      <Heading text="Library" type="h1" color="primaryText" />
+      <div sx={LibraryGridStyles}>
+        {libraryBooks.map((book) => (
+          <div key={book.id} sx={BookStyles} onClick={() => navigate(`/library/book/${book.id}`)}>
+            <FontAwesomeIcon icon={faBook} size="3x" />
+            <div sx={BookTitleStyles}>{book.title}</div>
+          </div>
+        ))}
+      </div>
+    </LoggedInPageWrapper>
+  );
+};
+
 export default Library;
