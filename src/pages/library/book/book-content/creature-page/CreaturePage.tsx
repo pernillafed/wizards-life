@@ -1,6 +1,6 @@
 /** @jsxImportSource theme-ui */
 
-import { useParams } from "react-router-dom";
+import { Link, useParams } from "react-router-dom";
 import LoggedInPageWrapper from "../../../../../components/shared/logged-in-page-wrapper/LoggedInPageWrapper";
 import { SidebarVisibilityProps } from "../../../../../components/sidebar/Sidebar";
 import { useEffect, useState } from "react";
@@ -40,8 +40,28 @@ const CreaturePage = ({ isSidebarVisible }: SidebarVisibilityProps) => {
 
   const [data, setData] = useState<CreatureType>();
 
+  const findSubSpecies = (species: CreatureType[]) => {
+    let creatureData: CreatureType | undefined;
+    species.forEach((creature) => {
+      if (creature.sub_species) {
+        creatureData = creature.sub_species.find((subSpecies) => subSpecies.id === speciesId);
+        if (creatureData) {
+          setData(creatureData);
+        } else {
+          findSubSpecies(creature.sub_species);
+        }
+      }
+    });
+  };
+
   useEffect(() => {
-    setData(species.find((creature) => creature.id === speciesId));
+    setData(undefined);
+    const firstLevelSpecies = species.find((creature) => creature.id === speciesId);
+    if (firstLevelSpecies) {
+      setData(firstLevelSpecies);
+    } else {
+      findSubSpecies(species);
+    }
   }, [speciesId]);
 
   return (
@@ -112,19 +132,20 @@ const CreaturePage = ({ isSidebarVisible }: SidebarVisibilityProps) => {
                 <Heading text="Sub species" type="h2" color="secondaryText" />
                 <div sx={CreatureSubSpeciesContent}>
                   {data.sub_species.map((species) => (
-                    <div key={species.id}>
-                      <button
-                        sx={{
-                          ...ButtonStyles,
-                          margin: "0.5rem 0.25rem",
-                          backgroundColor: "primaryBackground",
-                          fontWeight: "normal",
-                          ":hover": { backgroundColor: "hoverPrimaryBackground" },
-                        }}
-                      >
-                        {species.name}
-                      </button>
-                    </div>
+                    <Link
+                      key={species.id}
+                      to={`/library/book/${bookId}/species/${species.id}`}
+                      sx={{
+                        ...ButtonStyles,
+                        margin: "0.5rem 0.25rem",
+                        backgroundColor: "primaryBackground",
+                        fontWeight: "normal",
+                        textDecoration: "none",
+                        ":hover": { backgroundColor: "hoverPrimaryBackground" },
+                      }}
+                    >
+                      {species.name}
+                    </Link>
                   ))}
                 </div>
               </div>
