@@ -8,6 +8,15 @@ import species from "../../../../../assets/data/species.json";
 import { BookPageStyles } from "../../Book.styles";
 import BackLink from "../../../../../components/shared/back-link/BackLink";
 import Heading from "../../../../../components/shared/heading/Heading";
+import { ButtonStyles } from "../../../../../Global.styles";
+import {
+  CreatureContent,
+  CreatureDistinctionsList,
+  CreatureFacts,
+  CreatureFactsList,
+  CreatureImage,
+  CreatureSubSpeciesContent,
+} from "./CreaturePage.styles";
 
 export type CreatureType = {
   id: string;
@@ -41,37 +50,83 @@ const CreaturePage = ({ isSidebarVisible }: SidebarVisibilityProps) => {
       {data && (
         <div sx={BookPageStyles}>
           <Heading text={data.name} type="h1" color="secondaryText" isBookPageTitle={true} />
-          <div>
-            <div>
-              <img src={data.image_url} alt={data.name} sx={{ width: "30%" }} />
-              <ul>
-                <li>Native: {data.native ? data.native : "Unknown"}</li>
-                {data.hair && <li>Hair: {data.hair}</li>}
-                {data.feathers && <li>Feathers: {data.feathers}</li>}
-                {data.eyes && <li>Eyes: {data.eyes}</li>}
-                {data.skin && <li>Skin: {data.skin}</li>}
-                {data.height && <li>Height: {data.height}</li>}
-                {data.length && <li>Length: {data.length}</li>}
-                <li>Mortality: {data.mortality ? data.mortality : "Unknown"}</li>
-                {data.distinctions && (
+          <div sx={CreatureContent}>
+            <div sx={CreatureFacts}>
+              <img src={data.image_url} alt={data.name} sx={CreatureImage} />
+              <ul sx={CreatureFactsList}>
+                <li>
+                  <b>Native:</b> {data.native ? data.native : "Unknown"}
+                </li>
+                {data.hair && (
                   <li>
-                    Distinctions:
-                    <ul>
-                      {data.distinctions.map((distinction, i) => (
-                        <li key={i}>{distinction}</li>
-                      ))}
-                    </ul>
+                    <b>Hair:</b> {data.hair}
                   </li>
                 )}
-                {data.classification && <li>Magical classification: {data.classification}</li>}
+                {data.feathers && (
+                  <li>
+                    <b>Feathers:</b> {data.feathers}
+                  </li>
+                )}
+                {data.eyes && (
+                  <li>
+                    <b>Eyes:</b> {data.eyes}
+                  </li>
+                )}
+                {data.skin && (
+                  <li>
+                    <b>Skin:</b> {data.skin}
+                  </li>
+                )}
+                {data.height && (
+                  <li>
+                    <b>Height:</b> {data.height}
+                  </li>
+                )}
+                {data.length && (
+                  <li>
+                    <b>Length:</b> {data.length}
+                  </li>
+                )}
+                <li>
+                  <b>Mortality:</b> {data.mortality ? data.mortality : "Unknown"}
+                </li>
+                {data.classification && (
+                  <li>
+                    <b>Magical classification:</b> {data.classification}
+                  </li>
+                )}
               </ul>
             </div>
+            {data.distinctions && (
+              <div sx={{ marginTop: "2rem" }}>
+                <Heading text="Distinctions" type="h2" color="secondaryText" />
+                <ul sx={CreatureDistinctionsList}>
+                  {data.distinctions.map((distinction, i) => (
+                    <li key={i}>{distinction}</li>
+                  ))}
+                </ul>
+              </div>
+            )}
             {data.sub_species && (
-              <div>
+              <div sx={{ marginTop: "2rem" }}>
                 <Heading text="Sub species" type="h2" color="secondaryText" />
-                {data.sub_species.map((species) => (
-                  <div>{species.name}</div>
-                ))}
+                <div sx={CreatureSubSpeciesContent}>
+                  {data.sub_species.map((species) => (
+                    <div key={species.id}>
+                      <button
+                        sx={{
+                          ...ButtonStyles,
+                          margin: "0.5rem 0.25rem",
+                          backgroundColor: "primaryBackground",
+                          fontWeight: "normal",
+                          ":hover": { backgroundColor: "hoverPrimaryBackground" },
+                        }}
+                      >
+                        {species.name}
+                      </button>
+                    </div>
+                  ))}
+                </div>
               </div>
             )}
           </div>
