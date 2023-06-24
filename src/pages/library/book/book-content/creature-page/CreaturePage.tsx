@@ -39,6 +39,7 @@ const CreaturePage = ({ isSidebarVisible }: SidebarVisibilityProps) => {
   const { speciesId, bookId } = useParams();
 
   const [data, setData] = useState<CreatureType>();
+  const [speciesFamily, setSpeciesFamily] = useState<CreatureType>();
 
   const findSubSpecies = (species: CreatureType[]) => {
     let creatureData: CreatureType | undefined;
@@ -47,6 +48,7 @@ const CreaturePage = ({ isSidebarVisible }: SidebarVisibilityProps) => {
         creatureData = creature.sub_species.find((subSpecies) => subSpecies.id === speciesId);
         if (creatureData) {
           setData(creatureData);
+          setSpeciesFamily(creature);
         } else {
           findSubSpecies(creature.sub_species);
         }
@@ -56,6 +58,8 @@ const CreaturePage = ({ isSidebarVisible }: SidebarVisibilityProps) => {
 
   useEffect(() => {
     setData(undefined);
+    setSpeciesFamily(undefined);
+    window.scrollTo(0, 0);
     const firstLevelSpecies = species.find((creature) => creature.id === speciesId);
     if (firstLevelSpecies) {
       setData(firstLevelSpecies);
@@ -66,7 +70,14 @@ const CreaturePage = ({ isSidebarVisible }: SidebarVisibilityProps) => {
 
   return (
     <LoggedInPageWrapper isSidebarVisible={isSidebarVisible}>
-      <BackLink path={`/library/book/${bookId}`} text="Back to index" />
+      {speciesFamily ? (
+        <BackLink
+          path={`/library/book/${bookId}/species/${speciesFamily.id}`}
+          text={`Back to ${speciesFamily.name}`}
+        />
+      ) : (
+        <BackLink path={`/library/book/${bookId}`} text="Back to index" />
+      )}
       {data && (
         <div sx={BookPageStyles}>
           <Heading text={data.name} type="h1" color="secondaryText" isBookPageTitle={true} />

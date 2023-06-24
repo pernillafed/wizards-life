@@ -1,7 +1,7 @@
 import { ThemeUIStyleObject } from "theme-ui";
 
 export const CreatureContent: ThemeUIStyleObject = {
-  padding: "1rem 5rem",
+  padding: "0.5rem 5rem",
 };
 
 export const CreatureFacts: ThemeUIStyleObject = {
