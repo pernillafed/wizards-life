@@ -3,6 +3,7 @@ import {
   onAuthStateChanged,
   signInWithEmailAndPassword,
   signOut,
+  updateProfile,
   User,
   UserCredential,
 } from "firebase/auth";
@@ -15,6 +16,10 @@ export type AuthContextType = {
   createAccount: (email: string, password: string) => Promise<UserCredential>;
   logout: () => Promise<void>;
   login: (email: string, password: string) => Promise<UserCredential>;
+  updateUserInfo: (
+    displayName: string | null | undefined,
+    photoURL: string | null | undefined
+  ) => Promise<void>;
 };
 
 interface IAuthContextProps {
@@ -46,6 +51,17 @@ const AuthContextProvider = ({ children }: IAuthContextProps): JSX.Element => {
     return signOut(auth);
   };
 
+  const updateUserInfo = (
+    displayName: string | null | undefined,
+    photoURL: string | null | undefined
+  ): Promise<void> => {
+    if (auth.currentUser) {
+      return updateProfile(auth.currentUser, { displayName, photoURL });
+    } else {
+      throw new Error("No current user");
+    }
+  };
+
   useEffect(() => {
     onAuthStateChanged(auth, (user) => {
       setCurrentUser(user);
@@ -59,6 +75,7 @@ const AuthContextProvider = ({ children }: IAuthContextProps): JSX.Element => {
     createAccount,
     login,
     logout,
+    updateUserInfo,
   };
 
   return (

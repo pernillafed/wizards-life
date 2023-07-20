@@ -11,6 +11,7 @@ import Library from "./pages/library/Library";
 import Start from "./pages/start/Start";
 import CreaturePage from "./pages/library/book/book-content/creature-page/CreaturePage";
 import SpellPage from "./pages/library/book/book-content/spell-page/SpellPage";
+import Profile from "./pages/profile/Profile";
 
 const App = () => {
   const { currentUser } = useAuthContext();
@@ -25,6 +26,14 @@ const App = () => {
       )}
       <Routes>
         <Route path="/" element={<Start isSidebarVisible={isSidebarVisible} />} />
+        <Route
+          path="/profile"
+          element={
+            <RequireAuth redirectTo="/">
+              <Profile isSidebarVisible={isSidebarVisible} />
+            </RequireAuth>
+          }
+        />
         <Route
           path="/library"
           element={
