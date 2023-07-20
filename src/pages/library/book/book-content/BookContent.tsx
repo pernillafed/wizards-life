@@ -12,6 +12,16 @@ export type BookContentProps = {
   bookContent: BookContentType | QueryBookContentType | undefined;
 };
 
+const sortFunc = (a: BookContentEntryType, b: BookContentEntryType) => {
+  if (a.name > b.name) {
+    return 1;
+  } else if (a.name < b.name) {
+    return -1;
+  } else {
+    return 0;
+  }
+};
+
 const BookContent = ({ book, data, bookId, bookContent }: BookContentProps) => {
   return (
     <div sx={BookPageStyles}>
@@ -22,7 +32,7 @@ const BookContent = ({ book, data, bookId, bookContent }: BookContentProps) => {
         isBookPageTitle={true}
       />
       <div sx={BookContentGridStyles}>
-        {data.map((bookContentEntry: BookContentEntryType) => (
+        {data.sort(sortFunc).map((bookContentEntry: BookContentEntryType) => (
           <div key={bookContentEntry.id}>
             <Link
               to={`/library/book/${bookId}/${bookContent?.urlParam}/${bookContentEntry.id}`}
