@@ -54,7 +54,7 @@ const CharacterPage = ({ isSidebarVisible }: SidebarVisibilityProps) => {
     <LoggedInPageWrapper isSidebarVisible={isSidebarVisible}>
       <BackLink path={`/library/book/${bookId}`} text="Back to index" />
       {data && (
-        <div sx={{ ...BookPageStyles, padding: "3rem 2.5rem 4rem 2.5rem" }}>
+        <div sx={BookPageStyles}>
           <Heading
             text={data.name}
             type="h1"
@@ -71,6 +71,7 @@ const CharacterPage = ({ isSidebarVisible }: SidebarVisibilityProps) => {
             />
           )}
           <div sx={CharacterGridStyles}>
+            <img src={data.image_url} alt={data.name} sx={CharacterImageStyles} />
             <ul sx={CharacterInfoList}>
               <li sx={{ marginBottom: "0.25rem" }}>
                 <b>Gender:</b> {data.gender ? data.gender : "Unknown"}
@@ -101,7 +102,6 @@ const CharacterPage = ({ isSidebarVisible }: SidebarVisibilityProps) => {
                 </li>
               )}
             </ul>
-            <img src={data.image_url} alt={data.name} sx={CharacterImageStyles} />
           </div>
           <div sx={CharacterDescriptionWrapperStyles}>
             <div>
