@@ -16,6 +16,7 @@ import {
   CreatureFactsList,
   CreatureImage,
   CreatureSubSpeciesContent,
+  CreatureSubSpeciesLink,
 } from "./CreaturePage.styles";
 
 export type CreatureType = {
@@ -148,11 +149,7 @@ const CreaturePage = ({ isSidebarVisible }: SidebarVisibilityProps) => {
                       to={`/library/book/${bookId}/species/${species.id}`}
                       sx={{
                         ...ButtonStyles,
-                        margin: "0.5rem 0.25rem",
-                        backgroundColor: "primaryBackground",
-                        fontWeight: "normal",
-                        textDecoration: "none",
-                        ":hover": { backgroundColor: "hoverPrimaryBackground" },
+                        ...CreatureSubSpeciesLink,
                       }}
                     >
                       {species.name}

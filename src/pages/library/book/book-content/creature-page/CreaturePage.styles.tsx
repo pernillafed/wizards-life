@@ -34,4 +34,17 @@ export const CreatureDistinctionsList: ThemeUIStyleObject = {
 export const CreatureSubSpeciesContent: ThemeUIStyleObject = {
   display: "flex",
   justifyContent: "center",
+  flexWrap: "wrap",
+};
+
+export const CreatureSubSpeciesLink: ThemeUIStyleObject = {
+  margin: "0.5rem 0.25rem 0 0.25rem",
+  backgroundColor: "primaryBackground",
+  fontWeight: "normal",
+  textDecoration: "none",
+  width: "15rem",
+  textAlign: "center",
+  ":hover": {
+    backgroundColor: "hoverPrimaryBackground",
+  },
 };
