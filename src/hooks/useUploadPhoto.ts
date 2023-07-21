@@ -52,7 +52,7 @@ const useUploadPhoto = () => {
         setLoading(false);
       },
       async () => {
-        const url = getDownloadURL(fileRef);
+        const url = await getDownloadURL(fileRef);
 
         await addDoc(collection(db, "users", currentUser.uid, "photos"), {
           name: image.name,
