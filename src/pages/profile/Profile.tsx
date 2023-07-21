@@ -46,9 +46,11 @@ const Profile = ({ isSidebarVisible }: SidebarVisibilityProps) => {
     uploadPhoto(userImage, true);
   };
 
-  const handleUpdate = () => {
+  const handleUpdate = async () => {
     const profilePhoto = photos?.find((photo) => photo.isProfilePhoto);
-    updateUserInfo(userName, profilePhoto ? profilePhoto.url : null);
+    await updateUserInfo(userName, profilePhoto ? profilePhoto.url : null);
+    // TODO: Look into how the profile info will update on the page without reload
+    window.location.reload();
   };
 
   return (
